@@ -19,3 +19,6 @@ Frontpage: React — A React webpage only works while someone has it open in a b
 keep a tab open waiting for reminders. You need a backend scheduler (e.g., node-cron or a Celery/APScheduler job) 
 that fires independently of the browser and pushes the reminder through a channel that reaches them passively — a phone call 
 (IVR-style, reusing your TTS), SMS, or WhatsApp, not just an in-page notification.
+
+<img src="medicine_reminder_architecture.svg" alt="My Project Logo" width="250">
+
