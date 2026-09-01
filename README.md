@@ -20,5 +20,8 @@ keep a tab open waiting for reminders. You need a backend scheduler (e.g., node-
 that fires independently of the browser and pushes the reminder through a channel that reaches them passively — a phone call 
 (IVR-style, reusing your TTS), SMS, or WhatsApp, not just an in-page notification.
 
-<img src="medicine_reminder_architecture.svg" alt="My Project Logo" width="250">
+<p align="center">
+  <img src="medicine_reminder_architecture.svg" alt="Medicine Reminder Architecture Diagram" width="800">
+</p>
+
 
