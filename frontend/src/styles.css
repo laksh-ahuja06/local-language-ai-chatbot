@@ -23,10 +23,6 @@ select {
   font: inherit;
 }
 
-/* =========================
-   MAIN APP
-========================= */
-
 .app-shell {
   min-height: 100vh;
 
@@ -39,28 +35,17 @@ select {
     #f3f7f5;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
 .topbar {
   height: 78px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 6vw;
-
   border-bottom: 1px solid #dfe9e5;
-
   background: rgba(255, 255, 255, 0.88);
-
   backdrop-filter: blur(14px);
-
   position: sticky;
   top: 0;
-
   z-index: 10;
 }
 
@@ -73,132 +58,83 @@ select {
 .brand-icon {
   width: 42px;
   height: 42px;
-
   border-radius: 13px;
-
   display: grid;
   place-items: center;
-
   color: white;
-
   background: #117b6d;
-
   box-shadow:
-    0 7px 18px rgba(17, 123, 109, 0.2);
+  0 7px 18px rgba(17, 123, 109, 0.2);
 }
 
 .brand-name {
   font-family: "Manrope", sans-serif;
-
   font-weight: 800;
-
   font-size: 19px;
 }
 
 .brand-subtitle {
   color: #748582;
-
   font-size: 12px;
-
   margin-top: 2px;
 }
 
 .top-actions {
   display: flex;
   align-items: center;
-
   gap: 10px;
 }
-
-/* =========================
-   LANGUAGE
-========================= */
 
 .language-control {
   display: flex;
   align-items: center;
-
   gap: 8px;
-
   background: #edf4f1;
-
   padding: 10px 12px;
-
   border-radius: 11px;
-
   color: #246c62;
 }
 
 .language-control select {
   border: 0;
   outline: 0;
-
   background: transparent;
-
   color: #29433f;
-
   font-weight: 600;
-
   cursor: pointer;
 }
-
-/* =========================
-   SETTINGS BUTTON
-========================= */
 
 .icon-button {
   width: 43px;
   height: 43px;
-
   display: grid;
   place-items: center;
-
   border: 1px solid #dce7e3;
-
   background: white;
-
   color: #52716b;
-
   cursor: pointer;
-
   border-radius: 11px;
-
   transition: 0.2s ease;
 }
 
 .icon-button:hover {
   background: #edf7f4;
-
   color: #117b6d;
 }
 
-/* =========================
-   MAIN
-========================= */
-
 main {
   width: min(1160px, 88vw);
-
   margin: 0 auto;
-
   padding: 68px 0 35px;
 }
 
-/* =========================
-   HERO
-========================= */
-
 .hero {
   min-height: 370px;
-
   display: grid;
-
   grid-template-columns:
     1.05fr
     0.95fr;
-
   align-items: center;
-
   gap: 50px;
 }
 
@@ -206,49 +142,24 @@ main {
   max-width: 620px;
 }
 
-/* =========================
-   EYEBROW
-========================= */
-
 .eyebrow {
   display: inline-flex;
-
   align-items: center;
-
   gap: 7px;
-
   padding: 7px 11px;
-
   border-radius: 999px;
-
   background: #e3f2ee;
-
   color: #147565;
-
   font-size: 12px;
-
   font-weight: 700;
-
   letter-spacing: 0.03em;
 }
 
-/* =========================
-   HERO TITLE
-========================= */
-
 h1 {
   font-family: "Manrope", sans-serif;
-
-  font-size: clamp(
-    43px,
-    5vw,
-    67px
-  );
-
+  font-size: clamp(43px, 5vw, 67px);
   line-height: 1.02;
-
   letter-spacing: -0.045em;
-
   margin: 19px 0 18px;
 }
 
@@ -258,11 +169,8 @@ h1 span {
 
 .hero-copy p {
   max-width: 570px;
-
   font-size: 17px;
-
   line-height: 1.65;
-
   color: #657773;
 }
 
@@ -270,25 +178,14 @@ h1 span {
   color: #334a46;
 }
 
-/* =========================
-   VOICE CARD
-========================= */
-
 .voice-card {
   height: 330px;
-
   border-radius: 34px;
-
   position: relative;
-
   overflow: hidden;
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
 
   background:
@@ -320,9 +217,6 @@ h1 span {
   border-radius: 27px;
 }
 
-/* =========================
-   MICROPHONE ORBITS
-========================= */
 
 .voice-orbit {
   position: absolute;
@@ -342,28 +236,17 @@ h1 span {
   height: 310px;
 }
 
-/* =========================
-   MICROPHONE BUTTON
-========================= */
 
 .mic-button {
   width: 112px;
   height: 112px;
-
   border: 0;
-
   border-radius: 50%;
-
   z-index: 2;
-
   display: grid;
-
   place-items: center;
-
   color: #14796c;
-
   background: white;
-
   cursor: pointer;
 
   box-shadow:
@@ -381,13 +264,8 @@ h1 span {
   transform: scale(1.04);
 }
 
-/* =========================
-   LISTENING ANIMATION
-========================= */
-
 .is-listening .mic-button {
   animation: pulse 1.4s infinite;
-
   color: #c45146;
 }
 
@@ -410,32 +288,21 @@ h1 span {
   }
 }
 
-/* =========================
-   VOICE STATUS
-========================= */
 
 .voice-status {
   margin-top: 27px;
-
   color: white;
-
   z-index: 2;
-
   font-weight: 600;
-
   font-size: 15px;
 }
 
 .status-dot {
   display: inline-block;
-
   width: 8px;
   height: 8px;
-
   background: #b5c5c2;
-
   border-radius: 50%;
-
   margin-right: 8px;
 }
 
@@ -447,9 +314,6 @@ h1 span {
     rgba(255, 176, 167, 0.14);
 }
 
-/* =========================
-   WORKSPACE
-========================= */
 
 .workspace {
   display: grid;
@@ -463,9 +327,6 @@ h1 span {
   margin-top: 30px;
 }
 
-/* =========================
-   PANELS
-========================= */
 
 .panel {
   background: white;
@@ -483,111 +344,68 @@ h1 span {
     rgba(37, 72, 65, 0.045);
 }
 
-/* =========================
-   PANEL HEADER
-========================= */
-
 .panel-heading {
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   gap: 20px;
 }
 
 .panel-kicker {
   color: #839590;
-
   font-size: 10px;
-
   letter-spacing: 0.14em;
-
   font-weight: 800;
 }
 
 h2 {
   margin: 5px 0 0;
-
   font-family: "Manrope", sans-serif;
-
   font-size: 21px;
-
   letter-spacing: -0.025em;
 }
 
-/* =========================
-   CLEAR BUTTON
-========================= */
-
 .small-button {
   padding: 8px 11px;
-
   display: flex;
-
   align-items: center;
-
   gap: 6px;
-
   font-size: 13px;
 
-  border:
-    1px solid
-    #dce7e3;
+  border: 1px solid #dce7e3;
 
   background: white;
-
   color: #52716b;
-
   cursor: pointer;
-
   border-radius: 11px;
-
   transition: 0.2s ease;
 }
 
 .small-button:hover {
   background: #edf7f4;
-
   color: #117b6d;
 }
 
-/* =========================
-   TRANSCRIPT
-========================= */
 
 .transcript-box {
   min-height: 153px;
-
   margin: 20px 0 15px;
-
   border-radius: 15px;
 
-  border:
-    1px solid
-    #dfe9e5;
+  border: 1px solid #dfe9e5;
 
   background: #f8fbfa;
-
   padding: 18px;
-
   font-size: 17px;
-
   line-height: 1.55;
 }
 
 .transcript-box.empty {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 10px;
-
   color: #91a19d;
-
   text-align: center;
 }
 
@@ -599,42 +417,28 @@ h2 {
   color: #8a9a96;
 }
 
-/* =========================
-   VOICE BUTTONS
-========================= */
 
 .voice-tools {
   display: flex;
-
   align-items: center;
-
   gap: 10px;
 }
 
 .secondary-button,
 .primary-button {
   min-height: 45px;
-
   border-radius: 11px;
-
   padding: 0 15px;
-
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 8px;
-
   cursor: pointer;
-
   font-weight: 700;
 }
 
 .secondary-button {
   background: white;
-
   color: #3f625b;
 
   border:
@@ -649,12 +453,9 @@ h2 {
 .primary-button {
   background: #117b6d;
 
-  border:
-    1px solid
-    #117b6d;
+  border:1px solid #117b6d;
 
   color: white;
-
   flex: 1;
 }
 
@@ -664,35 +465,23 @@ h2 {
 
 button:disabled {
   opacity: 0.45;
-
   cursor: not-allowed;
 }
 
-/* =========================
-   ALERTS
-========================= */
 
 .alert {
   display: flex;
-
   align-items: center;
-
   gap: 8px;
-
   margin-top: 13px;
-
   padding: 11px 13px;
-
   border-radius: 10px;
-
   font-size: 13px;
-
   line-height: 1.4;
 }
 
 .error {
   color: #9b433c;
-
   background: #fff1ef;
 
   border:
@@ -702,7 +491,6 @@ button:disabled {
 
 .success {
   color: #146a5e;
-
   background: #eaf7f3;
 
   border:
@@ -710,22 +498,14 @@ button:disabled {
     #cdebe4;
 }
 
-/* =========================
-   HOW TO USE
-========================= */
 
 .round-icon {
   width: 38px;
   height: 38px;
-
   display: grid;
-
   place-items: center;
-
   background: #e9f5f1;
-
   color: #177667;
-
   border-radius: 50%;
 }
 
@@ -741,7 +521,6 @@ button:disabled {
     1fr;
 
   gap: 11px;
-
   padding: 14px 0;
 
   border-bottom:
@@ -751,11 +530,8 @@ button:disabled {
 
 .example > span {
   color: #96a5a1;
-
   font-size: 11px;
-
   font-weight: 800;
-
   padding-top: 3px;
 }
 
@@ -765,55 +541,34 @@ button:disabled {
 
 .example p {
   color: #778783;
-
   margin: 4px 0 0;
-
   font-size: 13px;
-
   line-height: 1.4;
 }
 
-/* =========================
-   ELDERLY USER NOTE
-========================= */
 
 .privacy-note {
   display: flex;
-
   align-items: center;
-
   gap: 11px;
-
   margin-top: 17px;
-
   padding: 13px;
-
   background: #f5f8f7;
-
   border-radius: 12px;
-
   color: #277568;
 }
 
 .privacy-note p {
   color: #768681;
-
   margin: 3px 0 0;
-
   font-size: 11px;
-
   line-height: 1.4;
 }
 
 .privacy-note strong {
   font-size: 12px;
-
   color: #355650;
 }
-
-/* =========================
-   REMINDERS
-========================= */
 
 .reminders-panel {
   margin-top: 20px;
@@ -821,15 +576,10 @@ button:disabled {
 
 .reminder-count {
   background: #edf6f3;
-
   color: #33766b;
-
   padding: 7px 10px;
-
   border-radius: 999px;
-
   font-size: 11px;
-
   font-weight: 700;
 }
 
@@ -847,9 +597,7 @@ button:disabled {
     auto;
 
   gap: 13px;
-
   align-items: center;
-
   padding: 14px 0;
 
   border-bottom:
@@ -864,23 +612,16 @@ button:disabled {
 .pill-icon {
   width: 39px;
   height: 39px;
-
   display: grid;
-
   place-items: center;
-
   border-radius: 11px;
-
   background: #edf7e8;
-
   color: #5f8a48;
 }
 
 .medicine {
   display: flex;
-
   flex-direction: column;
-
   gap: 3px;
 }
 
@@ -890,53 +631,34 @@ button:disabled {
 
 .medicine span {
   font-size: 12px;
-
   color: #879590;
 }
 
 .time {
   display: flex;
-
   align-items: center;
-
   gap: 7px;
-
   color: #546e68;
-
   font-size: 13px;
-
   font-weight: 600;
 }
 
 .today-badge {
   color: #5d766f;
-
   background: #f1f4f3;
-
   padding: 5px 9px;
-
   border-radius: 7px;
-
   font-size: 10px;
-
   font-weight: 700;
 }
 
-/* =========================
-   DISCLAIMER
-========================= */
 
 .disclaimer {
   color: #8a9895;
-
   font-size: 11px;
-
   line-height: 1.55;
-
   max-width: 900px;
-
   margin: 19px auto 0;
-
   text-align: center;
 }
 
@@ -944,39 +666,23 @@ button:disabled {
   color: #667773;
 }
 
-/* =========================
-   FOOTER
-========================= */
 
 footer {
   width: min(1160px, 88vw);
-
   margin: 0 auto;
-
   padding: 23px 0 30px;
-
   color: #899792;
-
   font-size: 11px;
-
   justify-content: space-between;
-
-  border-top:
-    1px solid
-    #e0e8e5;
+  border-top: 1px solid #e0e8e5;
 }
 
 .footer-right {
   display: flex;
-
   align-items: center;
-
   gap: 6px;
 }
 
-/* =========================
-   TABLET
-========================= */
 
 @media (max-width: 850px) {
 
@@ -1002,9 +708,6 @@ footer {
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 520px) {
 
