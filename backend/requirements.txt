@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-multipart
+transformers
+torchaudio
+"onnxruntime==1.20.1"
+"onnx==1.20.1"
+"onnxruntime-gpu==1.20.1"
+
+
+
+install line of code: pip install -r requirements.txt

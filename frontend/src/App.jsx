@@ -177,6 +177,32 @@ function App() {
     );
   }
 
+  // Connect to python server
+
+  async function sendData() {
+    try {
+      const res = await fetch("http://localhost:8000/sendData", {
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          prompt,
+          tone,
+        }),
+      });
+
+      const data = await res.json();
+
+      console.log(data);
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <div className="app-shell">
 
