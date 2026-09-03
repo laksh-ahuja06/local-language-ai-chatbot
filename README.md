@@ -1,9 +1,6 @@
-# AI Project for college submission
-
-Topic:- LOCAL-LANGUAGE AI CHATBOT FOR ELDERLY MEDICINE REMINDERS: A low-cost NLP/AI system designed for voice-first, multilingual medication support
+#  Local-Language AI Chatbot For Elderly Medicine Reminders: A low-cost NLP/AI system designed for voice-first, multilingual medication support
 
 AI models which I’ve chosen :
-
 IndicTrans2's role — using it as a pivot-language normalizer (local language → English/Hindi → back) 
 makes sense given Qwen2.5's Indic-language support is comparatively weak versus English. Keep this, 
 but be aware every added hop (ASR→MT→LLM→MT→TTS) adds latency — for elderly users expecting a conversational feel, 
