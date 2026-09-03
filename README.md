@@ -22,7 +22,20 @@ that fires independently of the browser and pushes the reminder through a channe
   <img src="medicine_reminder_architecture.svg" alt="Medicine Reminder Architecture Diagram" width="800">
 </p>
 
-### Text Recognition
+<br>
+
+<b>Reminder Engine - </b> This is the business logic layer. It doesn't run on a timer itself, it's the code that:
+<li> Takes validated intent from the LLM step (e.g. "remind me to take metformin at 8am and 8pm daily") and turns it into structured records </li>
+<li> Applies rules: handling recurring schedules, time zones, "take with food" style conditions, skip/snooze logic, dose adjustments  </li>
+<li> Talks to MongoDB to persist and update medicine/schedule/log data  </li>
+<li> Exposes functions like createReminder(), markTaken(), getUpcomingReminders(), escalateIfMissed() </li>
+
+<br>
+
+<b>Scheduler - </b> Scheduler triggers reminders at the right wall-clock time. It periodically (or via cron-like triggers) 
+asks the reminder engine "what's due right now?" and kicks off the delivery flow (call/SMS/TTS).
+
+## Text Recognition
 For the text recognition, i've used the google built-in Web Speech API (SpeechRecognition) which captures the voice.
 The voice is then converted to text in finalVariable, and later stored in the <b>transcript</b> variable. 
 
