@@ -1,10 +1,14 @@
+## install line of code: pip install -r requirements.txt
+# uvicorn app:app --reload to run the server
+# server is live on localhost:8000
+
 import torch
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-### Actual function
+### Actual function imported from other files
 from models import Qwen
 
 app = FastAPI()
@@ -24,28 +28,22 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup():
     print("Loading model...")
-    AICalling.load_model()
+    # Qwen.load_model()
     print("Ready!")
-
 
 @app.get("/")
 def home():
-    return {"message": "Server running"}
+    return {"message": "MedVoice backend is running on localhost:8000"}
 
-
-class UserData(BaseModel):
-    prompt: str
-    tone: str
-
+class ReminderData(BaseModel):
+    message: str
 
 @app.post("/sendData")
-def predict(data: UserData):
-    try:
-        print(data.prompt)
-        result = Qwen.run_model(data.prompt)
-        return {result}
-    except Exception as e:
-        import traceback
+def receive_reminder(data: ReminderData):
+    print("Reminder received:", data.message)
 
-        traceback.print_exc()
-        return {"error": str(e)}
+    return {
+        "success": True,
+        "message": "Reminder received by Python",
+        "received_text": data.message
+    }

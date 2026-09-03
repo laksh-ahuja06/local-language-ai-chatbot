@@ -111,7 +111,7 @@ function App() {
 
       setError(
         errors[event.error] ||
-          `Voice input error: ${event.error}`
+          `Voice input error: ${event.error}, Switch to google or safari`
       );
     };
 
@@ -177,31 +177,25 @@ function App() {
     );
   }
 
-  // Connect to python server
-
-  async function sendData() {
+  // Connect to python server:-
+  // Press Confirm reminder button to send text to backend
+  const confirmReminder = async () => {
     try {
       const res = await fetch("http://localhost:8000/sendData", {
         method: "POST",
-
         headers: {
           "Content-Type": "application/json",
         },
-
         body: JSON.stringify({
-          prompt,
-          tone,
+          message: transcript,
         }),
       });
-
       const data = await res.json();
-
-      console.log(data);
-
+      console.log("Python response:", data);
     } catch (error) {
-      console.error(error);
+      console.error("Error sending reminder:", error);
     }
-  }
+  };
 
   return (
     <div className="app-shell">
@@ -385,15 +379,23 @@ function App() {
               )}
             </div>
 
+            <input
+              type="text"
+              className="text-input"
+              value={transcript}
+              onChange={(e) => setTranscript(e.target.value)}
+              placeholder="Add text input"
+            />
+
+            <br></br><br></br>
+
             <div className="voice-tools"> {/* Action buttons */}
               <button
                 className="secondary-button"
                 onClick={
                   speakBack
                 }
-                disabled={
-                  !transcript
-                }
+                disabled={!transcript}
               >
 
                 <Volume2 size={18} />
@@ -402,13 +404,8 @@ function App() {
 
               <button
                 className="primary-button"
-                onClick={
-                  saveReminder
-                }
-                disabled={
-                  !transcript
-                }
-              >
+                onClick={confirmReminder}
+                disabled={!transcript}>
                 <Send size={18} />
                 Confirm reminder
               </button>
