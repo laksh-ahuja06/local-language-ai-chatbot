@@ -2,7 +2,7 @@
 
 AI models which I’ve chosen :
 
-<b> IndicTrans2's role — </b> using it as a pivot-language normalizer (local language → English/Hindi → back) 
+<b> IndicTrans2 — </b> using it as a pivot-language normalizer (local language → English/Hindi → back) 
 makes sense given Qwen2.5's Indic-language support is comparatively weak versus English. Keep this, 
 but be aware every added hop (ASR→MT→LLM→MT→TTS) adds latency — for elderly users expecting a conversational feel, 
 test end-to-end latency early, not at the end.
@@ -13,7 +13,12 @@ a known list, dose within sane bounds, time in valid format), and always read th
 via TTS for confirmation before writing to MongoDB. Medicine-name misrecognition is the single biggest safety risk 
 in this pipeline — ASR errors on drug names are common and consequences are real.
 
-<b> Working of the Front page: React — </b> A React webpage only works while someone has it open in a browser tab. Elderly users won't 
+<b> IndicF5 - </b> IndicF5 is used for the text-to-speech step because it's a model built specifically for Indian languages, giving it better coverage 
+of regional languages and dialects than mainstream cloud TTS services like Google, Azure, or AWS Polly, which still handle many Indic languages 
+inconsistently. It also tends to produce more natural-sounding speech for these languages — including clearer pronunciation of local terms and 
+medicine names — which matters a lot for elderly users who need reminders to be easy to understand, not robotic.
+
+<b> Working of the Front page using React — </b> A React webpage only works while someone has it open in a browser tab. Elderly users won't 
 keep a tab open waiting for reminders. You need a backend scheduler (e.g., node-cron or a Celery/APScheduler job) 
 that fires independently of the browser and pushes the reminder through a channel that reaches them passively — a phone call 
 (IVR-style, reusing your TTS), SMS, or WhatsApp, not just an in-page notification.  (Only implemented the react part yet)
