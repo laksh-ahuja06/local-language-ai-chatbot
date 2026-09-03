@@ -1,4 +1,4 @@
-#  Local-Language AI Chatbot For Elderly Medicine Reminders: A low-cost NLP/AI system designed for voice-first, multilingual medication support
+#  Local-Language AI Chatbot For Elderly Medicine Reminders: NLP/AI system designed for voice-first, multilingual medication support
 
 AI models which I’ve chosen :
 IndicTrans2's role — using it as a pivot-language normalizer (local language → English/Hindi → back) 
