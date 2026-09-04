@@ -138,9 +138,7 @@ function App() {
     setInterim("");
     setError("");
     setSaved(false);
-    setMessage(
-      "Tap the microphone and speak naturally."
-    );
+    setMessage("Tap the microphone and speak naturally.");
   }
 
 
@@ -152,9 +150,7 @@ function App() {
       return;
     }
     setSaved(true);
-    setMessage(
-      "Reminder captured successfully. Backend scheduling will be connected next."
-    );
+    setMessage("Reminder captured successfully. Backend scheduling will be connected next.");
   }
 
   function speakBack() {
@@ -172,9 +168,7 @@ function App() {
         `I heard: ${transcript}. Please confirm this reminder.`
       );
     utterance.lang = language.code;
-    window.speechSynthesis.speak(
-      utterance
-    );
+    window.speechSynthesis.speak(utterance);
   }
 
   // Connect to python server:-
@@ -227,18 +221,12 @@ function App() {
               onChange={(e) => {
                 const selected =
                   LANGUAGES.find(
-                    (item) =>
-                      item.code ===
-                      e.target.value
-                  );
+                    (item) => item.code === e.target.value);
                 setLanguage(selected);
               }}
             >
               {LANGUAGES.map((item) => (
-                <option
-                  key={item.code}
-                  value={item.code}
-                >
+                <option key={item.code} value={item.code}>
                   {item.label}
                 </option>
               ))}
@@ -251,73 +239,40 @@ function App() {
         <section className="hero">
           <div className="hero-copy">
             <span className="eyebrow">
-              <Activity size={15} />
-              Voice-first health assistant
-            </span>
+              <Activity size={15} /> Voice-first health assistant </span>
 
             <h1>
               Tell me your
               <br />
-              <span>
-                medicine reminder.
-              </span>
+              <span> medicine reminder. </span>
             </h1>
 
             <p>
-              Speak in your preferred
-              language. You can say
-              something like{" "}
-              <strong>
-                "Remind me to take my
-                medicine at 8 AM."
-              </strong>
+              Speak in your preferred language. You can say something like {" "}
+              <strong> "Remind me to take my medicine at 8 AM."</strong>
             </p>
           </div>
 
           {/* Main microphone */}
-          <div
-            className={`voice-card ${
-              listening
-                ? "is-listening"
-                : ""
-            }`}
-          >
+          <div className={`voice-card ${listening ? "is-listening" : "" }`} >
 
             <div className="voice-orbit orbit-one"></div>
             <div className="voice-orbit orbit-two"></div>
 
             <button
               className="mic-button"
-              onClick={
-                listening
-                  ? stopListening
-                  : startListening
-              }
-              aria-label={
-                listening
-                  ? "Stop listening"
-                  : "Start voice input"
-              }
-            >
+              onClick={listening ? stopListening : startListening}
+              aria-label={listening ? "Stop listening" : "Start voice input"}
+              >
 
-              {listening ? (
-                <MicOff size={42} />
-              ) : (
-                <Mic size={42} />
-              )}
+              {listening ? ( <MicOff size={42} />) : (<Mic size={42} />)}
             </button>
 
             <div className="voice-status">
               <span
-                className={`status-dot ${
-                  listening
-                    ? "active"
-                    : ""
-                }`}
+                className={`status-dot ${listening ? "active" : ""}`}
               ></span>
-              {listening
-                ? "Listening…"
-                : "Tap to speak"}
+              {listening ? "Listening…" : "Tap to speak"}
             </div>
           </div>
         </section>
@@ -335,12 +290,7 @@ function App() {
                   Your voice
                 </h2>
               </div>
-              <button
-                className="small-button"
-                onClick={clearTranscript}
-                title="Clear transcript"
-              >
-
+              <button className="small-button" onClick={clearTranscript} title="Clear transcript">
                 <RotateCcw size={17} />
                 Clear
               </button>
@@ -348,24 +298,13 @@ function App() {
 
             {/* Transcript box */}
             <div
-              className={`transcript-box ${
-                !transcript &&
-                !interim
-                  ? "empty"
-                  : ""
-              }`}
-            >
+              className={`transcript-box ${!transcript && !interim ? "empty" : ""}`}>
 
-              {transcript ||
-              interim ? (
+              {transcript || interim ? (
                 <>
-                  <p>
-                    {transcript}
-                  </p>
+                  <p> {transcript} </p>
                   {interim && (
-                    <p className="interim">
-                      {interim}
-                    </p>
+                    <p className="interim"> {interim} </p>
                   )}
                 </>
               ) : (
@@ -389,12 +328,10 @@ function App() {
 
             <br></br><br></br>
 
-            <div className="voice-tools"> {/* Action buttons */}
+            <div className="voice-tools">  {/* Action buttons */}
               <button
                 className="secondary-button"
-                onClick={
-                  speakBack
-                }
+                onClick={speakBack}
                 disabled={!transcript}
               >
 
@@ -406,8 +343,7 @@ function App() {
                 className="primary-button"
                 onClick={confirmReminder}
                 disabled={!transcript}>
-                <Send size={18} />
-                Confirm reminder
+                <Send size={18} /> Confirm reminder
               </button>
             </div>
 
@@ -431,7 +367,6 @@ function App() {
 
           <div className="panel guidance-panel"> {/* How to use guidelines */}
             <div className="panel-heading">
-
               <div>
                 <span className="panel-kicker">
                   HOW TO USE

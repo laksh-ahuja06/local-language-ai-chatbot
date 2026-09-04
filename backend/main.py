@@ -8,9 +8,10 @@ from pydantic import BaseModel
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 ### Actual function imported from other files
-from models import indicTrans2
+# from models import indicTrans2
 from models import Qwen
-from models import indicF5
+# from models import indicF5
+from services.pipeline import pipeline_message
 
 app = FastAPI()
 
@@ -25,11 +26,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 @app.on_event("startup")
 async def startup():
     print("Loading model...")
-    # Qwen.load_model()
+    indicTrans2.load_model()
+    Qwen.load_model()
+    indicF5.load_model()
     print("Ready!")
 
 @app.get("/")
@@ -42,9 +44,10 @@ class ReminderData(BaseModel):
 @app.post("/sendData")
 def receive_reminder(data: ReminderData):
     print("Reminder received:", data.message)
-
+    result = pipeline_message(data.message)
     return {
         "success": True,
         "message": "Reminder received by Python",
-        "received_text": data.message
+        "received_text": data.message,
+        "result": result
     }

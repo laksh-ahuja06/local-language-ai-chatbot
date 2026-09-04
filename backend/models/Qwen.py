@@ -33,9 +33,17 @@ def load_model():
 
 
 def run_model(prompt):
-    finalPrompt = """
-    {tone}
-    """
+
+    finalPrompt = f"""
+        Extract the medicine reminder information.
+        User message:
+        {prompt}
+        Return JSON with:
+        medicine
+        dose
+        time
+        frequency
+        """
 
     print(finalPrompt)
 
