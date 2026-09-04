@@ -2,14 +2,15 @@
 # uvicorn app:app --reload to run the server
 # server is live on localhost:8000
 
-import torch
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 ### Actual function imported from other files
+from models import indicTrans2
 from models import Qwen
+from models import indicF5
 
 app = FastAPI()
 
