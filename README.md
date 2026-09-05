@@ -1,4 +1,4 @@
-#  Local-Language AI Chatbot For Elderly Medicine Reminders: NLP/AI system designed for voice-first, multilingual medication support
+#  Local-Language AI Chatbot For Elderly Medicine Reminders: NLP/AI system designed for voice-first, multilingual medication support (V1.0)
 
 AI models which I’ve chosen :
 <b> IndicTrans2 (Local language to English) — </b> using it as a pivot-language normalizer (local language → English/Hindi → back) 
@@ -34,7 +34,13 @@ asks the reminder engine "what's due right now?" and kicks off the delivery flow
 
 <b>Validation (validation.py) - </b> It takes the data extracted by Qwen and fills any missing fields with default values like “medicine,” “1 tablet,” “night,” and “everyday.” It creates a clean reminder object containing medicine, dose, time, and frequency and always returns valid: True along with the completed reminder data.
 
-## Requirements.txt:
+## Guide to run the project:
+
+1) open frontend folder and run npm run dev
+2) open backend folder and run a) pip install -r requirements.txt b) uvicorn main:app --reload
+3) open terminal and run brew services start mongodb-community
+
+# Requirements.txt:
 
 ```python
 fastapi
@@ -63,6 +69,11 @@ datetime
 For the text recognition, i've used the google built-in Web Speech API (SpeechRecognition) which captures the voice.
 The voice is then converted to text in finalVariable, and later stored in the <b>transcript</b> variable. 
 
+## Frontend architecture
+
+<p align="center">
+  <img src="backend_folder_architecture.svg" alt="Backend_folder_architecture" width="800">
+</p>
 
 ## Backend architecture
 
