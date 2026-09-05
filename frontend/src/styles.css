@@ -792,3 +792,19 @@ footer {
   border: 2px solid #cbd9d6;
   outline: none;
 }
+
+.reminders-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.reminder-card {
+  flex: 0 0 250px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: white;
+}

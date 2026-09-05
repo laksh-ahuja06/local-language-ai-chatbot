@@ -30,6 +30,19 @@ function App() {
     ("SpeechRecognition" in window ||
       "webkitSpeechRecognition" in window);
 
+  // Take data from mongoDB
+  useEffect(() => {
+    fetch("http://localhost:8000/reminders")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          setReminders(data.reminders);
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching reminders:", error);
+      });
+  }, []);
 
   // Cleanup after every refresh
   useEffect(() => {
@@ -207,10 +220,27 @@ function App() {
   };
 
   // Delete button for reminders
-  const deleteReminder = (id) => {
-    setReminders((previousReminders) =>
-      previousReminders.filter((reminder) => reminder.id !== id)
-    );
+  const deleteReminder = async (id) => {
+    try {
+      const res = await fetch(
+        `http://localhost:8000/reminders/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
+
+      const data = await res.json();
+
+      if (data.success) {
+        setReminders((prevReminders) =>
+          prevReminders.filter(
+            (reminder) => reminder._id !== id
+          )
+        );
+      }
+    } catch (error) {
+      console.error("Error deleting reminder:", error);
+    }
   };
 
   return (
@@ -465,8 +495,8 @@ function App() {
 
       <div className="reminders-container">
         {reminders.map((reminder) => (
-          <div className="reminder-card" key={reminder.id}>
-            <h3>💊 {reminder.medicine}</h3>
+          <div className="reminder-card" key={reminder._id}>
+            <h3>{reminder.medicine}</h3>
             <p>
               <strong>Dose:</strong> {reminder.dose}
             </p>
@@ -477,8 +507,8 @@ function App() {
               <strong>Frequency:</strong> {reminder.frequency}
             </p>
             <button
-              onClick={() => deleteReminder(reminder.id)}>
-              Delete
+              onClick={() => deleteReminder(reminder._id)}
+            > Delete
             </button>
           </div>
         ))}

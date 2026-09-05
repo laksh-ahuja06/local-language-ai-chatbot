@@ -13,3 +13,7 @@ soundfile
 indictranstoolkit
 "accelerate>=1.10"
 apscheduler
+python-dateutil
+pymongo
+python-dotenv
+bson

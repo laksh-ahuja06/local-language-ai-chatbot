@@ -11,6 +11,13 @@ from models import indicTrans2
 from models import Qwen
 from services.pipeline import pipeline_message
 from services.scheduler import start_scheduler
+from services.connectToMongoDB import get_reminders
+from services.connectToMongoDB import delete_reminder
+from services.connectToMongoDB import (
+    get_reminders,
+    delete_reminder,
+)
+from services.scheduler import scheduler
 
 app = FastAPI()
 
@@ -25,14 +32,13 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup():
     print("Loading IndicTrans2...")
-        indicTrans2.load_model()
-        print("IndicTrans2 loaded.")
-        print("Loading Qwen...")
-        Qwen.load_model()
-        print("Qwen loaded.")
-        print("Loading IndicF5...")
-        start_scheduler ()
-        print("All models loaded...")
+    indicTrans2.load_model()
+    print("IndicTrans2 loaded.")
+    print("Loading Qwen...")
+    Qwen.load_model()
+    print("Qwen loaded.")
+    start_scheduler ()
+    print("All models loaded...")
 
 @app.get("/")
 def home():
@@ -40,6 +46,15 @@ def home():
 
 class ReminderData(BaseModel):
     message: str
+
+@app.get("/reminders")
+def get_all_reminders():
+    reminders = get_reminders()
+
+    return {
+        "success": True,
+        "reminders": reminders
+    }
 
 @app.post("/sendData")
 def receive_reminder(data: ReminderData):
@@ -50,4 +65,53 @@ def receive_reminder(data: ReminderData):
         "message": "Reminder received by Python",
         "received_text": data.message,
         "result": result
+    }
+
+@app.delete("/reminders/{reminder_id}")
+def remove_reminder(reminder_id: str):
+
+    # Get all reminders from MongoDB
+    reminders = get_reminders()
+
+    # Find the requested reminder
+    reminder = next(
+        (
+            r for r in reminders
+            if r["_id"] == reminder_id
+        ),
+        None
+    )
+
+    # Reminder does not exist
+    if reminder is None:
+        return {
+            "success": False,
+            "message": "Reminder not found"
+        }
+
+    # Get scheduler job IDs
+    job_ids = reminder.get("job_ids", [])
+
+    # Remove scheduler jobs
+    for job_id in job_ids:
+
+        job = scheduler.get_job(job_id)
+
+        if job:
+            scheduler.remove_job(job_id)
+            print(f"Scheduler job removed: {job_id}")
+
+    # Delete reminder from MongoDB
+    deleted = delete_reminder(reminder_id)
+
+    if deleted:
+
+        return {
+            "success": True,
+            "message": "Reminder and scheduled jobs deleted"
+        }
+
+    return {
+        "success": False,
+        "message": "Could not delete reminder"
     }
