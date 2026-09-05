@@ -45,3 +45,14 @@ For the text recognition, i've used the google built-in Web Speech API (SpeechRe
 The voice is then converted to text in finalVariable, and later stored in the <b>transcript</b> variable. 
 
 
+## Backend architecture
+
+<p align="center">
+  <img src="backend_folder_architecture.svg" alt="Backend_folder_architecture" width="800">
+</p>
+
+
+
+
+
+
