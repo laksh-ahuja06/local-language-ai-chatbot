@@ -1,31 +1,38 @@
 def validate_reminder(data):
 
-    errors = []
+    # If Qwen returns nothing at all
+    if data is None:
+        data = {}
 
+    # Get values from Qwen
     medicine = data.get("medicine", "").strip()
     dose = data.get("dose", "").strip()
     time = data.get("time", "").strip()
     frequency = data.get("frequency", "").strip()
 
+    # Apply default values
     if not medicine:
-        errors.append("Medicine is missing.")
+        medicine = "medicine"
 
     if not dose:
-        errors.append("Dose is missing.")
+        dose = "1 tablet"
 
     if not time:
-        errors.append("Time is missing.")
+        time = "night"
 
     if not frequency:
-        errors.append("Frequency is missing.")
+        frequency = "everyday"
 
-    if errors:
-        return {
-            "valid": False,
-            "errors": errors
-        }
+    # Create cleaned reminder
+    validated_reminder = {
+        "medicine": medicine,
+        "dose": dose,
+        "time": time,
+        "frequency": frequency
+    }
 
     return {
         "valid": True,
-        "errors": []
+        "errors": [],
+        "data": validated_reminder
     }

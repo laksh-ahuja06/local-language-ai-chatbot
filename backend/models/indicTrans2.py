@@ -28,10 +28,6 @@ def load_model ():
 def translate_to_english (input):
 
     input_sentences = [
-        # "When I was young, I used to go to the park every day.",
-        # "We watched a new movie last week, which was very inspiring.",
-        # "If you had met me at that time, we would have gone out to eat.",
-        # "My friend has invited me to his birthday party, and I will give him a gift.",
         input
     ]
 

@@ -23,6 +23,7 @@ function App() {
   const [saved, setSaved] = useState(false);
   const recognitionRef = useRef(null);
   const [reminders, setReminders] = useState([]);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   // check browser support
   const supported =
@@ -188,6 +189,8 @@ function App() {
   // Connect to python server:-
   // Press Confirm reminder button to send text to backend
   const confirmReminder = async () => {
+    setIsProcessing(true);
+
     try {
       const res = await fetch("http://localhost:8000/sendData", {
         method: "POST",
@@ -198,24 +201,30 @@ function App() {
           message: transcript,
         }),
       });
+
       const data = await res.json();
+
       console.log("Python response:", data);
-      const schedule = data.result?.schedule;
-      if (schedule?.scheduled) {
-        const newReminder = {
-          id: Date.now(),
-          medicine: schedule.medicine,
-          dose: schedule.dose,
-          time: schedule.time,
-          frequency: schedule.frequency,
-        };
-        setReminders((previousReminders) => [
-          ...previousReminders,
-          newReminder,
-        ]);
+
+      if (data.success) {
+        // Fetch the updated reminders from MongoDB
+        const remindersRes = await fetch(
+          "http://localhost:8000/reminders"
+        );
+
+        const remindersData = await remindersRes.json();
+
+        if (remindersData.success) {
+          setReminders(remindersData.reminders);
+        }
       }
+
     } catch (error) {
       console.error("Error sending reminder:", error);
+
+    } finally {
+      // Processing is finished
+      setIsProcessing(false);
     }
   };
 
@@ -394,11 +403,16 @@ function App() {
               <button
                 className="primary-button"
                 onClick={confirmReminder}
-                disabled={!transcript}>
-                <Send size={18} /> Confirm reminder
+                disabled={isProcessing}>
+                <Send size={18} />  {isProcessing ? "⏳ Processing..." : "✈ Confirm reminder"}
               </button>
             </div>
 
+            {isProcessing && (
+              <div className="processing-message">
+                ⏳ Processing your reminder...
+              </div>
+            )}
 
             {error && (
               <div className="alert error">  {/* ERROR */}

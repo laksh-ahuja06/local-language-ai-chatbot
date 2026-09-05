@@ -23,17 +23,25 @@ def reminder_function(medicine, dose):
 # TIME PARSER
 def parse_time(time_string):
     """
-    Convert human-readable time into hour and minute.
+    Convert different human-readable time formats
+    into hour and minute.
 
     Examples:
 
-        "8:00 PM" -> (20, 0)
-        "8 PM"    -> (20, 0)
-        "8 pm"    -> (20, 0)
-        "20:00"   -> (20, 0)
+        "8:00 PM"  -> (20, 0)
+        "8 PM"     -> (20, 0)
+        "8 pm"     -> (20, 0)
+        "8 P.M."   -> (20, 0)
+        "8:00 P.M."-> (20, 0)
+        "20:00"    -> (20, 0)
     """
 
     time_string = time_string.strip().upper()
+
+    # Remove periods from AM/PM
+    # "P.M." -> "PM"
+    # "A.M." -> "AM"
+    time_string = time_string.replace(".", "")
 
     formats = [
         "%I:%M %p",
@@ -69,7 +77,6 @@ def parse_frequency(frequency_string):
     Understand different frequency formats.
 
     Supported:
-
         daily
         every day
         everyday

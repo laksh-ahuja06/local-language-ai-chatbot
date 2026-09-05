@@ -795,16 +795,47 @@ footer {
 
 .reminders-container {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 10px;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .reminder-card {
-  flex: 0 0 250px;
-  padding: 20px;
-  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 18px 25px;
+
   border: 1px solid #ddd;
+  border-radius: 12px;
   background: white;
+}
+
+.reminder-card h3 {
+  margin: 0;
+  min-width: 150px;
+}
+
+.reminder-card p {
+  margin: 0;
+}
+
+.reminder-card button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.processing-message {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
 }

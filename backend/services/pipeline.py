@@ -5,7 +5,7 @@ from services.validation import validate_reminder
 from services.scheduler import schedule_reminder
 
 from services.connectToMongoDB import save_reminder
-from connectToMongoDB import save_reminder, update_job_ids
+from services.connectToMongoDB import save_reminder, update_job_ids
 
 def pipeline_message(message):
 
