@@ -11,6 +11,7 @@ from models import indicTrans2
 from models import Qwen
 # from models import indicF5
 from services.pipeline import pipeline_message
+from services.scheduler import start_scheduler
 
 app = FastAPI()
 
@@ -31,6 +32,7 @@ async def startup():
         Qwen.load_model()
         print("Qwen loaded.")
         print("Loading IndicF5...")
+        start_scheduler ()
         # indicF5.load_model()
         # print("IndicF5 loaded.")
         print("All models loaded...")

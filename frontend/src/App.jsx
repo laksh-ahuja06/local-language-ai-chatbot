@@ -22,6 +22,7 @@ function App() {
   const [error, setError] = useState("");
   const [saved, setSaved] = useState(false);
   const recognitionRef = useRef(null);
+  const [reminders, setReminders] = useState([]);
 
   // check browser support
   const supported =
@@ -186,9 +187,30 @@ function App() {
       });
       const data = await res.json();
       console.log("Python response:", data);
+      const schedule = data.result?.schedule;
+      if (schedule?.scheduled) {
+        const newReminder = {
+          id: Date.now(),
+          medicine: schedule.medicine,
+          dose: schedule.dose,
+          time: schedule.time,
+          frequency: schedule.frequency,
+        };
+        setReminders((previousReminders) => [
+          ...previousReminders,
+          newReminder,
+        ]);
+      }
     } catch (error) {
       console.error("Error sending reminder:", error);
     }
+  };
+
+  // Delete button for reminders
+  const deleteReminder = (id) => {
+    setReminders((previousReminders) =>
+      previousReminders.filter((reminder) => reminder.id !== id)
+    );
   };
 
   return (
@@ -440,6 +462,27 @@ function App() {
           </div>
         </section>
       </main>
+
+      <div className="reminders-container">
+        {reminders.map((reminder) => (
+          <div className="reminder-card" key={reminder.id}>
+            <h3>💊 {reminder.medicine}</h3>
+            <p>
+              <strong>Dose:</strong> {reminder.dose}
+            </p>
+            <p>
+              <strong>Time:</strong> {reminder.time}
+            </p>
+            <p>
+              <strong>Frequency:</strong> {reminder.frequency}
+            </p>
+            <button
+              onClick={() => deleteReminder(reminder.id)}>
+              Delete
+            </button>
+          </div>
+        ))}
+      </div>
 
       <footer>
         <span>

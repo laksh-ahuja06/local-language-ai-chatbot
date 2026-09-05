@@ -1,18 +1,31 @@
-def validate_reminder(reminder):
+def validate_reminder(data):
 
-    if not reminder["medicine"]:
+    errors = []
+
+    medicine = data.get("medicine", "").strip()
+    dose = data.get("dose", "").strip()
+    time = data.get("time", "").strip()
+    frequency = data.get("frequency", "").strip()
+
+    if not medicine:
+        errors.append("Medicine is missing.")
+
+    if not dose:
+        errors.append("Dose is missing.")
+
+    if not time:
+        errors.append("Time is missing.")
+
+    if not frequency:
+        errors.append("Frequency is missing.")
+
+    if errors:
         return {
             "valid": False,
-            "reason": "Medicine name is missing"
-        }
-
-    if not reminder["time"]:
-        return {
-            "valid": False,
-            "reason": "Time is missing"
+            "errors": errors
         }
 
     return {
         "valid": True,
-        "data": reminder
+        "errors": []
     }

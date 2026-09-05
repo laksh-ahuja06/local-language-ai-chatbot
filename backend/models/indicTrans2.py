@@ -2,6 +2,7 @@ import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from IndicTransToolkit.processor import IndicProcessor
 
+# conda activate indicf5
 # recommended to run this on a gpu with flash_attn installed
 # don't set attn_implemetation if you don't have flash_attn
 
