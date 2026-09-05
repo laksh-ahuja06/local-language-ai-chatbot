@@ -2,21 +2,16 @@
 
 AI models which I’ve chosen :
 
-<b> IndicTrans2 — </b> using it as a pivot-language normalizer (local language → English/Hindi → back) 
+<b> IndicTrans2 (Local language to English) — </b> using it as a pivot-language normalizer (local language → English/Hindi → back) 
 makes sense given Qwen2.5's Indic-language support is comparatively weak versus English. Keep this, 
 but be aware every added hop (ASR→MT→LLM→MT→TTS) adds latency — for elderly users expecting a conversational feel, 
 test end-to-end latency early, not at the end.
 
-<b> Qwen2.5-1.5B - </b> Instruct for intent extraction — fine for structured JSON extraction, but for a medical use case,
+<b> Qwen2.5-1.5B (English to JSON query) - </b> Instruct for intent extraction — fine for structured JSON extraction, but for a medical use case,
 don't trust it blind. Add a validation/confirmation layer: schema-check the extracted fields (drug name against
 a known list, dose within sane bounds, time in valid format), and always read the parsed entry back to the user 
 via TTS for confirmation before writing to MongoDB. Medicine-name misrecognition is the single biggest safety risk 
 in this pipeline — ASR errors on drug names are common and consequences are real.
-
-<b> IndicF5 - </b> IndicF5 is used for the text-to-speech step because it's a model built specifically for Indian languages, giving it better coverage 
-of regional languages and dialects than mainstream cloud TTS services like Google, Azure, or AWS Polly, which still handle many Indic languages 
-inconsistently. It also tends to produce more natural-sounding speech for these languages — including clearer pronunciation of local terms and 
-medicine names — which matters a lot for elderly users who need reminders to be easy to understand, not robotic.
 
 <b> Working of the Front page using React — </b> A React webpage only works while someone has it open in a browser tab. Elderly users won't 
 keep a tab open waiting for reminders. You need a backend scheduler (e.g., node-cron or a Celery/APScheduler job) 
