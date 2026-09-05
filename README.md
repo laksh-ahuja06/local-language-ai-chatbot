@@ -69,19 +69,14 @@ datetime
 For the text recognition, i've used the google built-in Web Speech API (SpeechRecognition) which captures the voice.
 The voice is then converted to text in finalVariable, and later stored in the <b>transcript</b> variable. 
 
-## Frontend architecture
+## Frontend and Backend Architecture
 
 <p align="center">
-  <img src="backend_folder_architecture.svg" alt="Backend_folder_architecture" width="800">
+  <img src="frontend_tree.svg" alt="Backend_folder_architecture" width="300">
+  <img src="backend_tree.svg" alt="Backend_folder_architecture" width="300">
 </p>
 
-## Backend architecture
-
-<p align="center">
-  <img src="backend_folder_architecture.svg" alt="Backend_folder_architecture" width="800">
-</p>
-
-### Qwen.py:
+### Qwen.py (if you want to run locally):
 
 ```python
 import torch
@@ -187,7 +182,9 @@ Use exactly these fields:
 
 ```
 
-### indicTrans2.py:
+<br>
+
+### indicTrans2.py (if you want to run locally):
 
 ```python
 import torch
