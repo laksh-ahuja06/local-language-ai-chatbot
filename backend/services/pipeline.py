@@ -1,4 +1,3 @@
-from models import indicF5
 from models import indicTrans2
 from models import Qwen
 
@@ -11,13 +10,11 @@ def pipeline_message (message):
     json_format = Qwen.run_model (translation)
 
     ## validate the json query
-
     validation = validate_reminder (json_format)
 
-
+    schedule_result = None
 
     if validation["valid"]:
-        global schedule_result
         schedule_result = schedule_reminder(
                 medicine=json_format["medicine"],
                 dose=json_format["dose"],

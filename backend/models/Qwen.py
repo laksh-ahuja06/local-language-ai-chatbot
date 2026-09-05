@@ -98,6 +98,3 @@ Use exactly these fields:
     print(result)
 
     return result
-
-load_model ()
-run_model ("Remind me to take paracetamol every night for three days")

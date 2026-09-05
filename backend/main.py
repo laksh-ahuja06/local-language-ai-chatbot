@@ -9,7 +9,6 @@ from pydantic import BaseModel
 ### Actual function imported from other files
 from models import indicTrans2
 from models import Qwen
-# from models import indicF5
 from services.pipeline import pipeline_message
 from services.scheduler import start_scheduler
 
@@ -33,8 +32,6 @@ async def startup():
         print("Qwen loaded.")
         print("Loading IndicF5...")
         start_scheduler ()
-        # indicF5.load_model()
-        # print("IndicF5 loaded.")
         print("All models loaded...")
 
 @app.get("/")
