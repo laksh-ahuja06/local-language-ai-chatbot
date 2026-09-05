@@ -1,8 +1,14 @@
 fastapi
 uvicorn[standard]
 python-multipart
-transformers
+transformers==4.51.3
 torchaudio
 "onnxruntime==1.20.1"
 "onnx==1.20.1"
 "onnxruntime-gpu==1.20.1"
+sentencepiece
+torch
+numpy
+soundfile
+indictranstoolkit
+"accelerate>=1.10"

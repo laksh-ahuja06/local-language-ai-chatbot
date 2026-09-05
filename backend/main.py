@@ -1,22 +1,18 @@
 ## install line of code: pip install -r requirements.txt
-# uvicorn app:app --reload to run the server
+# uvicorn main:app --reload to run the server
 # server is live on localhost:8000
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 ### Actual function imported from other files
-# from models import indicTrans2
+from models import indicTrans2
 from models import Qwen
 # from models import indicF5
 from services.pipeline import pipeline_message
 
 app = FastAPI()
-
-tokenizer = None
-model = None
 
 app.add_middleware(
     CORSMiddleware,
@@ -28,11 +24,16 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup():
-    print("Loading model...")
-    indicTrans2.load_model()
-    Qwen.load_model()
-    indicF5.load_model()
-    print("Ready!")
+    print("Loading IndicTrans2...")
+        indicTrans2.load_model()
+        print("IndicTrans2 loaded.")
+        print("Loading Qwen...")
+        Qwen.load_model()
+        print("Qwen loaded.")
+        print("Loading IndicF5...")
+        # indicF5.load_model()
+        # print("IndicF5 loaded.")
+        print("All models loaded...")
 
 @app.get("/")
 def home():

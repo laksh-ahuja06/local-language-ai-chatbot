@@ -4,14 +4,18 @@ from IndicTransToolkit.processor import IndicProcessor
 
 # recommended to run this on a gpu with flash_attn installed
 # don't set attn_implemetation if you don't have flash_attn
-#
+
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-src_lang, tgt_lang = "eng_Latn", "hin_Deva"
-model_name = "ai4bharat/indictrans2-en-indic-dist-200M"
+src_lang = "tam_Taml"
+tgt_lang = "eng_Latn"
+model_name = "ai4bharat/indictrans2-indic-en-dist-200M"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 
+ip = IndicProcessor(inference=True)
+
 def load_model ():
+    global model
     model = AutoModelForSeq2SeqLM.from_pretrained(
         model_name,
         trust_remote_code=True,
@@ -65,3 +69,5 @@ def translate_to_english (input):
     for input_sentence, translation in zip(input_sentences, translations):
         print(f"{src_lang}: {input_sentence}")
         print(f"{tgt_lang}: {translation}")
+
+    return translations[0]
