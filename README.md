@@ -1,4 +1,14 @@
-#  Local-Language AI Chatbot For Elderly Medicine Reminders: NLP/AI system designed for voice-first, multilingual medication support (V1.0)
+<div align="center">
+
+# 🩺 Local Language Elderly Reminders for elderly users: NLP/AI system designed for voice-first, multilingual medication support
+
+An AI-powered medication reminder system for elderly users: NLP/AI system designed for voice-first, multilingual medication support
+
+[![🤗 Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/spaces/Lkkash/Local_language_elderly_reminders)
+
+</div>
+
+<b>V1.1</b> - adds a huggingface space link for a live demo of the backend <br>
 
 AI models which I’ve chosen :
 <b> IndicTrans2 (Local language to English) — </b> using it as a pivot-language normalizer (local language → English/Hindi → back) 
@@ -17,8 +27,17 @@ keep a tab open waiting for reminders. You need a backend scheduler (e.g., node-
 that fires independently of the browser and pushes the reminder through a channel that reaches them passively — a phone call 
 (IVR-style, reusing your TTS), SMS, or WhatsApp, not just an in-page notification.  (Only implemented the react part yet)
 
+## Frontend Image:
+
 <p align="center">
-  <img src="medicine_reminder_architecture.svg" alt="Medicine Reminder Architecture Diagram" width="800">
+  <img src="LLAC-Frontend.png" alt="Frontend" width="800">
+</p>
+
+
+## Architecture
+
+<p align="center">
+  <img src="medicine_reminder_architecture.svg" alt="Medicine Reminder Architecture Diagram" width="600">
 </p>
 
 <br>
