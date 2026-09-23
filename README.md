@@ -293,6 +293,37 @@ All the JSON queries are being stored in the backend with database being medvoic
 }
 ```
 
+## Language Presets:
+
+| Language | Script (letters, symbols, characters) | Preset Code |
+|----------|--------|-------------|
+| Assamese | Bengali | `asm_Beng` |
+| Bengali | Bengali | `ben_Beng` |
+| Bodo | Devanagari | `brx_Deva` |
+| Dogri | Devanagari | `doi_Deva` |
+| English | Latin | `eng_Latn` |
+| Konkani | Devanagari | `gom_Deva` |
+| Gujarati | Gujarati | `guj_Gujr` |
+| Hindi | Devanagari | `hin_Deva` |
+| Kannada | Kannada | `kan_Knda` |
+| Kashmiri | Arabic | `kas_Arab` |
+| Kashmiri | Devanagari | `kas_Deva` |
+| Maithili | Devanagari | `mai_Deva` |
+| Malayalam | Malayalam | `mal_Mlym` |
+| Marathi | Devanagari | `mar_Deva` |
+| Manipuri | Bengali | `mni_Beng` |
+| Manipuri | Meitei | `mni_Mtei` |
+| Nepali | Devanagari | `npi_Deva` |
+| Odia | Odia | `ory_Orya` |
+| Punjabi | Gurmukhi | `pan_Guru` |
+| Sanskrit | Devanagari | `san_Deva` |
+| Santali | Ol Chiki | `sat_Olck` |
+| Sindhi | Arabic | `snd_Arab` |
+| Sindhi | Devanagari | `snd_Deva` |
+| Tamil | Tamil | `tam_Taml` |
+| Telugu | Telugu | `tel_Telu` |
+| Urdu | Arabic | `urd_Arab` |
+
 
 
 
