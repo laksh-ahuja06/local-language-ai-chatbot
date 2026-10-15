@@ -1,4 +1,14 @@
-#  Local-Language AI Chatbot For Elderly Medicine Reminders: NLP/AI system designed for voice-first, multilingual medication support
+<div align="center">
+
+# 🩺 Local Language Elderly Reminders for elderly users: NLP/AI system designed for voice-first, multilingual medication support
+
+An AI-powered medication reminder system for elderly users: NLP/AI system designed for voice-first, multilingual medication support
+
+[![🤗 Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/spaces/Lkkash/Local_language_elderly_reminders)
+
+</div>
+
+<b>V1.1</b> - adds a huggingface space link for a live demo of the backend <br>
 
 AI models which I’ve chosen :
 <b> IndicTrans2 (Local language to English) — </b> using it as a pivot-language normalizer (local language → English/Hindi → back) 
@@ -35,10 +45,17 @@ scheduler in the backend that fires a macOS notification at the reminder time, e
 6. The reminder is saved in MongoDB and APScheduler creates the timed jobs; the job IDs are saved back on the reminder.
 7. At the reminder time a macOS notification pops up. React lists saved reminders (`GET /reminders`) and can delete them (`DELETE /reminders/{id}`), which also cancels their jobs.
 
+## Frontend Image:
+
+<p align="center">
+  <img src="LLAC-Frontend.png" alt="Frontend" width="800">
+</p>
+
+
 ## Architecture
 
 <p align="center">
-  <img src="medicine_reminder_architecture.svg" alt="Medicine Reminder Architecture Diagram" width="800">
+  <img src="medicine_reminder_architecture.svg" alt="Medicine Reminder Architecture Diagram" width="600">
 </p>
 
 <br>
@@ -97,7 +114,15 @@ Takes Qwen's JSON and makes it safe for the scheduler:
 - Checks the time and frequency with the scheduler's own `parse_time` / `parse_frequency`. If they can't be understood it returns
   `valid: False` with a message (e.g. *I couldn't understand the time "after lunch"*), which the app shows in its error box.
 
-## Requirements.txt:
+## Guide to run the project:
+
+1) open frontend folder and run npm run dev
+2) open backend folder and run a) pip install -r requirements.txt b) uvicorn main:app --reload
+3) open terminal and run brew services start mongodb-community
+4) change source to venv -> source venv/bin/activate
+5) change other source to conda for indicf5 -> conda activate indicf5
+
+# Requirements.txt:
 
 ```python
 fastapi
@@ -129,14 +154,14 @@ The voice is then converted to text in finalVariable, and later stored in the <b
 The language slider at the top of the page (हिन्दी / தமிழ் / తెలుగు / বাংলা) sets both the speech-recognition language and the
 language IndicTrans2 translates from. It's locked while the app is listening or processing.
 
-
-## Backend architecture
+## Frontend and Backend Architecture
 
 <p align="center">
-  <img src="backend_folder_architecture.svg" alt="Backend_folder_architecture" width="800">
+  <img src="frontend_tree.svg" alt="Backend_folder_architecture" width="300">
+  <img src="backend_tree.svg" alt="Backend_folder_architecture" width="300">
 </p>
 
-### Qwen.py
+### Qwen.py (if you want to run locally):
 
 [`backend/models/Qwen.py`](backend/models/Qwen.py) loads **`Qwen/Qwen2.5-0.5B-Instruct`** and turns the English sentence into JSON.
 
@@ -163,7 +188,9 @@ Accuracy on 10 test sentences (fully correct after validation):
 | 0.5B | 1/10 | 5/10 | **8/10** |
 | 1.5B | 2/10 | 8/10 | 8/10 (about 2× slower) |
 
-### indicTrans2.py
+<br>
+
+### indicTrans2.py (if you want to run locally):
 
 [`backend/models/indicTrans2.py`](backend/models/indicTrans2.py) loads **`ai4bharat/indictrans2-indic-en-dist-200M`** and translates
 the user's sentence to English. The source language comes from the language slider in the app:
@@ -225,6 +252,37 @@ All the JSON queries are being stored in the backend with database being medvoic
 
 The saved reminders appear on the page in a "Your schedule" panel: one card per reminder with the medicine, dose, time and
 frequency, and a Delete button that removes the reminder and cancels its scheduled jobs.
+
+## Language Presets:
+
+| Language | Script (letters, symbols, characters) | Preset Code |
+|----------|--------|-------------|
+| Assamese | Bengali | `asm_Beng` |
+| Bengali | Bengali | `ben_Beng` |
+| Bodo | Devanagari | `brx_Deva` |
+| Dogri | Devanagari | `doi_Deva` |
+| English | Latin | `eng_Latn` |
+| Konkani | Devanagari | `gom_Deva` |
+| Gujarati | Gujarati | `guj_Gujr` |
+| Hindi | Devanagari | `hin_Deva` |
+| Kannada | Kannada | `kan_Knda` |
+| Kashmiri | Arabic | `kas_Arab` |
+| Kashmiri | Devanagari | `kas_Deva` |
+| Maithili | Devanagari | `mai_Deva` |
+| Malayalam | Malayalam | `mal_Mlym` |
+| Marathi | Devanagari | `mar_Deva` |
+| Manipuri | Bengali | `mni_Beng` |
+| Manipuri | Meitei | `mni_Mtei` |
+| Nepali | Devanagari | `npi_Deva` |
+| Odia | Odia | `ory_Orya` |
+| Punjabi | Gurmukhi | `pan_Guru` |
+| Sanskrit | Devanagari | `san_Deva` |
+| Santali | Ol Chiki | `sat_Olck` |
+| Sindhi | Arabic | `snd_Arab` |
+| Sindhi | Devanagari | `snd_Deva` |
+| Tamil | Tamil | `tam_Taml` |
+| Telugu | Telugu | `tel_Telu` |
+| Urdu | Arabic | `urd_Arab` |
 
 
 
