@@ -51,6 +51,14 @@ scheduler in the backend that fires a macOS notification at the reminder time, e
   <img src="LLAC-Frontend.png" alt="Frontend" width="800">
 </p>
 
+### Active reminders
+
+Saved reminders from MongoDB, shown on the page with their dose, time and frequency, and a Delete button that also cancels their scheduled jobs.
+
+<p align="center">
+  <img src="LLAC-Reminders.png" alt="Active reminders panel showing saved medicine reminders" width="800">
+</p>
+
 
 ## Architecture
 
