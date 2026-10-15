@@ -58,6 +58,8 @@ asks the reminder engine "what's due right now?" and kicks off the delivery flow
 1) open frontend folder and run npm run dev
 2) open backend folder and run a) pip install -r requirements.txt b) uvicorn main:app --reload
 3) open terminal and run brew services start mongodb-community
+4) change source to venv -> source venv/bin/activate
+5) change other source to conda for indicf5 -> conda activate indicf5
 
 # Requirements.txt:
 
