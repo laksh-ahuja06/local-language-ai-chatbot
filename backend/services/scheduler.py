@@ -2,9 +2,37 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 import re
+import subprocess
 
 # CREATE SCHEDULER
 scheduler = BackgroundScheduler()
+
+# MAC NOTIFICATION
+def send_mac_notification(title, message, subtitle=""):
+    """
+    Show a native macOS notification using AppleScript.
+    """
+
+    # Escape characters that would break the AppleScript string
+    def escape(text):
+        return str(text).replace("\\", "\\\\").replace('"', '\\"')
+
+    script = (
+        f'display notification "{escape(message)}" '
+        f'with title "{escape(title)}" '
+        f'subtitle "{escape(subtitle)}" '
+        f'sound name "Glass"'
+    )
+
+    try:
+        subprocess.run(
+            ["osascript", "-e", script],
+            check=True
+        )
+
+    except Exception as e:
+        print("Could not send Mac notification:", e)
+
 
 # REMINDER FUNCTION
 def reminder_function(medicine, dose):
@@ -12,12 +40,20 @@ def reminder_function(medicine, dose):
     Function that runs when the reminder is triggered.
     """
 
+    current_time = datetime.now().strftime('%I:%M %p')
+
     print("\n==============================")
     print("💊 MEDICINE REMINDER")
     print(f"Medicine: {medicine}")
     print(f"Dose: {dose}")
-    print(f"Time: {datetime.now().strftime('%I:%M %p')}")
+    print(f"Time: {current_time}")
     print("==============================\n")
+
+    send_mac_notification(
+        title="MEDICINE REMINDER 💊💊",
+        subtitle=f"It's {current_time}!!",
+        message=f"Take {dose} of {medicine} right now"
+    )
 
 
 # TIME PARSER

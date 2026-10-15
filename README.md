@@ -6,7 +6,10 @@ makes sense given Qwen2.5's Indic-language support is comparatively weak versus 
 but be aware every added hop (ASR→MT→LLM→MT→TTS) adds latency — for elderly users expecting a conversational feel, 
 test end-to-end latency early, not at the end.
 
-<b> Qwen2.5-1.5B (English to JSON query) - </b> Instruct for intent extraction — fine for structured JSON extraction, but for a medical use case,
+<b> Qwen2.5-0.5B (English to JSON query) - </b> Instruct for intent extraction. I switched from 1.5B to 0.5B because 1.5B didn't fit in
+8 GB of RAM (it was partly offloaded to disk and took minutes to start). 0.5B in float16 is ~1 GB, loads in seconds and answers in ~1.3s.
+With a chat-format prompt, worked examples and rule-based frequency (see Qwen.py and validation.py below), 0.5B scored 8/10 on my
+test sentences, the same as 1.5B at half the time. It is fine for structured JSON extraction, but for a medical use case,
 don't trust it blind. Add a validation/confirmation layer: schema-check the extracted fields (drug name against
 a known list, dose within sane bounds, time in valid format), and always read the parsed entry back to the user 
 via TTS for confirmation before writing to MongoDB. Medicine-name misrecognition is the single biggest safety risk 
@@ -15,7 +18,24 @@ in this pipeline — ASR errors on drug names are common and consequences are re
 <b> Working of the Front page using React — </b> A React webpage only works while someone has it open in a browser tab. Elderly users won't 
 keep a tab open waiting for reminders. You need a backend scheduler (e.g., node-cron or a Celery/APScheduler job) 
 that fires independently of the browser and pushes the reminder through a channel that reaches them passively — a phone call 
-(IVR-style, reusing your TTS), SMS, or WhatsApp, not just an in-page notification.  (Only implemented the react part yet)
+(IVR-style, reusing your TTS), SMS, or WhatsApp, not just an in-page notification.  (Implemented so far: an APScheduler
+scheduler in the backend that fires a macOS notification at the reminder time, even when the browser tab is closed. Phone call / SMS / WhatsApp are not done yet.)
+
+## How it works
+
+<p align="center">
+  <img src="project_flowchart.svg" alt="MedVoice flow: voice → IndicTrans2 → Qwen → validation → MongoDB + scheduler → notification" width="800">
+</p>
+
+1. The user picks a language (Hindi, Tamil, Telugu or Bengali) on the slider and speaks. The browser's Web Speech API turns it into text.
+2. React sends the text and the language to FastAPI (`POST /sendData`).
+3. IndicTrans2 translates it to English.
+4. Qwen2.5-0.5B extracts `{medicine, dose, time, frequency}` as JSON.
+5. `validation.py` fills defaults and normalises the time and frequency so the scheduler can understand them.
+6. The reminder is saved in MongoDB and APScheduler creates the timed jobs; the job IDs are saved back on the reminder.
+7. At the reminder time a macOS notification pops up. React lists saved reminders (`GET /reminders`) and can delete them (`DELETE /reminders/{id}`), which also cancels their jobs.
+
+## Architecture
 
 <p align="center">
   <img src="medicine_reminder_architecture.svg" alt="Medicine Reminder Architecture Diagram" width="800">
@@ -32,7 +52,50 @@ that fires independently of the browser and pushes the reminder through a channe
 <b>Scheduler (scheduler.py) - </b> Scheduler triggers reminders at the right wall-clock time. It periodically (or via cron-like triggers) 
 asks the reminder engine "what's due right now?" and kicks off the delivery flow (call/SMS/TTS).
 
-<b>Validation (validation.py) - </b> It takes the data extracted by Qwen and fills any missing fields with default values like “medicine,” “1 tablet,” “night,” and “everyday.” It creates a clean reminder object containing medicine, dose, time, and frequency and always returns valid: True along with the completed reminder data.
+## Scheduler (scheduler.py)
+
+The scheduler runs inside the FastAPI backend using **APScheduler's `BackgroundScheduler`**, a background thread that keeps a list of
+timed jobs and runs each one at its time. It works even when the React tab is closed, as long as the backend is running.
+
+| Part | What it does |
+|---|---|
+| `scheduler = BackgroundScheduler()` | Creates the scheduler. `main.py` also uses it to remove jobs when a reminder is deleted. |
+| `start_scheduler()` / `stop_scheduler()` | Start the scheduler thread (called from `main.py` on startup) / shut it down. |
+| `send_mac_notification()` | Shows a native **macOS notification** with a sound, using `osascript` (AppleScript). Quotes in medicine names are escaped so they can't break the script. |
+| `reminder_function(medicine, dose)` | What runs at the reminder time: prints a reminder box in the terminal and sends the macOS notification ("Take 1 tablet of Crocin right now"). |
+| `parse_time()` | Turns human times into `(hour, minute)`: `"8:00 PM"`, `"8 PM"`, `"8 p.m."`, `"20:00"` → `(20, 0)`. |
+| `parse_frequency()` | Understands `daily` / `every day` / `every morning`, `every monday` … `every sunday`, `next 3 days`, `next 4 months`. |
+| `schedule_reminder()` | Creates the jobs for one reminder and returns their job IDs, which `pipeline.py` saves on the MongoDB document. |
+
+How each frequency is scheduled:
+
+| Frequency | Jobs created |
+|---|---|
+| `daily` | one `cron` job every day at that time (`<id>_daily`) |
+| `every monday` | one `cron` job on that weekday (`<id>_weekly`) |
+| `next N days` | N one-time `date` jobs, one per day (`<id>_day_0` … `<id>_day_N-1`) |
+| `next N months` | one daily `cron` job with a start and end date (`<id>_monthly`) |
+
+Deleting a reminder from the app (`DELETE /reminders/{id}`) removes its jobs using the saved job IDs, then deletes the MongoDB document.
+
+You can test the scheduler on its own with `python services/scheduler.py` (from `backend/`); it schedules a test reminder.
+
+**Known limitations:**
+- Jobs live in memory only, so restarting the backend clears all scheduled jobs (the reminders stay in MongoDB but stop firing).
+  Fix: reload active reminders from MongoDB on startup, or use a MongoDB job store.
+- For `next N days`, if today's time has already passed, two reminders land on the same day and the last day is skipped.
+- Notifications only appear on the Mac running the backend (macOS only).
+
+## Validation (validation.py)
+
+Takes Qwen's JSON and makes it safe for the scheduler:
+- Converts numbers, `null` and lists to text (e.g. dose `500` → `"500"`).
+- Fills missing fields with defaults: `"medicine"`, `"1 tablet"`, `"9:00 PM"`, `"daily"`.
+- Maps time words to clock times: morning → 8:00 AM, afternoon → 2:00 PM, evening → 6:00 PM, night → 9:00 PM.
+- Works out the frequency with rules instead of trusting Qwen: looks for "next N days/months" and weekday names in Qwen's answer
+  and in the translated sentence, otherwise uses `daily`.
+- Checks the time and frequency with the scheduler's own `parse_time` / `parse_frequency`. If they can't be understood it returns
+  `valid: False` with a message (e.g. *I couldn't understand the time "after lunch"*), which the app shows in its error box.
 
 ## Requirements.txt:
 
@@ -63,6 +126,9 @@ datetime
 For the text recognition, i've used the google built-in Web Speech API (SpeechRecognition) which captures the voice.
 The voice is then converted to text in finalVariable, and later stored in the <b>transcript</b> variable. 
 
+The language slider at the top of the page (हिन्दी / தமிழ் / తెలుగు / বাংলা) sets both the speech-recognition language and the
+language IndicTrans2 translates from. It's locked while the app is listening or processing.
+
 
 ## Backend architecture
 
@@ -70,186 +136,74 @@ The voice is then converted to text in finalVariable, and later stored in the <b
   <img src="backend_folder_architecture.svg" alt="Backend_folder_architecture" width="800">
 </p>
 
-### Qwen.py:
+### Qwen.py
 
-```python
-import torch
-import json
-from transformers import AutoModelForCausalLM, AutoTokenizer
+[`backend/models/Qwen.py`](backend/models/Qwen.py) loads **`Qwen/Qwen2.5-0.5B-Instruct`** and turns the English sentence into JSON.
 
-MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
-tokenizer = None
-model = None
+- **Precision:** `float16` (`bfloat16` on a CUDA GPU that supports it), about 1 GB, so it fits in 8 GB of RAM.
+- **Prompt:** uses the model's chat format (`tokenizer.apply_chat_template`) with
+  - a system prompt that defines each field and its exact format (`time` like `"9:00 PM"`, `frequency` one of `daily`, `every monday`, `next N days`, `next N months`),
+  - 3 worked examples given as earlier chat turns.
+- **Output:** `max_new_tokens = 80` (the JSON is ~40 tokens). The first `{...}` block in the reply is parsed as JSON.
+- **Time estimate:** prints an estimated time before each query (based on earlier queries), a live `tokens | tok/s | ~Ns left`
+  line while generating, and the actual time at the end. The last timing is kept in `Qwen.last_run`.
 
-dtype = (
-    torch.bfloat16
-    if torch.cuda.is_available() and torch.cuda.is_bf16_supported()
-    else torch.float16
-    if torch.cuda.is_available()
-    else torch.float32
-)
-
-def load_model():
-    global tokenizer, model
-
-    print("Loading Qwen...")
-
-    tokenizer = AutoTokenizer.from_pretrained(MODEL)
-
-    model = AutoModelForCausalLM.from_pretrained(
-        MODEL,
-        torch_dtype=dtype,
-        device_map="auto",
-    )
-
-    print("Qwen loaded successfully.")
-
-
-def run_model(prompt):
-
-    if model is None or tokenizer is None:
-        raise RuntimeError("Qwen model has not been loaded.")
-
-    finalPrompt = f"""
-Extract the medicine reminder information from the user message.
-
-User message:
-{prompt}
-
-Return ONLY valid JSON.
-Do not include any explanation or extra text.
-
-Use exactly these fields:
-{{
-    "medicine": "",
-    "dose": "",
-    "time": "",
-    "frequency": ""
-}}
-"""
-
-    print("Qwen prompt:")
-    print(finalPrompt)
-
-    inputs = tokenizer(
-        finalPrompt,
-        return_tensors="pt"
-    ).to(model.device)
-
-    outputs = model.generate(
-        **inputs,
-        max_new_tokens=150,
-        do_sample=False,
-    )
-
-    generated = outputs[0][inputs["input_ids"].shape[1]:]
-
-    response = tokenizer.decode(
-        generated,
-        skip_special_tokens=True
-    ).strip()
-
-    print("Qwen raw response:")
-    print(response)
-
-    try:
-        decoder = json.JSONDecoder()
-        for i, char in enumerate(response):
-            if char == "{":
-                try:
-                    result, _ = decoder.raw_decode(response[i:])
-                    break
-                except json.JSONDecodeError:
-                    continue
-        else:
-            print("Qwen did not return valid JSON.")
-            return None
-
-    except Exception as e:
-        print("Error parsing Qwen response:", e)
-        return None
-
-    print("Qwen JSON:")
-    print(result)
-
-    return result
-
+Example terminal output:
+```
+Qwen: estimated time ~2s
+Qwen: prompt processed in 0.3s, generating...
+Qwen: 22 tokens | 28.4 tok/s | ~0s left
+Qwen: finished in 1.3s (35 tokens)
 ```
 
-### indicTrans2.py:
+Accuracy on 10 test sentences (fully correct after validation):
 
-```python
-import torch
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
-from IndicTransToolkit.processor import IndicProcessor
+| Model | Old plain prompt | Chat prompt + examples | + rule-based frequency |
+|---|---|---|---|
+| 0.5B | 1/10 | 5/10 | **8/10** |
+| 1.5B | 2/10 | 8/10 | 8/10 (about 2× slower) |
 
-# conda activate indicf5
-# recommended to run this on a gpu with flash_attn installed
-# don't set attn_implemetation if you don't have flash_attn
+### indicTrans2.py
 
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+[`backend/models/indicTrans2.py`](backend/models/indicTrans2.py) loads **`ai4bharat/indictrans2-indic-en-dist-200M`** and translates
+the user's sentence to English. The source language comes from the language slider in the app:
 
-src_lang = "tam_Taml"
-tgt_lang = "eng_Latn"
-model_name = "ai4bharat/indictrans2-indic-en-dist-200M"
-tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+| App language | Code sent by React | IndicTrans2 code |
+|---|---|---|
+| हिन्दी Hindi | `hi-IN` | `hin_Deva` |
+| தமிழ் Tamil | `ta-IN` | `tam_Taml` |
+| తెలుగు Telugu | `te-IN` | `tel_Telu` |
+| বাংলা Bengali | `bn-IN` | `ben_Beng` |
 
-ip = IndicProcessor(inference=True)
+`translate_to_english(text, src_lang)` takes the language as a parameter (it used to be hardcoded to Tamil, which turned Hindi
+into untranslated text). An unsupported language returns a clear error instead of crashing.
 
-def load_model ():
-    global model
-    model = AutoModelForSeq2SeqLM.from_pretrained(
-        model_name,
-        trust_remote_code=True,
-        torch_dtype=torch.float16, # performance might slightly vary for bfloat16
-        attn_implementation="flash_attention_2"
-    ).to(DEVICE)
-    ip = IndicProcessor(inference=True)
+### pipeline.py and errors
 
-def translate_to_english (input):
+[`backend/services/pipeline.py`](backend/services/pipeline.py) runs translate → Qwen → validate → save + schedule, and always
+returns `{"success": ..., "message": ...}`. If anything fails, `/sendData` returns `success: false` with a readable message
+(shown in the app) instead of a 500 error. A 500 has no CORS headers, so the browser used to report it as a "CORS error".
+If scheduling fails after the reminder is saved, the saved reminder is deleted again.
 
-    input_sentences = [
-        input
-    ]
+## Running the project
 
-    batch = ip.preprocess_batch(input_sentences, src_lang=src_lang, tgt_lang=tgt_lang)
+Start MongoDB, then the backend, wait for `Application startup complete`, then the frontend:
 
-    # Tokenize the sentences and generate input encodings
-    inputs = tokenizer(
-        batch,
-        truncation=True,
-        padding="longest",
-        return_tensors="pt",
-        return_attention_mask=True,
-    ).to(DEVICE)
-
-    # Generate translations using the model
-    with torch.no_grad():
-        generated_tokens = model.generate(
-            **inputs,
-            use_cache=True,
-            min_length=0,
-            max_length=256,
-            num_beams=5,
-            num_return_sequences=1,
-        )
-
-    # Decode the generated tokens into text
-    generated_tokens = tokenizer.batch_decode(
-        generated_tokens,
-        skip_special_tokens=True,
-        clean_up_tokenization_spaces=True,
-    )
-
-    # Postprocess the translations, including entity replacement
-    translations = ip.postprocess_batch(generated_tokens, lang=tgt_lang)
-
-    for input_sentence, translation in zip(input_sentences, translations):
-        print(f"{src_lang}: {input_sentence}")
-        print(f"{tgt_lang}: {translation}")
-
-    return translations[0]
+```bash
+cd backend && venv/bin/uvicorn main:app
 ```
+
+```bash
+cd frontend && npm run dev
+```
+
+Open `http://localhost:5173` (not `127.0.0.1:5173`, CORS only allows `localhost`). The app retries loading reminders every 2s
+until the backend is ready, and calls the API on `http://127.0.0.1:8000`.
+
+- **First run / model downloads:** if a Hugging Face download is stuck at 0%, disable the Xet backend:
+  `HF_HUB_DISABLE_XET=1 venv/bin/uvicorn main:app`
+- **Don't use `--reload`** while testing reminders: every reload restarts the server and clears scheduled jobs.
+- **macOS notifications:** allow notifications for *Script Editor* in System Settings → Notifications.
 
 ## Database (MongoDB):
 
@@ -258,13 +212,19 @@ All the JSON queries are being stored in the backend with database being medvoic
 ```python
 {
   _id: ObjectId('id'),
-  medicine: 'medicine',
-  dose: 'dose',
-  time: 'time'',
-  frequency: 'frequence',
-  status: 'active' or 'inactive'
+  medicine: 'Crocin',
+  dose: '1 tablet',
+  time: '9:00 PM',
+  frequency: 'daily',
+  original_message: 'रात 9 बजे क्रोसिन लेने की याद दिलाना',   # what the user said
+  status: 'active',
+  created_at: ISODate('...'),
+  job_ids: ['<id>_daily']   # scheduler jobs, used to cancel them on delete
 }
 ```
+
+The saved reminders appear on the page in a "Your schedule" panel: one card per reminder with the medicine, dose, time and
+frequency, and a Delete button that removes the reminder and cancels its scheduled jobs.
 
 
 

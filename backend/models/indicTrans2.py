@@ -8,7 +8,15 @@ from IndicTransToolkit.processor import IndicProcessor
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-src_lang = "tam_Taml"
+# Language codes sent by the React app -> IndicTrans2 language codes
+LANGUAGE_CODES = {
+    "hi-IN": "hin_Deva",  # Hindi
+    "ta-IN": "tam_Taml",  # Tamil
+    "te-IN": "tel_Telu",  # Telugu
+    "bn-IN": "ben_Beng",  # Bengali
+}
+
+DEFAULT_SRC_LANG = "hin_Deva"
 tgt_lang = "eng_Latn"
 model_name = "ai4bharat/indictrans2-indic-en-dist-200M"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
@@ -25,7 +33,15 @@ def load_model ():
     ).to(DEVICE)
     ip = IndicProcessor(inference=True)
 
-def translate_to_english (input):
+def get_src_lang(language_code):
+    """
+    Convert the app's language code (e.g. "hi-IN") to IndicTrans2's (e.g. "hin_Deva").
+    Returns None if the language isn't supported.
+    """
+    return LANGUAGE_CODES.get(language_code)
+
+
+def translate_to_english (input, src_lang=DEFAULT_SRC_LANG):
 
     input_sentences = [
         input

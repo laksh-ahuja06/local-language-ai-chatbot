@@ -95,13 +95,65 @@ select {
   color: #246c62;
 }
 
-.language-control select {
+/* Sliding language picker */
+.language-slider {
+  --slider-padding: 3px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--option-count), 1fr);
+  padding: var(--slider-padding);
+  border-radius: 9px;
+  background: #dceae5;
+}
+
+.language-slider-thumb {
+  position: absolute;
+  top: var(--slider-padding);
+  bottom: var(--slider-padding);
+  left: var(--slider-padding);
+  width: calc((100% - 2 * var(--slider-padding)) / var(--option-count));
+  border-radius: 7px;
+  background: #117b6d;
+  box-shadow: 0 3px 10px rgba(17, 123, 109, 0.25);
+  transform: translateX(calc(100% * var(--active-index)));
+  transition: transform 0.25s ease;
+}
+
+.language-option {
+  position: relative;
+  z-index: 1;
   border: 0;
-  outline: 0;
   background: transparent;
+  padding: 6px 12px;
+  min-width: 64px;
+  border-radius: 7px;
   color: #29433f;
   font-weight: 600;
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.language-option.active {
+  color: white;
+}
+
+.language-option:disabled {
+  cursor: not-allowed;
+}
+
+.language-slider:has(.language-option:disabled) {
+  opacity: 0.6;
+}
+
+.language-option:focus-visible {
+  outline: 2px solid #117b6d;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-slider-thumb {
+    transition: none;
+  }
 }
 
 .icon-button {
@@ -723,6 +775,29 @@ footer {
     display: none;
   }
 
+  .language-control {
+    padding: 4px;
+  }
+
+  .top-actions {
+    flex-shrink: 0;
+  }
+
+  .language-option {
+    min-width: 0;
+    padding: 6px 7px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+/* Narrow phones: logo icon only, so the language slider fits */
+@media (max-width: 420px) {
+
+  .brand-name {
+    display: none;
+  }
+
   main {
     width: 92vw;
   }
@@ -757,7 +832,8 @@ footer {
     display: none;
   }
 
-  footer {
+  footer,
+  .schedule {
     width: 92vw;
   }
 }
@@ -793,44 +869,147 @@ footer {
   outline: none;
 }
 
+/* Saved reminders (from MongoDB) */
+.schedule {
+  width: min(1160px, 88vw);
+  margin: 0 auto 35px;
+}
+
 .reminders-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 14px;
   margin-top: 20px;
 }
 
 .reminder-card {
   display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #e0e9e6;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f8fbfa, white);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reminder-card:hover {
+  border-color: #c5ddd6;
+  box-shadow: 0 8px 22px rgba(37, 72, 65, 0.07);
+}
+
+.reminder-card-top {
+  display: flex;
   align-items: center;
-  gap: 30px;
-
-  width: 100%;
-  box-sizing: border-box;
-
-  padding: 18px 25px;
-
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background: white;
+  gap: 12px;
+  min-width: 0;
 }
 
-.reminder-card h3 {
+.reminder-card-top .round-icon {
+  flex-shrink: 0;
+}
+
+.reminder-card-title {
+  min-width: 0;
+}
+
+.reminder-card-title h3 {
   margin: 0;
-  min-width: 150px;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: #172525;
+  text-transform: capitalize;
+  overflow-wrap: anywhere;
 }
 
-.reminder-card p {
-  margin: 0;
+.reminder-card-title span {
+  display: block;
+  margin-top: 2px;
+  color: #748582;
+  font-size: 13px;
+  overflow-wrap: anywhere;
 }
 
-.reminder-card button {
-  margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 6px;
+.reminder-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.reminder-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #edf6f3;
+  color: #33766b;
+  font-size: 12px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.reminder-chip svg {
+  flex-shrink: 0;
+}
+
+.reminder-delete {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding: 7px 12px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: #8a6a66;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.reminder-delete:hover {
+  background: #fff1ef;
+  border-color: #f4d6d2;
+  color: #b4473b;
+}
+
+.reminder-delete:focus-visible {
+  outline: 2px solid #117b6d;
+  outline-offset: 2px;
+}
+
+.schedule-empty {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px dashed #dce7e3;
+  border-radius: 14px;
+  color: #748582;
+}
+
+.schedule-empty p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reminder-card,
+  .reminder-delete {
+    transition: none;
+  }
 }
 
 .processing-message {

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 860" width="760" height="860" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <style>
+      .box { stroke-width: 1.5; rx: 10; }
+      .fe { fill: #e8f1fd; stroke: #3b7ddd; }
+      .api { fill: #f1f1f1; stroke: #777; }
+      .ai { fill: #f3ebfd; stroke: #8a4fd8; }
+      .svc { fill: #e9f7ee; stroke: #2f9e5b; }
+      .db { fill: #fff4e3; stroke: #d88a1c; }
+      .t { font-size: 15px; font-weight: 600; fill: #1d1d1f; text-anchor: middle; }
+      .s { font-size: 12px; fill: #555; text-anchor: middle; }
+      .lbl { font-size: 11px; fill: #666; }
+      .ln { stroke: #555; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+      .dash { stroke-dasharray: 5 4; }
+    </style>
+  </defs>
+
+  <rect width="760" height="860" fill="#ffffff"/>
+  <text x="380" y="34" class="t" style="font-size:20px">MedVoice: Local-Language Medicine Reminder</text>
+  <text x="380" y="54" class="s">Voice in any Indian language → scheduled medicine reminder</text>
+
+  <!-- 1. User speaks -->
+  <rect x="230" y="78" width="300" height="58" class="box fe"/>
+  <text x="380" y="102" class="t">👵 User picks language &amp; speaks</text>
+  <text x="380" y="122" class="s">React app · Web Speech API → text</text>
+  <path d="M380,136 V168" class="ln"/>
+
+  <!-- 2. FastAPI -->
+  <rect x="230" y="170" width="300" height="52" class="box api"/>
+  <text x="380" y="192" class="t">FastAPI  POST /sendData</text>
+  <text x="380" y="210" class="s">main.py → pipeline.py</text>
+  <path d="M380,222 V254" class="ln"/>
+
+  <!-- 3. IndicTrans2 -->
+  <rect x="230" y="256" width="300" height="52" class="box ai"/>
+  <text x="380" y="278" class="t">IndicTrans2</text>
+  <text x="380" y="296" class="s">Hindi / Tamil / Telugu / Bengali → English</text>
+  <path d="M380,308 V340" class="ln"/>
+
+  <!-- 4. Qwen -->
+  <rect x="230" y="342" width="300" height="58" class="box ai"/>
+  <text x="380" y="364" class="t">Qwen2.5-0.5B-Instruct</text>
+  <text x="380" y="384" class="s">English → JSON {medicine, dose, time, frequency}</text>
+  <path d="M380,400 V432" class="ln"/>
+
+  <!-- 5. Validation -->
+  <rect x="230" y="434" width="300" height="52" class="box svc"/>
+  <text x="380" y="456" class="t">validation.py</text>
+  <text x="380" y="474" class="s">defaults, normalise time &amp; frequency</text>
+
+  <!-- split -->
+  <path d="M380,486 V506 H200 V528" class="ln"/>
+  <path d="M380,506 H560 V528" class="ln"/>
+
+  <!-- 6a. MongoDB -->
+  <rect x="70" y="530" width="260" height="58" class="box db"/>
+  <text x="200" y="554" class="t">MongoDB (medvoice.reminders)</text>
+  <text x="200" y="574" class="s">save reminder + job_ids</text>
+
+  <!-- 6b. Scheduler -->
+  <rect x="430" y="530" width="260" height="58" class="box svc"/>
+  <text x="560" y="554" class="t">APScheduler (scheduler.py)</text>
+  <text x="560" y="574" class="s">parse time &amp; frequency → cron/date jobs</text>
+
+  <!-- job ids back to db -->
+  <path d="M430,559 H332" class="ln dash"/>
+  <text x="381" y="551" class="lbl" text-anchor="middle">job_ids</text>
+
+  <!-- 7. Reminder fires -->
+  <path d="M560,588 V620" class="ln"/>
+  <rect x="430" y="622" width="260" height="58" class="box svc"/>
+  <text x="560" y="646" class="t">⏰ Reminder fires at due time</text>
+  <text x="560" y="666" class="s">macOS notification + terminal log</text>
+
+  <!-- 8. Frontend list -->
+  <path d="M200,588 V620" class="ln"/>
+  <rect x="70" y="622" width="260" height="58" class="box fe"/>
+  <text x="200" y="646" class="t">React reminder list</text>
+  <text x="200" y="666" class="s">GET /reminders · DELETE /reminders/{id}</text>
+
+  <!-- 9. Read back -->
+  <path d="M200,680 V712" class="ln"/>
+  <rect x="70" y="714" width="260" height="52" class="box fe"/>
+  <text x="200" y="736" class="t">🔊 Spoken confirmation</text>
+  <text x="200" y="754" class="s">browser speechSynthesis in user's language</text>
+
+  <!-- delete removes jobs -->
+  <path d="M330,651 C380,651 380,600 430,590" class="ln dash"/>
+  <text x="372" y="618" class="lbl" text-anchor="middle">delete</text>
+  <text x="372" y="631" class="lbl" text-anchor="middle">removes jobs</text>
+
+  <!-- legend -->
+  <g transform="translate(70,800)" font-size="12" fill="#444">
+    <rect x="0" y="0" width="14" height="14" class="box fe" rx="3"/><text x="20" y="11">Frontend (React)</text>
+    <rect x="140" y="0" width="14" height="14" class="box api" rx="3"/><text x="160" y="11">API</text>
+    <rect x="210" y="0" width="14" height="14" class="box ai" rx="3"/><text x="230" y="11">AI models</text>
+    <rect x="320" y="0" width="14" height="14" class="box svc" rx="3"/><text x="340" y="11">Backend services</text>
+    <rect x="470" y="0" width="14" height="14" class="box db" rx="3"/><text x="490" y="11">Database</text>
+  </g>
+</svg>

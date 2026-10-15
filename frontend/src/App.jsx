@@ -1,15 +1,39 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
-import {Activity,CheckCircle2,Globe2,HeartPulse,History,Languages,Mic,MicOff,Pill,RotateCcw,Send,Volume2,XCircle} from "lucide-react";
+import {Activity,CalendarClock,CheckCircle2,Clock,Globe2,HeartPulse,History,Languages,Mic,MicOff,Pill,Repeat,RotateCcw,Send,Trash2,Volume2,XCircle} from "lucide-react";
 
+// Languages the backend can translate (code is used for speech recognition AND sent to the backend)
 const LANGUAGES = [
-  { label: "English", code: "en-IN" },
-  { label: "हिन्दी", code: "hi-IN" },
-  { label: "தமிழ்", code: "ta-IN" },
-  { label: "తెలుగు", code: "te-IN" },
-  { label: "বাংলা", code: "bn-IN" },
-  { label: "मराठी", code: "mr-IN" },
+  { label: "हिन्दी", name: "Hindi", code: "hi-IN" },
+  { label: "தமிழ்", name: "Tamil", code: "ta-IN" },
+  { label: "తెలుగు", name: "Telugu", code: "te-IN" },
+  { label: "বাংলা", name: "Bengali", code: "bn-IN" },
 ];
+
+// Python backend (uvicorn listens on IPv4 only, so avoid "localhost" which can resolve to IPv6)
+const API_URL = "http://127.0.0.1:8000";
+
+// How often to retry while the backend is still starting up (loading models)
+const RETRY_DELAY_MS = 2000;
+
+// "daily" -> "Every day", "every monday" -> "Every Monday", "next 5 days" -> "Next 5 days"
+function formatFrequency(frequency = "") {
+  const text = frequency.trim().toLowerCase();
+
+  if (["daily", "everyday", "every day"].includes(text)) {
+    return "Every day";
+  }
+
+  const weekdays = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+
+  const words = text.split(/\s+/).map((word) =>
+    weekdays.includes(word) ? word[0].toUpperCase() + word.slice(1) : word
+  );
+
+  const sentence = words.join(" ");
+
+  return sentence.charAt(0).toUpperCase() + sentence.slice(1);
+}
 
 function App() {
 
@@ -32,17 +56,48 @@ function App() {
       "webkitSpeechRecognition" in window);
 
   // Take data from mongoDB
+  // Keeps retrying until the backend is ready (it only starts answering after the models load)
   useEffect(() => {
-    fetch("http://localhost:8000/reminders")
-      .then((res) => res.json())
-      .then((data) => {
+    let cancelled = false;
+    let retryTimer = null;
+    let attempt = 0;
+
+    const loadReminders = async () => {
+      attempt += 1;
+
+      try {
+        const res = await fetch(`${API_URL}/reminders`);
+        const data = await res.json();
+
+        if (cancelled) return;
+
         if (data.success) {
           setReminders(data.reminders);
+
+          if (attempt > 1) {
+            console.info(`Backend ready, reminders loaded after ${attempt} attempts.`);
+          }
         }
-      })
-      .catch((error) => {
-        console.error("Error fetching reminders:", error);
-      });
+
+      } catch (error) {
+        if (cancelled) return;
+
+        // Log only the first failure so the console isn't flooded while waiting
+        if (attempt === 1) {
+          console.warn("Backend not ready yet, retrying every 2s...", error);
+        }
+
+        retryTimer = setTimeout(loadReminders, RETRY_DELAY_MS);
+      }
+    };
+
+    loadReminders();
+
+    // Stop retrying if the component unmounts
+    return () => {
+      cancelled = true;
+      clearTimeout(retryTimer);
+    };
   }, []);
 
   // Cleanup after every refresh
@@ -192,13 +247,14 @@ function App() {
     setIsProcessing(true);
 
     try {
-      const res = await fetch("http://localhost:8000/sendData", {
+      const res = await fetch(`${API_URL}/sendData`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           message: transcript,
+          language: language.code,
         }),
       });
 
@@ -209,7 +265,7 @@ function App() {
       if (data.success) {
         // Fetch the updated reminders from MongoDB
         const remindersRes = await fetch(
-          "http://localhost:8000/reminders"
+          `${API_URL}/reminders`
         );
 
         const remindersData = await remindersRes.json();
@@ -217,10 +273,14 @@ function App() {
         if (remindersData.success) {
           setReminders(remindersData.reminders);
         }
+      } else {
+        // Show the backend's explanation (e.g. "I couldn't understand the time ...")
+        setError(data.message || "Sorry, I couldn't set that reminder. Please try again.");
       }
 
     } catch (error) {
       console.error("Error sending reminder:", error);
+      setError("Couldn't reach the server. Please check the backend is running.");
 
     } finally {
       // Processing is finished
@@ -232,7 +292,7 @@ function App() {
   const deleteReminder = async (id) => {
     try {
       const res = await fetch(
-        `http://localhost:8000/reminders/${id}`,
+        `${API_URL}/reminders/${id}`,
         {
           method: "DELETE",
         }
@@ -274,25 +334,43 @@ function App() {
 
         {/* Language selector */}
         <div className="top-actions">
-          <label className="language-control">
+          <div className="language-control">
             <Languages size={19} />
 
-            <select
-              value={language.code}
-              onChange={(e) => {
-                const selected =
-                  LANGUAGES.find(
-                    (item) => item.code === e.target.value);
-                setLanguage(selected);
+            {/* Sliding language picker */}
+            <div
+              className="language-slider"
+              role="radiogroup"
+              aria-label="Speaking language"
+              style={{
+                "--option-count": LANGUAGES.length,
+                "--active-index": LANGUAGES.findIndex(
+                  (item) => item.code === language.code
+                ),
               }}
             >
+              <span className="language-slider-thumb" aria-hidden="true" />
+
               {LANGUAGES.map((item) => (
-                <option key={item.code} value={item.code}>
+                <button
+                  key={item.code}
+                  type="button"
+                  role="radio"
+                  aria-checked={item.code === language.code}
+                  title={item.name}
+                  className={
+                    item.code === language.code
+                      ? "language-option active"
+                      : "language-option"
+                  }
+                  disabled={listening || isProcessing}
+                  onClick={() => setLanguage(item)}
+                >
                   {item.label}
-                </option>
+                </button>
               ))}
-            </select>
-          </label>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -507,26 +585,72 @@ function App() {
         </section>
       </main>
 
-      <div className="reminders-container">
-        {reminders.map((reminder) => (
-          <div className="reminder-card" key={reminder._id}>
-            <h3>{reminder.medicine}</h3>
-            <p>
-              <strong>Dose:</strong> {reminder.dose}
-            </p>
-            <p>
-              <strong>Time:</strong> {reminder.time}
-            </p>
-            <p>
-              <strong>Frequency:</strong> {reminder.frequency}
-            </p>
-            <button
-              onClick={() => deleteReminder(reminder._id)}
-            > Delete
-            </button>
+      {/* Saved reminders from MongoDB */}
+      <section className="schedule panel">
+        <div className="panel-heading">
+          <div>
+            <span className="panel-kicker">
+              YOUR SCHEDULE
+            </span>
+            <h2>
+              Active reminders
+            </h2>
           </div>
-        ))}
-      </div>
+
+          <span className="reminder-count">
+            {reminders.length} {reminders.length === 1 ? "reminder" : "reminders"}
+          </span>
+        </div>
+
+        {reminders.length === 0 ? (
+          <div className="schedule-empty">
+            <div className="round-icon">
+              <CalendarClock size={19} />
+            </div>
+            <p>
+              No reminders yet. Tap the microphone above and say your first one.
+            </p>
+          </div>
+        ) : (
+          <div className="reminders-container">
+            {reminders.map((reminder) => (
+              <article className="reminder-card" key={reminder._id}>
+                <div className="reminder-card-top">
+                  <div className="round-icon">
+                    <Pill size={18} />
+                  </div>
+
+                  <div className="reminder-card-title">
+                    <h3>{reminder.medicine}</h3>
+                    <span>{reminder.dose}</span>
+                  </div>
+                </div>
+
+                <div className="reminder-chips">
+                  <span className="reminder-chip">
+                    <Clock size={14} />
+                    {reminder.time}
+                  </span>
+                  <span className="reminder-chip">
+                    <Repeat size={14} />
+                    {formatFrequency(reminder.frequency)}
+                  </span>
+                </div>
+
+                <button
+                  type="button"
+                  className="reminder-delete"
+                  aria-label={`Delete ${reminder.medicine} reminder`}
+                  onClick={() => deleteReminder(reminder._id)}
+                >
+                  <Trash2 size={15} />
+                  Delete
+                </button>
+              </article>
+            ))}
+          </div>
+        )}
+      </section>
 
       <footer>
         <span>

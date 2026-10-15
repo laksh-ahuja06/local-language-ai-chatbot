@@ -46,6 +46,7 @@ def home():
 
 class ReminderData(BaseModel):
     message: str
+    language: str = "hi-IN"  # speech language chosen in the app
 
 @app.get("/reminders")
 def get_all_reminders():
@@ -58,11 +59,11 @@ def get_all_reminders():
 
 @app.post("/sendData")
 def receive_reminder(data: ReminderData):
-    print("Reminder received:", data.message)
-    result = pipeline_message(data.message)
+    print(f"Reminder received ({data.language}):", data.message)
+    result = pipeline_message(data.message, data.language)
     return {
-        "success": True,
-        "message": "Reminder received by Python",
+        "success": result["success"],
+        "message": result["message"],
         "received_text": data.message,
         "result": result
     }
