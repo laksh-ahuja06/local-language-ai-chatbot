@@ -42,7 +42,7 @@ scheduler in the backend that fires a macOS notification at the reminder time, e
 3. IndicTrans2 translates it to English.
 4. Qwen2.5-0.5B extracts `{medicine, dose, time, frequency}` as JSON.
 5. `validation.py` fills defaults and normalises the time and frequency so the scheduler can understand them.
-6. The reminder is saved in MongoDB and APScheduler creates the timed jobs; the job IDs are saved back on the reminder.
+6. The reminder is saved in MongoDB; the scheduler then reads it back from MongoDB and creates the timed jobs (MongoDB is the scheduler's only source of reminders).
 7. At the reminder time a macOS notification pops up. React lists saved reminders (`GET /reminders`) and can delete them (`DELETE /reminders/{id}`), which also cancels their jobs.
 
 ## Frontend Image:
@@ -82,15 +82,28 @@ asks the reminder engine "what's due right now?" and kicks off the delivery flow
 The scheduler runs inside the FastAPI backend using **APScheduler's `BackgroundScheduler`**, a background thread that keeps a list of
 timed jobs and runs each one at its time. It works even when the React tab is closed, as long as the backend is running.
 
+**MongoDB is the source of truth.** Jobs are only ever built from the reminders stored in the `medvoice.reminders` collection:
+- **On start-up** (`start_database_sync()`, called from `main.py`) every active reminder in MongoDB gets its jobs, so restarting the
+  backend no longer loses reminders.
+- **Every 60 seconds** (`sync_with_database()`) the scheduler is reconciled with MongoDB: new reminders are scheduled, edited ones
+  (medicine, dose, time or frequency changed) are rescheduled, and deleted reminders or reminders whose `status` is not `"active"` lose
+  their jobs. This also picks up changes made directly in MongoDB (e.g. in Compass).
+- **New reminders from the app** are scheduled by reading the saved document back from MongoDB (`schedule_reminder_by_id()`), not from
+  the model's output.
+
 | Part | What it does |
 |---|---|
-| `scheduler = BackgroundScheduler()` | Creates the scheduler. `main.py` also uses it to remove jobs when a reminder is deleted. |
-| `start_scheduler()` / `stop_scheduler()` | Start the scheduler thread (called from `main.py` on startup) / shut it down. |
+| `scheduler = BackgroundScheduler()` | Creates the scheduler (jobs are held in memory and rebuilt from MongoDB). |
+| `start_scheduler()` / `stop_scheduler()` | Start / shut down the scheduler thread. |
+| `start_database_sync()` | Starts the scheduler, builds all jobs from MongoDB, and adds the 60-second sync job. |
+| `sync_with_database()` | Makes the scheduled jobs match the active reminders in MongoDB (add, reschedule, remove). |
+| `schedule_from_database()` / `schedule_reminder_by_id()` | (Re)build the jobs for one reminder document and save its `job_ids` back on the document. |
+| `unschedule_reminder()` | Removes all jobs of one reminder (used by the sync and by `DELETE /reminders/{id}`). |
 | `send_mac_notification()` | Shows a native **macOS notification** with a sound, using `osascript` (AppleScript). Quotes in medicine names are escaped so they can't break the script. |
 | `reminder_function(medicine, dose)` | What runs at the reminder time: prints a reminder box in the terminal and sends the macOS notification ("Take 1 tablet of Crocin right now"). |
 | `parse_time()` | Turns human times into `(hour, minute)`: `"8:00 PM"`, `"8 PM"`, `"8 p.m."`, `"20:00"` → `(20, 0)`. |
 | `parse_frequency()` | Understands `daily` / `every day` / `every morning`, `every monday` … `every sunday`, `next 3 days`, `next 4 months`. |
-| `schedule_reminder()` | Creates the jobs for one reminder and returns their job IDs, which `pipeline.py` saves on the MongoDB document. |
+| `schedule_reminder()` | Creates the jobs for one reminder from its medicine, dose, time, frequency and `created_at`, and returns their job IDs. |
 
 How each frequency is scheduled:
 
@@ -98,17 +111,19 @@ How each frequency is scheduled:
 |---|---|
 | `daily` | one `cron` job every day at that time (`<id>_daily`) |
 | `every monday` | one `cron` job on that weekday (`<id>_weekly`) |
-| `next N days` | N one-time `date` jobs, one per day (`<id>_day_0` … `<id>_day_N-1`) |
+| `next N days` | one daily `cron` job with a start and end date covering exactly N reminders (`<id>_days`) |
 | `next N months` | one daily `cron` job with a start and end date (`<id>_monthly`) |
 
-Deleting a reminder from the app (`DELETE /reminders/{id}`) removes its jobs using the saved job IDs, then deletes the MongoDB document.
+`next N days` and `next N months` are counted from the reminder's `created_at` in MongoDB, so rebuilding jobs after a restart does not
+extend the window; a reminder whose window has already ended gets no job.
+
+Deleting a reminder from the app (`DELETE /reminders/{id}`) removes its jobs, then deletes the MongoDB document.
 
 You can test the scheduler on its own with `python services/scheduler.py` (from `backend/`); it schedules a test reminder.
 
 **Known limitations:**
-- Jobs live in memory only, so restarting the backend clears all scheduled jobs (the reminders stay in MongoDB but stop firing).
-  Fix: reload active reminders from MongoDB on startup, or use a MongoDB job store.
-- For `next N days`, if today's time has already passed, two reminders land on the same day and the last day is skipped.
+- Reminders only fire while the backend is running; a reminder that falls due while it is stopped is skipped, not sent late.
+- Changes made directly in MongoDB take up to 60 seconds to reach the scheduler.
 - Notifications only appear on the Mac running the backend (macOS only).
 
 ## Validation (validation.py)
@@ -237,7 +252,7 @@ until the backend is ready, and calls the API on `http://127.0.0.1:8000`.
 
 - **First run / model downloads:** if a Hugging Face download is stuck at 0%, disable the Xet backend:
   `HF_HUB_DISABLE_XET=1 venv/bin/uvicorn main:app`
-- **Don't use `--reload`** while testing reminders: every reload restarts the server and clears scheduled jobs.
+- **`--reload` is fine for reminders now:** after each restart the scheduler rebuilds all jobs from MongoDB. It is still slow, because every reload loads the models again.
 - **macOS notifications:** allow notifications for *Script Editor* in System Settings → Notifications.
 
 ## Database (MongoDB):
@@ -254,7 +269,7 @@ All the JSON queries are being stored in the backend with database being medvoic
   original_message: 'रात 9 बजे क्रोसिन लेने की याद दिलाना',   # what the user said
   status: 'active',
   created_at: ISODate('...'),
-  job_ids: ['<id>_daily']   # scheduler jobs, used to cancel them on delete
+  job_ids: ['<id>_daily']   # scheduler jobs built from this document (kept in sync by the scheduler)
 }
 ```
 

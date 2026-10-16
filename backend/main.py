@@ -10,14 +10,11 @@ from pydantic import BaseModel
 from models import indicTrans2
 from models import Qwen
 from services.pipeline import pipeline_message
-from services.scheduler import start_scheduler
-from services.connectToMongoDB import get_reminders
-from services.connectToMongoDB import delete_reminder
+from services.scheduler import start_database_sync, unschedule_reminder
 from services.connectToMongoDB import (
     get_reminders,
     delete_reminder,
 )
-from services.scheduler import scheduler
 
 app = FastAPI()
 
@@ -37,7 +34,8 @@ async def startup():
     print("Loading Qwen...")
     Qwen.load_model()
     print("Qwen loaded.")
-    start_scheduler ()
+    # Build reminder jobs from MongoDB and keep them in sync
+    start_database_sync()
     print("All models loaded...")
 
 @app.get("/")
@@ -90,17 +88,8 @@ def remove_reminder(reminder_id: str):
             "message": "Reminder not found"
         }
 
-    # Get scheduler job IDs
-    job_ids = reminder.get("job_ids", [])
-
-    # Remove scheduler jobs
-    for job_id in job_ids:
-
-        job = scheduler.get_job(job_id)
-
-        if job:
-            scheduler.remove_job(job_id)
-            print(f"Scheduler job removed: {job_id}")
+    # Remove this reminder's scheduler jobs
+    unschedule_reminder(reminder_id)
 
     # Delete reminder from MongoDB
     deleted = delete_reminder(reminder_id)

@@ -4,9 +4,9 @@ from models import indicTrans2
 from models import Qwen
 
 from services.validation import validate_reminder
-from services.scheduler import schedule_reminder
+from services.scheduler import schedule_reminder_by_id
 
-from services.connectToMongoDB import save_reminder, update_job_ids, delete_reminder
+from services.connectToMongoDB import save_reminder, delete_reminder
 
 def pipeline_message(message, language):
 
@@ -62,24 +62,14 @@ def pipeline_message(message, language):
         })
 
         try:
-            schedule_result = schedule_reminder(
-                medicine=reminder["medicine"],
-                dose=reminder["dose"],
-                time=reminder["time"],
-                frequency=reminder["frequency"],
-                reminder_id=database_result
-            )
+            # Schedule from the document as stored in MongoDB (the scheduler's only source)
+            schedule_result = schedule_reminder_by_id(database_result)
 
         except Exception:
             # Don't leave a saved reminder with no scheduled job behind it
             delete_reminder(database_result)
             database_result = None
             raise
-
-        update_job_ids(
-            database_result,
-            schedule_result["job_ids"]
-        )
 
     except Exception as e:
         print("Pipeline failed:")

@@ -248,8 +248,14 @@ def schedule_reminder(
     dose,
     time,
     frequency,
-    reminder_id
+    reminder_id,
+    start=None
 ):
+    """
+    start: when the reminder was created (MongoDB created_at).
+    "next N days/months" are counted from this moment, so rebuilding
+    jobs after a restart does not push the end date further out.
+    """
 
     # PARSE TIME
     hour, minute = parse_time(time)
@@ -332,37 +338,50 @@ def schedule_reminder(
 
         number_of_days = parsed_frequency["days"]
 
-        now = datetime.now()
+        created = start or datetime.now()
 
 
-        for day in range(number_of_days):
+        # First reminder: the reminder time on the creation day,
+        # or the next day if that time had already passed.
+        first_time = created.replace(
+            hour=hour,
+            minute=minute,
+            second=0,
+            microsecond=0
+        )
 
-            reminder_time = now.replace(
-                hour=hour,
-                minute=minute,
-                second=0,
-                microsecond=0
-            ) + timedelta(days=day)
+        if first_time <= created:
 
-
-            # If today's reminder time has already passed,
-            # move it to tomorrow.
-            if reminder_time <= now:
-
-                reminder_time += timedelta(
-                    days=1
-                )
+            first_time += timedelta(
+                days=1
+            )
 
 
-            # Create unique job ID
-            job_id = f"{reminder_id}_day_{day}"
+        # One daily job that stops after N reminders
+        last_time = first_time + timedelta(
+            days=number_of_days - 1
+        )
 
+
+        if last_time < datetime.now():
+
+            print(
+                f"\nReminder {reminder_id} has finished "
+                f"(last reminder was {last_time}). Not scheduled."
+            )
+
+        else:
+
+            job_id = f"{reminder_id}_days"
 
             scheduler.add_job(
                 reminder_function,
-                "date",
+                "cron",
                 id=job_id,
-                run_date=reminder_time,
+                hour=hour,
+                minute=minute,
+                start_date=first_time,
+                end_date=last_time,
                 args=[
                     medicine,
                     dose
@@ -370,15 +389,12 @@ def schedule_reminder(
                 replace_existing=True,
             )
 
-
-            # Store job ID
             job_ids.append(job_id)
 
-
-        print(
-            f"\nReminder scheduled for the next "
-            f"{number_of_days} days!"
-        )
+            print(
+                f"\nReminder scheduled for the next "
+                f"{number_of_days} days!"
+            )
 
 
     # ==========================================
@@ -389,10 +405,10 @@ def schedule_reminder(
 
         number_of_months = parsed_frequency["months"]
 
-        now = datetime.now()
+        created = start or datetime.now()
 
 
-        start_time = now.replace(
+        start_time = created.replace(
             hour=hour,
             minute=minute,
             second=0,
@@ -400,46 +416,52 @@ def schedule_reminder(
         )
 
 
-        # If today's reminder time has already passed,
-        # start tomorrow.
-        if start_time <= now:
+        # If the reminder time had already passed on the
+        # creation day, start the next day.
+        if start_time <= created:
 
             start_time += timedelta(
                 days=1
             )
 
 
-        end_time = now + relativedelta(
+        end_time = created + relativedelta(
             months=number_of_months
         )
 
 
-        job_id = f"{reminder_id}_monthly"
+        if end_time < datetime.now():
 
+            print(
+                f"\nReminder {reminder_id} has finished "
+                f"(ended {end_time}). Not scheduled."
+            )
 
-        scheduler.add_job(
-            reminder_function,
-            "cron",
-            id=job_id,
-            hour=hour,
-            minute=minute,
-            start_date=start_time,
-            end_date=end_time,
-            args=[
-                medicine,
-                dose
-            ],
-            replace_existing=True,
-        )
+        else:
 
+            job_id = f"{reminder_id}_monthly"
 
-        job_ids.append(job_id)
+            scheduler.add_job(
+                reminder_function,
+                "cron",
+                id=job_id,
+                hour=hour,
+                minute=minute,
+                start_date=start_time,
+                end_date=end_time,
+                args=[
+                    medicine,
+                    dose
+                ],
+                replace_existing=True,
+            )
 
+            job_ids.append(job_id)
 
-        print(
-            f"\nReminder scheduled daily for the next "
-            f"{number_of_months} months!"
-        )
+            print(
+                f"\nReminder scheduled daily for the next "
+                f"{number_of_months} months!"
+            )
 
 
     # ==========================================
@@ -488,6 +510,153 @@ def schedule_reminder(
         "time": time,
         "frequency": frequency
     }
+
+
+# ==========================================
+# MONGODB IS THE SOURCE OF TRUTH
+# ==========================================
+#
+# Jobs are only ever built from reminders stored in MongoDB.
+# On start-up and every SYNC_INTERVAL_SECONDS the scheduler is
+# reconciled with the database:
+#   - active reminders without jobs get scheduled
+#   - reminders that were edited get rescheduled
+#   - reminders that were deleted or made inactive lose their jobs
+
+SYNC_JOB_ID = "__sync_with_mongodb__"
+SYNC_INTERVAL_SECONDS = 60
+
+# reminder_id -> the fields its jobs were built from (to detect edits)
+scheduled_reminders = {}
+
+
+def reminder_fingerprint(reminder):
+    return (
+        reminder.get("medicine"),
+        reminder.get("dose"),
+        reminder.get("time"),
+        reminder.get("frequency"),
+        str(reminder.get("created_at")),
+    )
+
+
+def is_active(reminder):
+    # Reminders saved before "status" existed count as active
+    return reminder.get("status", "active") == "active"
+
+
+def unschedule_reminder(reminder_id):
+    """Remove every job that belongs to this reminder."""
+
+    prefix = f"{reminder_id}_"
+
+    for job in scheduler.get_jobs():
+
+        if job.id.startswith(prefix):
+
+            scheduler.remove_job(job.id)
+            print(f"Scheduler job removed: {job.id}")
+
+    scheduled_reminders.pop(reminder_id, None)
+
+
+def schedule_from_database(reminder):
+    """(Re)build the jobs for one MongoDB reminder document."""
+
+    from services.connectToMongoDB import update_job_ids
+
+    reminder_id = str(reminder["_id"])
+
+    unschedule_reminder(reminder_id)
+
+    result = schedule_reminder(
+        medicine=reminder["medicine"],
+        dose=reminder["dose"],
+        time=reminder["time"],
+        frequency=reminder["frequency"],
+        reminder_id=reminder_id,
+        start=reminder.get("created_at"),
+    )
+
+    scheduled_reminders[reminder_id] = reminder_fingerprint(reminder)
+
+    if reminder.get("job_ids") != result["job_ids"]:
+        update_job_ids(reminder_id, result["job_ids"])
+
+    return result
+
+
+def schedule_reminder_by_id(reminder_id):
+    """Schedule a reminder exactly as it is stored in MongoDB."""
+
+    from services.connectToMongoDB import get_reminders
+
+    reminder = next(
+        (r for r in get_reminders() if r["_id"] == str(reminder_id)),
+        None
+    )
+
+    if reminder is None:
+        raise ValueError(f"Reminder {reminder_id} is not in the database")
+
+    return schedule_from_database(reminder)
+
+
+def sync_with_database():
+    """Make the scheduler's jobs match the reminders in MongoDB."""
+
+    from services.connectToMongoDB import get_reminders
+
+    try:
+        reminders = get_reminders()
+
+    except Exception as e:
+        # Keep the current jobs if MongoDB is briefly unreachable
+        print("Scheduler sync skipped, MongoDB not reachable:", e)
+        return
+
+    active = {r["_id"]: r for r in reminders if is_active(r)}
+
+    # Remove jobs of reminders that were deleted or made inactive
+    for reminder_id in list(scheduled_reminders):
+
+        if reminder_id not in active:
+            unschedule_reminder(reminder_id)
+
+    # Schedule new reminders and reschedule edited ones
+    for reminder_id, reminder in active.items():
+
+        if scheduled_reminders.get(reminder_id) == reminder_fingerprint(reminder):
+            continue
+
+        try:
+            schedule_from_database(reminder)
+
+        except Exception as e:
+            # One bad document must not stop the others
+            print(f"Could not schedule reminder {reminder_id}:", e)
+
+
+def start_database_sync():
+    """Build all jobs from MongoDB now, then keep them in sync."""
+
+    start_scheduler()
+
+    sync_with_database()
+
+    scheduler.add_job(
+        sync_with_database,
+        "interval",
+        id=SYNC_JOB_ID,
+        seconds=SYNC_INTERVAL_SECONDS,
+        replace_existing=True,
+    )
+
+    print(
+        f"Scheduler synced with MongoDB "
+        f"({len(scheduled_reminders)} reminders); "
+        f"re-syncing every {SYNC_INTERVAL_SECONDS}s."
+    )
 
 
 # ==========================================

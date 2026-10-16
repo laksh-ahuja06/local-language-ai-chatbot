@@ -1,0 +1,1701 @@
+system,id,lang,exact,medicine,dose,time,frequency,schedulable,pred_medicine,pred_dose,pred_time,pred_frequency
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",1,hi-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",3,hi-IN,0,1,1,0,1,0,tablets of metformin,two tablets,30:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",4,hi-IN,1,1,1,1,1,1,dolo,1 tablet,10:00 AM,every monday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",5,hi-IN,0,1,0,1,1,1,vitamin d,1 tablet,9:00 AM,next 5 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",6,hi-IN,1,1,1,1,1,1,pill of aspirin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",8,hi-IN,1,1,1,1,1,1,calcium,1 tablet,6:00 PM,every sunday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",9,hi-IN,0,0,1,0,1,1,a tablet of echosprin,half tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",10,hi-IN,0,1,1,0,1,1,pill of thyronorm,1 tablet,8:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",11,hi-IN,0,0,1,1,1,1,medicine,500 mg,10:00 AM,next 3 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",12,hi-IN,1,1,1,1,1,1,tablet of pantoprazole,a tablet,7:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",14,hi-IN,0,0,0,1,1,1,tablespoons of cough medicine,1 tablet,8:00 PM,next 4 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",15,hi-IN,1,1,1,1,1,1,iron,1 tablet,1:00 PM,every wednesday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",16,hi-IN,0,1,1,0,1,0,telma,1 tablet,30:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",19,hi-IN,0,0,1,1,1,1,medicine,1 tablet,11:00 AM,every saturday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",21,hi-IN,0,0,1,0,1,0,tablet of montaire,a tablet,45:00 PM,next 2 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",22,hi-IN,1,1,1,1,1,1,ors,a packet,4:00 PM,next 2 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",23,hi-IN,0,0,1,1,1,1,shellcal,one tablet,5:00 PM,every friday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",25,hi-IN,0,0,1,1,1,1,cetrizine,1 tablet,10:00 PM,next 10 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",1,ta-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",3,ta-IN,0,1,0,0,1,0,metformin,1 tablet,30:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",4,ta-IN,0,0,1,1,1,1,tolo,1 tablet,10:00 AM,every monday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",5,ta-IN,0,1,0,1,1,1,vitamin d,1 tablet,9:00 AM,next 5 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",6,ta-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",7,ta-IN,0,0,1,1,1,1,insulin should be given,10 units,8:00 PM,next 3 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",8,ta-IN,1,1,1,1,1,1,calcium,1 tablet,6:00 PM,every sunday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",9,ta-IN,0,0,0,0,1,1,half echospirine,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",10,ta-IN,0,0,1,1,1,1,thyronerm should be taken,one tablet,7:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",12,ta-IN,1,1,1,1,1,1,pantoprazole,1 tablet,7:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",14,ta-IN,0,0,0,1,1,1,tablespoons of cough medicine,1 tablet,8:00 PM,next 4 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",15,ta-IN,1,1,1,1,1,1,iron,1 tablet,1:00 PM,every wednesday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",16,ta-IN,0,0,1,0,1,0,delma,1 tablet,30:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",17,ta-IN,0,0,1,1,1,1,glycomet should be taken,500 mg,2:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",19,ta-IN,0,0,1,1,1,1,medicine,1 tablet,11:00 AM,every saturday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",21,ta-IN,0,0,1,0,1,0,monterey should be taken,one tablet,45:00 PM,next 2 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",22,ta-IN,0,0,0,1,1,1,ors packet,1 tablet,4:00 PM,next 2 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",23,ta-IN,0,0,0,1,1,1,medicine,500 tablet,5:00 PM,every friday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",1,te-IN,0,0,1,1,1,1,medicine,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",3,te-IN,0,1,0,0,1,0,metformin,1 tablet,30:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",4,te-IN,0,0,1,1,1,1,medicine,1 tablet,10:00 AM,every monday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",5,te-IN,0,1,0,1,1,1,vitamin d,1 tablet,9:00 AM,next 5 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",6,te-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",8,te-IN,1,1,1,1,1,1,calcium,1 tablet,6:00 PM,every sunday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",9,te-IN,0,0,0,0,1,1,an echosprin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",10,te-IN,0,0,1,1,1,1,thyronorm should be taken,one tablet,7:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",11,te-IN,0,0,1,1,1,1,medicine,500 mg,10:00 AM,next 3 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",12,te-IN,1,1,1,1,1,1,pantoprazole,1 tablet,7:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",14,te-IN,0,0,0,1,1,1,tablespoons of cough syrup,1 tablet,8:00 PM,next 4 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",15,te-IN,1,1,1,1,1,1,iron,1 tablet,1:00 PM,every wednesday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",16,te-IN,0,0,1,0,1,0,medicine,1 tablet,30:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",18,te-IN,0,0,1,1,1,1,eye drops to your eyes,2 drops,6:00 PM,next 7 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",19,te-IN,0,0,1,1,1,1,medicine,1 tablet,11:00 AM,every saturday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",21,te-IN,0,0,1,0,1,0,monterey,1 tablet,45:00 PM,next 2 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",22,te-IN,0,0,0,1,1,1,ors packet,1 tablet,4:00 PM,next 2 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",23,te-IN,0,0,0,1,1,1,medicine,500 tablet,5:00 PM,every friday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",25,te-IN,0,0,1,1,1,1,medicine,1 tablet,10:00 PM,next 10 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",1,bn-IN,0,0,1,1,1,1,medicine,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",3,bn-IN,0,1,0,0,1,0,metformin,1 tablet,30:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",4,bn-IN,0,0,1,1,1,1,medicine,1 tablet,10:00 AM,every monday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",5,bn-IN,0,1,0,1,1,1,vitamin d,1 tablet,9:00 AM,next 5 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",6,bn-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",8,bn-IN,1,1,1,1,1,1,calcium,1 tablet,6:00 PM,every sunday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",9,bn-IN,0,0,0,0,1,1,an echosprin,1 tablet,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",14,bn-IN,0,0,0,1,1,1,tablespoons of cough syrup,1 tablet,8:00 PM,next 4 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",15,bn-IN,0,0,1,1,1,1,medicine,1 tablet,1:00 PM,every wednesday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",16,bn-IN,0,0,1,0,1,0,medicine,1 tablet,30:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",17,bn-IN,0,0,1,1,1,1,glycomate should be consumed,500 mg,2:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",19,bn-IN,0,0,1,1,1,1,medicine,1 tablet,11:00 AM,every saturday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",21,bn-IN,0,0,1,0,1,0,medicine,1 tablet,45:00 PM,next 2 months
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",22,bn-IN,0,0,0,1,1,1,medicine,1 tablet,4:00 PM,next 2 days
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",23,bn-IN,0,0,0,1,1,1,medicine,500 tablet,5:00 PM,every friday
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"B1 Rule-based (IndicTrans2 + regex, no LLM)",25,bn-IN,0,0,1,1,1,1,medicine,1 tablet,10:00 PM,next 10 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",1,hi-IN,0,1,0,0,1,0,Crocin,every day,at 9 p. m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",2,hi-IN,0,1,1,0,1,0,paracetamol,500 mg,every morning at 8 am,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",3,hi-IN,0,1,1,0,1,1,metformin,two tablets,1:30 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",4,hi-IN,0,1,0,0,0,0,Dolo,650,every Monday at 10 a.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",5,hi-IN,0,1,0,0,1,0,vitamin D,capsule,at 9 a.m.,for the next 5 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",6,hi-IN,0,1,0,0,1,0,aspirin,pill,at night,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",7,hi-IN,0,1,1,0,1,0,insulin,10 units,every day at 8 pm,for the next 3 months
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",8,hi-IN,0,1,0,0,0,0,calcium,pill,every Sunday at 6 p.m.,weekly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",9,hi-IN,0,0,1,0,1,0,echosprin,half a tablet,at 11:15 at night,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",10,hi-IN,0,1,0,0,1,0,thyronorm,pill,every morning at 7 o'clock,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10 am,for the next 3 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",12,hi-IN,0,1,0,0,1,0,Pantoprazole,tablet,before breakfast,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",14,hi-IN,0,1,1,0,1,0,cough medicine,two tablespoons,at 8 p.m.,for the next 4 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",15,hi-IN,0,1,0,0,0,0,iron,pill,Wednesday at 1 p.m.,every
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",16,hi-IN,0,1,0,0,1,1,Telma,40,1:30 a.m.,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",18,hi-IN,0,1,1,0,1,0,eye drops,2 drops,at 6 p.m.,for the next 7 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",19,hi-IN,0,1,0,0,0,0,B12,injected,every Saturday at 11 a.m.,weekly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",20,hi-IN,0,1,1,0,1,0,atorvastatin,10 mg,before bedtime at 10 p.m.,every night
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",21,hi-IN,0,0,0,0,1,1,montaire,tablet,1:45 p.m.,next 2 months
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",22,hi-IN,0,1,0,1,1,1,ORS,1 tablet,4 p.m.,next 2 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",23,hi-IN,0,0,0,0,0,0,Shellcal 500,tablet,Friday at 5 pm,every
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6 a.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",25,hi-IN,0,0,0,0,1,0,cetrizine,not specified,at 10 p.m.,for the next 10 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",1,ta-IN,0,1,0,0,0,0,Crocin,every night,at 9 p.m.,nightly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",2,ta-IN,0,1,1,0,1,0,paracetamol,500 mg,every morning at 8am,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",3,ta-IN,0,1,0,0,1,1,Metformin,two,1:30 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",4,ta-IN,0,0,0,0,0,0,TOLO,650,every Monday at 10 a.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",5,ta-IN,0,1,0,1,1,1,vitamin D,capsule,9 a.m.,next 5 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",6,ta-IN,0,1,0,0,0,0,aspirin,pill,at night,reminder
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",7,ta-IN,0,1,1,0,0,0,insulin,10 units,every day at 8 pm,3 months
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6 p.m.,every Sunday
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",9,ta-IN,0,0,0,1,0,0,echospirine,half,11:15 PM,night
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",10,ta-IN,0,0,0,1,1,1,thyronerm,tablet,7 am,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10 am,for the next 3 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",12,ta-IN,0,1,0,0,1,0,Pantoprazole,pill,before breakfast,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",13,ta-IN,0,1,1,0,0,0,amlodipine,5 mg,every night at 9pm,nightly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",14,ta-IN,0,1,1,0,1,0,cough medicine,two tablespoons,at 8 p.m.,for the next 4 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",15,ta-IN,0,1,0,0,0,0,iron,pill,Wednesday at 1 p.m.,every
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",16,ta-IN,0,0,0,0,1,1,Delma,40,1:30 a.m.,every morning
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6 p.m.,next 7 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",19,ta-IN,0,1,0,0,0,0,B12,injections,every Saturday at 11 a.m.,weekly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",20,ta-IN,0,1,1,0,1,0,atorvastatin,10 mg,before bedtime at 10 p.m.,every night
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",21,ta-IN,0,0,0,0,0,0,Monterey,tablet,1:45 p.m.,one
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4 p.m.,next 2 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",23,ta-IN,0,1,0,0,0,0,Shelcal,500 tablet,Friday at 5 p.m.,every
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",24,ta-IN,0,1,1,0,1,0,losartan,50 mg,6am,every morning
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",25,ta-IN,0,0,0,0,1,0,certicine,at 10 p.m.,every day,for the next 10 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",1,te-IN,0,1,0,0,1,0,Crocin,every day,at 9 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",2,te-IN,0,1,1,0,1,0,paracetamol,500 mg,every day at 8 am,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",3,te-IN,0,1,0,0,1,1,metformin,two,1:30 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",4,te-IN,0,1,0,0,0,0,Dolo,every Monday,at 10 a.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",5,te-IN,0,1,0,1,1,1,vitamin D,capsule,9 a.m.,next 5 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",6,te-IN,0,1,0,0,0,0,aspirin,pill,at night,reminder
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",7,te-IN,0,1,1,0,1,0,insulin,10 units,every day at 8 p.m.,for the next 3 months
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",8,te-IN,0,1,1,0,0,0,calcium pill,1 tablet,every Sunday at 6 p. m.,weekly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",9,te-IN,0,0,0,0,1,0,echosprin,half an echosprin,at 11:15 hours at night,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",10,te-IN,0,1,1,0,1,0,thyronorm,one tablet,every day at 7 am,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10 am,next 3 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",12,te-IN,0,1,0,0,1,0,Pantoprazole,pill,before breakfast at 7 a.m.,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9 p.m.,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",14,te-IN,1,1,1,1,1,1,cough syrup,two tablespoons,8 p.m.,for the next 4 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",15,te-IN,0,1,0,0,0,0,iron,pill,Wednesday at 1 p.m.,every
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",16,te-IN,0,1,1,0,1,1,Telma 40,1 tablet,1:30 a.m.,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",17,te-IN,0,0,1,0,1,0,glycomate,500 mg,every day at 2 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",18,te-IN,0,1,1,0,1,0,eye drops,2 drops,at 6 p.m.,for the next 7 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",19,te-IN,0,1,0,0,0,0,B12,injections,every Saturday at 11 a.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",20,te-IN,0,1,1,0,1,0,atorvastatin,10 mg,before bedtime at 10 p.m.,every night
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",21,te-IN,0,0,0,0,1,1,Monterey,pill,1:45 p.m.,for the next 2 months
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",22,te-IN,0,0,1,1,0,1,ORS packet,1 packet,4 p.m.,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",23,te-IN,0,0,0,0,0,0,Shelkol 500,tablet,Friday at 5 p.m.,every
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",24,te-IN,1,1,1,1,1,1,losartan,50 mg,6 a.m.,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",25,te-IN,0,0,0,0,1,0,cetrizine,apply,at 10 p.m.,for the next 10 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",1,bn-IN,0,1,0,0,0,0,Crocin,every night,at 9 p.m.,nightly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",2,bn-IN,0,1,1,0,1,0,paracetamol,500 mg,every morning at 8 am,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",3,bn-IN,0,1,1,0,1,1,metformin,two tablets,1:30 p.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",4,bn-IN,0,1,0,0,0,0,Dolo,650,every Monday at 10am,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",5,bn-IN,0,1,0,1,1,1,vitamin D,capsule,9 a.m.,next 5 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",6,bn-IN,0,1,0,0,0,0,aspirin,tablet,night,reminder
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",7,bn-IN,0,1,1,0,1,0,insulin,10 units,every day at 8pm,for the next 3 months
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",8,bn-IN,0,1,0,0,0,0,calcium,tablets,every Sunday at 6 p.m.,weekly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",9,bn-IN,0,0,0,0,1,0,echosprin,half an echosprin,"night, 11:15",every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",10,bn-IN,0,0,0,0,1,0,thyronerm,tablet,every morning at 7 am,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10 am,for the next 3 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",12,bn-IN,0,0,0,0,1,0,pentoprazole,tablet,before breakfast,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",13,bn-IN,0,1,1,0,0,0,amlodipine,5 mg,every night at 9pm,nightly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",14,bn-IN,0,1,1,0,1,0,cough syrup,two tablespoons,at 8 p.m.,for the next 4 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",15,bn-IN,0,1,0,0,0,0,iron,every Wednesday at 1 p.m.,"Wednesday, 1 p.m.",weekly
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",16,bn-IN,0,1,0,0,1,1,Telma,40,1:30 a.m.,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2 pm,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6 p.m.,next 7 days
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",19,bn-IN,0,1,0,0,0,0,B12,injections,every Saturday at 11 a.m.,daily
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",20,bn-IN,0,1,1,0,1,0,atorvastatin,10 mg,before bedtime at 10 p.m.,every night
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",21,bn-IN,0,0,0,0,1,1,Monterey,tablet,1:45 p.m.,next 2 months
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",22,bn-IN,0,0,1,1,0,1,ORS packet,1 packet,4:00 PM,every day
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",23,bn-IN,0,0,0,0,0,0,Shelkale,500 tablet,Friday at 5 pm,every
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",24,bn-IN,0,1,1,0,1,0,losartan,50 mg,6am,every morning
+"B2 Original pipeline (Qwen-1.5B, plain prompt, v1 validation)",25,bn-IN,0,0,1,0,0,0,satirizine,1 tablet,10 p. m.,every day
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",1,hi-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",4,hi-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",9,hi-IN,0,0,1,1,1,1,Echosprin,half tablet,11:15 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",10,hi-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",12,hi-IN,0,1,0,1,1,1,pantoprazole,7 am,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",16,hi-IN,0,1,0,0,1,1,Telma,40,01:30 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",21,hi-IN,0,0,1,0,1,1,montaire,1 tablet,1:45 PM,next 2 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",22,hi-IN,0,1,0,0,1,1,ORS,1 tablet,12:00 PM,next 2 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",25,hi-IN,0,0,1,1,1,1,cretizine,1 tablet,10:00 PM,next 10 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",1,ta-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",9,ta-IN,0,0,1,1,1,1,Echospirine,half tablet,11:15 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",12,ta-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",1,te-IN,0,1,0,1,1,1,crocin,none,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",4,te-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",6,te-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",12,te-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",16,te-IN,0,1,0,0,1,1,Telma 40,40,01:30 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",21,te-IN,0,0,1,0,1,1,Monterey pill,1 tablet,1:45 PM,next 2 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",22,te-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",23,te-IN,0,0,0,1,1,1,Shelkol,500 tablets,5:00 PM,every friday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",25,te-IN,0,0,1,1,1,1,ctrizine,1 tablet,10:00 PM,next 10 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",1,bn-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",4,bn-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",6,bn-IN,0,1,0,0,1,1,aspirin,tablet,11:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",9,bn-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",16,bn-IN,0,1,0,0,1,1,Telma,40 capsules,1:30 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",21,bn-IN,0,0,0,0,1,1,Monterey,1:45 PM,1:45 PM,next 2 months
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",22,bn-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",23,bn-IN,0,0,0,1,1,1,Shelkale,500 tablets,5:00 PM,every friday
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+"Ours (Qwen-0.5B, chat + few-shot, v2 validation)",25,bn-IN,0,0,1,1,1,1,saturizine,1 tablet,10:00 PM,next 10 days
+Ours with Qwen-1.5B,1,hi-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+Ours with Qwen-1.5B,2,hi-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours with Qwen-1.5B,3,hi-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours with Qwen-1.5B,4,hi-IN,1,1,1,1,1,1,Dolo 650,1 tablet,10:00 AM,every monday
+Ours with Qwen-1.5B,5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours with Qwen-1.5B,6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,10:00 PM,daily
+Ours with Qwen-1.5B,7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours with Qwen-1.5B,8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours with Qwen-1.5B,9,hi-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours with Qwen-1.5B,10,hi-IN,0,1,0,1,1,1,thyronorm,pill,7:00 AM,daily
+Ours with Qwen-1.5B,11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours with Qwen-1.5B,12,hi-IN,1,1,1,1,1,1,Pantoprazole,1 tablet,7:00 AM,daily
+Ours with Qwen-1.5B,13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours with Qwen-1.5B,14,hi-IN,1,1,1,1,1,1,cough medicine,two tablespoons,8:00 PM,next 4 days
+Ours with Qwen-1.5B,15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours with Qwen-1.5B,16,hi-IN,0,1,1,0,1,1,Telma 40,1 tablet,1:30 AM,daily
+Ours with Qwen-1.5B,17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,14:00,daily
+Ours with Qwen-1.5B,18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours with Qwen-1.5B,19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+Ours with Qwen-1.5B,20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours with Qwen-1.5B,21,hi-IN,0,0,1,0,1,1,Montaire,1 tablet,1:45 PM,next 2 months
+Ours with Qwen-1.5B,22,hi-IN,0,1,0,0,1,0,ORS,1 tablet,16:00 PM,next 2 days
+Ours with Qwen-1.5B,23,hi-IN,0,0,1,1,1,1,Shellcal,1 tablet,5:00 PM,every friday
+Ours with Qwen-1.5B,24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours with Qwen-1.5B,25,hi-IN,0,0,1,1,1,1,cetrizine,1 tablet,10:00 PM,next 10 days
+Ours with Qwen-1.5B,1,ta-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+Ours with Qwen-1.5B,2,ta-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours with Qwen-1.5B,3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours with Qwen-1.5B,4,ta-IN,0,0,1,1,1,1,TOLO 650,1 tablet,10:00 AM,every monday
+Ours with Qwen-1.5B,5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours with Qwen-1.5B,6,ta-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+Ours with Qwen-1.5B,7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours with Qwen-1.5B,8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours with Qwen-1.5B,9,ta-IN,0,0,1,1,1,1,echospirine,half tablet,11:15 PM,daily
+Ours with Qwen-1.5B,10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours with Qwen-1.5B,11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours with Qwen-1.5B,12,ta-IN,0,1,0,1,1,1,Pantoprazole,pill,7:00 AM,daily
+Ours with Qwen-1.5B,13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours with Qwen-1.5B,14,ta-IN,1,1,1,1,1,1,cough medicine,two tablespoons,8:00 PM,next 4 days
+Ours with Qwen-1.5B,15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours with Qwen-1.5B,16,ta-IN,0,0,1,0,1,1,Delma 40,1 tablet,1:30 AM,daily
+Ours with Qwen-1.5B,17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,14:00,daily
+Ours with Qwen-1.5B,18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours with Qwen-1.5B,19,ta-IN,1,1,1,1,1,1,B12 injection,1 tablet,11:00 AM,every saturday
+Ours with Qwen-1.5B,20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours with Qwen-1.5B,21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours with Qwen-1.5B,22,ta-IN,0,0,0,0,1,0,medicine,ORS packet,16:00 PM,next 2 days
+Ours with Qwen-1.5B,23,ta-IN,0,1,0,1,1,1,Shelcal,500 mg,5:00 PM,every friday
+Ours with Qwen-1.5B,24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours with Qwen-1.5B,25,ta-IN,0,0,1,1,1,1,ctericine,1 tablet,10:00 PM,next 10 days
+Ours with Qwen-1.5B,1,te-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+Ours with Qwen-1.5B,2,te-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours with Qwen-1.5B,3,te-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours with Qwen-1.5B,4,te-IN,1,1,1,1,1,1,Dolo 650,1 tablet,10:00 AM,every monday
+Ours with Qwen-1.5B,5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours with Qwen-1.5B,6,te-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+Ours with Qwen-1.5B,7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours with Qwen-1.5B,8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours with Qwen-1.5B,9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours with Qwen-1.5B,10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours with Qwen-1.5B,11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours with Qwen-1.5B,12,te-IN,1,1,1,1,1,1,Pantoprazole,1 tablet,7:00 AM,daily
+Ours with Qwen-1.5B,13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours with Qwen-1.5B,14,te-IN,1,1,1,1,1,1,cough syrup,two tablespoons,8:00 PM,next 4 days
+Ours with Qwen-1.5B,15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours with Qwen-1.5B,16,te-IN,0,1,1,0,1,1,Telma 40,1 tablet,1:30 AM,daily
+Ours with Qwen-1.5B,17,te-IN,0,0,1,1,1,1,glycomate,500 mg,14:00,daily
+Ours with Qwen-1.5B,18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours with Qwen-1.5B,19,te-IN,1,1,1,1,1,1,B12 injection,1 tablet,11:00 AM,every saturday
+Ours with Qwen-1.5B,20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours with Qwen-1.5B,21,te-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours with Qwen-1.5B,22,te-IN,0,0,0,0,1,0,ORS packet,1 tablet,16:00 PM,next 2 days
+Ours with Qwen-1.5B,23,te-IN,0,0,0,1,1,1,Shelkol,500 mg,5:00 PM,every friday
+Ours with Qwen-1.5B,24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours with Qwen-1.5B,25,te-IN,0,0,1,1,1,1,cetrizine,1 tablet,10:00 PM,next 10 days
+Ours with Qwen-1.5B,1,bn-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+Ours with Qwen-1.5B,2,bn-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours with Qwen-1.5B,3,bn-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours with Qwen-1.5B,4,bn-IN,1,1,1,1,1,1,Dolo 650,1 tablet,10:00 AM,every monday
+Ours with Qwen-1.5B,5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours with Qwen-1.5B,6,bn-IN,0,1,0,1,1,1,aspirin,tablet,9:00 PM,daily
+Ours with Qwen-1.5B,7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours with Qwen-1.5B,8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+Ours with Qwen-1.5B,9,bn-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours with Qwen-1.5B,10,bn-IN,0,0,0,1,1,1,thyronerm,tablet,7:00 AM,daily
+Ours with Qwen-1.5B,11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours with Qwen-1.5B,12,bn-IN,0,0,0,1,1,1,pentoprazole,tablet,7:00 AM,daily
+Ours with Qwen-1.5B,13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours with Qwen-1.5B,14,bn-IN,1,1,1,1,1,1,cough syrup,two tablespoons,8:00 PM,next 4 days
+Ours with Qwen-1.5B,15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+Ours with Qwen-1.5B,16,bn-IN,0,1,1,0,1,1,Telma 40,1 tablet,1:30 AM,daily
+Ours with Qwen-1.5B,17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,14:00,daily
+Ours with Qwen-1.5B,18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours with Qwen-1.5B,19,bn-IN,1,1,1,1,1,1,B12 injection,1 tablet,11:00 AM,every saturday
+Ours with Qwen-1.5B,20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours with Qwen-1.5B,21,bn-IN,0,0,1,0,1,1,Monterey tablet,1 tablet,1:45 PM,next 2 months
+Ours with Qwen-1.5B,22,bn-IN,0,0,0,0,1,0,ORS packet,1 tablet,16:00 PM,next 2 days
+Ours with Qwen-1.5B,23,bn-IN,0,0,0,1,1,1,Shelkale,500 mg,5:00 PM,every friday
+Ours with Qwen-1.5B,24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours with Qwen-1.5B,25,bn-IN,0,0,1,1,1,1,satirizine,1 tablet,10:00 PM,next 10 days
+- few-shot examples (system prompt only),1,hi-IN,0,1,0,1,1,1,Crocin,500 mg,9:00 PM,daily
+- few-shot examples (system prompt only),2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- few-shot examples (system prompt only),3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+- few-shot examples (system prompt only),4,hi-IN,1,1,1,1,1,1,Dolo 650,1 tablet,10:00 AM,every monday
+- few-shot examples (system prompt only),5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- few-shot examples (system prompt only),6,hi-IN,0,1,1,0,1,1,Aspirin,1 tablet,10:00 PM,daily
+- few-shot examples (system prompt only),7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+- few-shot examples (system prompt only),8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- few-shot examples (system prompt only),9,hi-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+- few-shot examples (system prompt only),10,hi-IN,0,1,0,1,1,1,thyronorm,500 mg,7:00 AM,daily
+- few-shot examples (system prompt only),11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- few-shot examples (system prompt only),12,hi-IN,0,1,0,1,1,1,pantoprazole,7 mg,7:00 AM,daily
+- few-shot examples (system prompt only),13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- few-shot examples (system prompt only),14,hi-IN,0,1,0,1,1,1,cough medicine,2 tbsp,8:00 PM,next 4 days
+- few-shot examples (system prompt only),15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- few-shot examples (system prompt only),16,hi-IN,0,1,0,0,1,1,Telma 40,40 mg,1:30 AM,daily
+- few-shot examples (system prompt only),17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2 p.m.,daily
+- few-shot examples (system prompt only),18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- few-shot examples (system prompt only),19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+- few-shot examples (system prompt only),20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+- few-shot examples (system prompt only),21,hi-IN,0,0,0,0,1,1,montaire,1/4 tablet,1:45 PM,next 2 months
+- few-shot examples (system prompt only),22,hi-IN,0,1,0,1,1,1,ORS,1 tablet,4:00 PM,next 2 days
+- few-shot examples (system prompt only),23,hi-IN,0,0,0,1,1,1,Shellcal 500,500 mg,5:00 PM,every friday
+- few-shot examples (system prompt only),24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- few-shot examples (system prompt only),25,hi-IN,0,0,0,1,1,1,cretizine,10 mg,10:00 PM,next 10 days
+- few-shot examples (system prompt only),1,ta-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+- few-shot examples (system prompt only),2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- few-shot examples (system prompt only),3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+- few-shot examples (system prompt only),4,ta-IN,0,0,0,1,1,1,TOLO 650,10 mg,10:00 AM,every monday
+- few-shot examples (system prompt only),5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- few-shot examples (system prompt only),6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,10:00 PM,daily
+- few-shot examples (system prompt only),7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+- few-shot examples (system prompt only),8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- few-shot examples (system prompt only),9,ta-IN,0,0,1,1,1,1,Echospirine,half tablet,11:15 PM,daily
+- few-shot examples (system prompt only),10,ta-IN,0,0,0,1,1,1,thyronerm,7 mg,7:00 AM,daily
+- few-shot examples (system prompt only),11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- few-shot examples (system prompt only),12,ta-IN,1,1,1,1,1,1,Pantoprazole,1 tablet,7:00 AM,daily
+- few-shot examples (system prompt only),13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- few-shot examples (system prompt only),14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+- few-shot examples (system prompt only),15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- few-shot examples (system prompt only),16,ta-IN,0,0,0,1,1,1,Delma 40,40 mg,8:30 AM,daily
+- few-shot examples (system prompt only),17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+- few-shot examples (system prompt only),18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- few-shot examples (system prompt only),19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- few-shot examples (system prompt only),20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+- few-shot examples (system prompt only),21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+- few-shot examples (system prompt only),22,ta-IN,1,1,1,1,1,1,ORS,1 packet,4:00 PM,next 2 days
+- few-shot examples (system prompt only),23,ta-IN,0,1,0,1,1,1,Shelcal 500,500 mg,5:00 PM,every friday
+- few-shot examples (system prompt only),24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- few-shot examples (system prompt only),25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+- few-shot examples (system prompt only),1,te-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+- few-shot examples (system prompt only),2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- few-shot examples (system prompt only),3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+- few-shot examples (system prompt only),4,te-IN,0,1,0,1,1,1,Dolo 650,10 mg,10:00 AM,every monday
+- few-shot examples (system prompt only),5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- few-shot examples (system prompt only),6,te-IN,0,1,1,0,1,1,Aspirin,1 tablet,10:00 PM,daily
+- few-shot examples (system prompt only),7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+- few-shot examples (system prompt only),8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- few-shot examples (system prompt only),9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+- few-shot examples (system prompt only),10,te-IN,0,1,0,1,1,1,thyronorm,7 mg,7:00 AM,daily
+- few-shot examples (system prompt only),11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- few-shot examples (system prompt only),12,te-IN,0,1,0,1,1,1,Pantoprazole,500 mg,7:00 AM,daily
+- few-shot examples (system prompt only),13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- few-shot examples (system prompt only),14,te-IN,0,1,0,1,1,1,cough syrup,2 tbsp,8:00 PM,next 4 days
+- few-shot examples (system prompt only),15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- few-shot examples (system prompt only),16,te-IN,0,1,0,0,1,1,Telma 40,40 mg,1:30 AM,daily
+- few-shot examples (system prompt only),17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2 PM,daily
+- few-shot examples (system prompt only),18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- few-shot examples (system prompt only),19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- few-shot examples (system prompt only),20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+- few-shot examples (system prompt only),21,te-IN,0,0,0,0,1,1,Monterey pill,1/4 teaspoon,1:45 PM,next 2 months
+- few-shot examples (system prompt only),22,te-IN,1,1,1,1,1,1,ORS,1 packet,4:00 PM,next 2 days
+- few-shot examples (system prompt only),23,te-IN,0,0,0,1,1,1,Shelkol 500,500 mg,5:00 PM,every friday
+- few-shot examples (system prompt only),24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- few-shot examples (system prompt only),25,te-IN,0,0,0,1,1,1,cretizine,10 mg,10:00 PM,next 10 days
+- few-shot examples (system prompt only),1,bn-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+- few-shot examples (system prompt only),2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- few-shot examples (system prompt only),3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+- few-shot examples (system prompt only),4,bn-IN,0,1,0,1,1,1,Dolo 650,1 capsule,10:00 AM,every monday
+- few-shot examples (system prompt only),5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- few-shot examples (system prompt only),6,bn-IN,1,1,1,1,1,1,Aspirin,1 tablet,9:00 PM,daily
+- few-shot examples (system prompt only),7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+- few-shot examples (system prompt only),8,bn-IN,0,1,0,1,1,1,calcium tablets,6,6:00 PM,every sunday
+- few-shot examples (system prompt only),9,bn-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+- few-shot examples (system prompt only),10,bn-IN,0,0,0,1,1,1,thyronerm,500 mg,7:00 AM,daily
+- few-shot examples (system prompt only),11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- few-shot examples (system prompt only),12,bn-IN,0,0,0,1,1,1,Pentoprazole,500 mg,7:00 AM,daily
+- few-shot examples (system prompt only),13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- few-shot examples (system prompt only),14,bn-IN,0,1,0,1,1,1,cough syrup,2 tbsp,8:00 PM,next 4 days
+- few-shot examples (system prompt only),15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+- few-shot examples (system prompt only),16,bn-IN,0,1,0,0,1,1,Telma 40,40 mg,1:30 AM,daily
+- few-shot examples (system prompt only),17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2 pm,daily
+- few-shot examples (system prompt only),18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- few-shot examples (system prompt only),19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- few-shot examples (system prompt only),20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+- few-shot examples (system prompt only),21,bn-IN,0,0,1,0,1,1,Monterey tablet,1 tablet,1:45 PM,next 2 months
+- few-shot examples (system prompt only),22,bn-IN,0,1,0,1,1,1,ORS,1 tablet,4:00 PM,next 2 days
+- few-shot examples (system prompt only),23,bn-IN,0,0,0,1,1,1,Shelkale,500 mg,5:00 PM,every friday
+- few-shot examples (system prompt only),24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- few-shot examples (system prompt only),25,bn-IN,0,0,0,1,1,1,satirizine,100 mg,10:00 PM,next 10 days
+- system prompt and examples (plain prompt),1,hi-IN,0,1,0,0,1,0,crocin,10 mg,every day at 9 p. m.,daily
+- system prompt and examples (plain prompt),2,hi-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),3,hi-IN,0,1,0,0,1,0,metformin,2,1:30 p. m.,daily
+- system prompt and examples (plain prompt),4,hi-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every monday
+- system prompt and examples (plain prompt),5,hi-IN,0,1,0,1,1,1,vitamin D,1,9 a.m.,next 5 days
+- system prompt and examples (plain prompt),6,hi-IN,1,1,1,1,1,1,Aspirin,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),7,hi-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 3 months
+- system prompt and examples (plain prompt),8,hi-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every sunday
+- system prompt and examples (plain prompt),9,hi-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),10,hi-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10 am,next 3 days
+- system prompt and examples (plain prompt),12,hi-IN,1,1,1,1,1,1,pantoprazole,1 tablet,7 a.m.,daily
+- system prompt and examples (plain prompt),13,hi-IN,0,1,1,0,1,0,amlodipine,5 mg,daily at 9 p.m.,daily
+- system prompt and examples (plain prompt),14,hi-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 4 days
+- system prompt and examples (plain prompt),15,hi-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every wednesday
+- system prompt and examples (plain prompt),16,hi-IN,0,1,1,0,1,1,Telma,1 tablet,1:30 a.m.,daily
+- system prompt and examples (plain prompt),17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2 p.m.,daily
+- system prompt and examples (plain prompt),18,hi-IN,0,1,0,0,1,0,eye drops,2,at 6 p.m.,next 7 days
+- system prompt and examples (plain prompt),19,hi-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every saturday
+- system prompt and examples (plain prompt),20,hi-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),21,hi-IN,0,0,1,0,1,1,montaire,1 pill,1:45 p.m.,next 2 months
+- system prompt and examples (plain prompt),22,hi-IN,0,1,0,0,1,0,ORS,10ml,4pm,next 2 days
+- system prompt and examples (plain prompt),23,hi-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every friday
+- system prompt and examples (plain prompt),24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6 a.m.,daily
+- system prompt and examples (plain prompt),25,hi-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,next 10 days
+- system prompt and examples (plain prompt),1,ta-IN,0,0,1,1,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),2,ta-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),3,ta-IN,0,1,0,0,1,0,Metformin,2,1:30 p. m.,daily
+- system prompt and examples (plain prompt),4,ta-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every monday
+- system prompt and examples (plain prompt),5,ta-IN,0,1,0,1,1,1,vitamin D,1,9 a.m.,next 5 days
+- system prompt and examples (plain prompt),6,ta-IN,0,0,1,1,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),7,ta-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 3 months
+- system prompt and examples (plain prompt),8,ta-IN,0,1,0,0,1,0,calcium,100 mg,every Sunday at 6 p.m.,every sunday
+- system prompt and examples (plain prompt),9,ta-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),10,ta-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10 am,next 3 days
+- system prompt and examples (plain prompt),12,ta-IN,1,1,1,1,1,1,Pantoprazole,1 tablet,7 a.m.,daily
+- system prompt and examples (plain prompt),13,ta-IN,0,0,0,1,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),14,ta-IN,0,1,1,0,1,0,cough medicine,two tablespoons,at 8 p.m.,next 4 days
+- system prompt and examples (plain prompt),15,ta-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every wednesday
+- system prompt and examples (plain prompt),16,ta-IN,0,0,1,0,1,1,Delma,1 tablet,8:00 AM,daily
+- system prompt and examples (plain prompt),17,ta-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),18,ta-IN,0,1,1,0,1,0,eye drops,2 drops,at 6 p.m.,next 7 days
+- system prompt and examples (plain prompt),19,ta-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every saturday
+- system prompt and examples (plain prompt),20,ta-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),21,ta-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,next 2 months
+- system prompt and examples (plain prompt),22,ta-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 2 days
+- system prompt and examples (plain prompt),23,ta-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every friday
+- system prompt and examples (plain prompt),24,ta-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),25,ta-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,next 10 days
+- system prompt and examples (plain prompt),1,te-IN,1,1,1,1,1,1,Crocin,1 tablet,9 p.m.,daily
+- system prompt and examples (plain prompt),2,te-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),3,te-IN,0,1,0,0,1,0,metformin,2,1:30 p. m.,daily
+- system prompt and examples (plain prompt),4,te-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every monday
+- system prompt and examples (plain prompt),5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9 a.m.,next 5 days
+- system prompt and examples (plain prompt),6,te-IN,0,0,1,0,1,0,tablet,1 tablet,every 3 hours,daily
+- system prompt and examples (plain prompt),7,te-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 3 months
+- system prompt and examples (plain prompt),8,te-IN,0,1,0,0,1,0,calcium pill,10 mg,every Sunday at 6 p. m.,every sunday
+- system prompt and examples (plain prompt),9,te-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),10,te-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),11,te-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 3 days
+- system prompt and examples (plain prompt),12,te-IN,1,1,1,1,1,1,Pantoprazole,1 tablet,7 a.m.,daily
+- system prompt and examples (plain prompt),13,te-IN,0,0,0,1,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),14,te-IN,0,1,1,0,1,0,cough syrup,two tablespoons,at 8 p.m.,next 4 days
+- system prompt and examples (plain prompt),15,te-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every wednesday
+- system prompt and examples (plain prompt),16,te-IN,0,1,1,0,1,1,Telma 40,1 tablet,1:30 a.m.,daily
+- system prompt and examples (plain prompt),17,te-IN,0,0,1,0,1,0,glycomate,500 mg,every day at 2 p.m.,daily
+- system prompt and examples (plain prompt),18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6 p.m.,next 7 days
+- system prompt and examples (plain prompt),19,te-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every saturday
+- system prompt and examples (plain prompt),20,te-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),21,te-IN,0,0,1,0,1,0,Monterey pill,1 tablet,1: 45 p.m.,next 2 months
+- system prompt and examples (plain prompt),22,te-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 2 days
+- system prompt and examples (plain prompt),23,te-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every friday
+- system prompt and examples (plain prompt),24,te-IN,0,1,1,0,1,0,losartan,50 mg,every day at 6 a.m.,daily
+- system prompt and examples (plain prompt),25,te-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,next 10 days
+- system prompt and examples (plain prompt),1,bn-IN,0,0,1,1,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),2,bn-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),3,bn-IN,0,1,0,0,1,0,metformin,2,1:30 p. m.,daily
+- system prompt and examples (plain prompt),4,bn-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every monday
+- system prompt and examples (plain prompt),5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9 a.m.,next 5 days
+- system prompt and examples (plain prompt),6,bn-IN,0,0,1,0,1,0,pills,1 tablet,every 3 hours,daily
+- system prompt and examples (plain prompt),7,bn-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 3 months
+- system prompt and examples (plain prompt),8,bn-IN,0,1,1,0,1,0,calcium,1 tablet,every Sunday at 6 p.m.,every sunday
+- system prompt and examples (plain prompt),9,bn-IN,0,0,0,0,1,1,Echosprin,20mg,9:00 PM,daily
+- system prompt and examples (plain prompt),10,bn-IN,0,0,1,0,1,0,thyronerm,1 tablet,every morning at 7 am,daily
+- system prompt and examples (plain prompt),11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10 am,next 3 days
+- system prompt and examples (plain prompt),12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7 a.m.,daily
+- system prompt and examples (plain prompt),13,bn-IN,0,0,0,1,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),14,bn-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 4 days
+- system prompt and examples (plain prompt),15,bn-IN,0,1,1,0,1,0,iron tablets,1 tablet,every Wednesday at 1 p.m.,every wednesday
+- system prompt and examples (plain prompt),16,bn-IN,0,1,1,0,1,1,Telma,1 tablet,1:30 a.m.,daily
+- system prompt and examples (plain prompt),17,bn-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6 p.m.,next 7 days
+- system prompt and examples (plain prompt),19,bn-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every saturday
+- system prompt and examples (plain prompt),20,bn-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,daily
+- system prompt and examples (plain prompt),21,bn-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,next 2 months
+- system prompt and examples (plain prompt),22,bn-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 2 days
+- system prompt and examples (plain prompt),23,bn-IN,0,0,1,0,1,1,medicine,1 tablet,9:00 PM,every friday
+- system prompt and examples (plain prompt),24,bn-IN,0,1,1,0,1,0,losartan,50mg,6am,daily
+- system prompt and examples (plain prompt),25,bn-IN,0,0,0,0,1,0,satirizine,10 mg,10 p. m.,next 10 days
+- rule-based frequency,1,hi-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+- rule-based frequency,2,hi-IN,0,1,1,1,0,0,paracetamol,500 mg,8:00 AM,morning
+- rule-based frequency,3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,every morning
+- rule-based frequency,4,hi-IN,0,1,0,1,0,0,Dolo 650,10 units,10:00 AM,Monday
+- rule-based frequency,5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- rule-based frequency,6,hi-IN,0,1,1,0,0,0,aspirin,1 tablet,11:00 PM,night
+- rule-based frequency,7,hi-IN,0,1,1,1,0,0,insulin,10 units,8:00 PM,every month
+- rule-based frequency,8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- rule-based frequency,9,hi-IN,0,0,1,1,0,0,Echosprin,half tablet,11:15 PM,night
+- rule-based frequency,10,hi-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,every morning
+- rule-based frequency,11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- rule-based frequency,12,hi-IN,0,1,0,1,1,1,pantoprazole,7 am,7:00 AM,daily
+- rule-based frequency,13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- rule-based frequency,14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+- rule-based frequency,15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- rule-based frequency,16,hi-IN,0,1,0,0,1,1,Telma,40,01:30 AM,daily
+- rule-based frequency,17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+- rule-based frequency,18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- rule-based frequency,19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+- rule-based frequency,20,hi-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- rule-based frequency,21,hi-IN,0,0,1,0,0,0,montaire,1 tablet,1:45 PM,every month
+- rule-based frequency,22,hi-IN,0,1,0,0,1,1,ORS,1 tablet,12:00 PM,next 2 days
+- rule-based frequency,23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+- rule-based frequency,24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- rule-based frequency,25,hi-IN,0,0,1,1,1,1,cretizine,1 tablet,10:00 PM,next 10 days
+- rule-based frequency,1,ta-IN,0,1,0,1,0,0,crocin,500 mg,9:00 PM,night
+- rule-based frequency,2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- rule-based frequency,3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+- rule-based frequency,4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+- rule-based frequency,5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- rule-based frequency,6,ta-IN,0,1,1,0,0,0,aspirin,1 tablet,11:00 PM,night
+- rule-based frequency,7,ta-IN,0,1,1,1,0,0,insulin,10 units,8:00 PM,every 3 months
+- rule-based frequency,8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- rule-based frequency,9,ta-IN,0,0,1,1,0,0,Echospirine,half tablet,11:15 PM,night
+- rule-based frequency,10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+- rule-based frequency,11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- rule-based frequency,12,ta-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+- rule-based frequency,13,ta-IN,0,1,1,1,0,0,amlodipine,5 mg,9:00 PM,nightly
+- rule-based frequency,14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+- rule-based frequency,15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- rule-based frequency,16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+- rule-based frequency,17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+- rule-based frequency,18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- rule-based frequency,19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- rule-based frequency,20,ta-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- rule-based frequency,21,ta-IN,0,0,1,0,0,0,Monterey,1 tablet,1:45 PM,every month
+- rule-based frequency,22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+- rule-based frequency,23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+- rule-based frequency,24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- rule-based frequency,25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+- rule-based frequency,1,te-IN,0,1,0,1,1,1,crocin,none,9:00 PM,daily
+- rule-based frequency,2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- rule-based frequency,3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+- rule-based frequency,4,te-IN,0,1,0,1,0,0,Dolo 650,10 units,10:00 AM,Monday
+- rule-based frequency,5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- rule-based frequency,6,te-IN,0,1,1,0,0,0,aspirin,1 tablet,11:00 PM,night
+- rule-based frequency,7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+- rule-based frequency,8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- rule-based frequency,9,te-IN,0,0,1,1,0,0,echosprin,half tablet,11:15 PM,night
+- rule-based frequency,10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+- rule-based frequency,11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- rule-based frequency,12,te-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+- rule-based frequency,13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- rule-based frequency,14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+- rule-based frequency,15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- rule-based frequency,16,te-IN,0,1,0,0,1,1,Telma 40,40,01:30 AM,daily
+- rule-based frequency,17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+- rule-based frequency,18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- rule-based frequency,19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- rule-based frequency,20,te-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- rule-based frequency,21,te-IN,0,0,1,0,1,1,Monterey pill,1 tablet,1:45 PM,next 2 months
+- rule-based frequency,22,te-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+- rule-based frequency,23,te-IN,0,0,0,1,1,1,Shelkol,500 tablets,5:00 PM,every friday
+- rule-based frequency,24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- rule-based frequency,25,te-IN,0,0,1,1,1,1,ctrizine,1 tablet,10:00 PM,next 10 days
+- rule-based frequency,1,bn-IN,0,1,1,1,0,0,crocin,1 tablet,9:00 PM,night
+- rule-based frequency,2,bn-IN,0,1,1,1,0,0,paracetamol,500 mg,8:00 AM,morning
+- rule-based frequency,3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+- rule-based frequency,4,bn-IN,0,1,0,1,0,0,Dolo 650,10 units,10:00 AM,Monday
+- rule-based frequency,5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- rule-based frequency,6,bn-IN,0,1,0,0,0,0,aspirin,tablet,11:00 PM,night
+- rule-based frequency,7,bn-IN,0,1,1,1,0,0,insulin,10 units,8:00 PM,every month
+- rule-based frequency,8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+- rule-based frequency,9,bn-IN,0,0,1,1,0,0,echosprin,half tablet,11:15 PM,night
+- rule-based frequency,10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,every morning
+- rule-based frequency,11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- rule-based frequency,12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+- rule-based frequency,13,bn-IN,0,1,1,1,0,0,amlodipine,5 mg,9:00 PM,nightly
+- rule-based frequency,14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+- rule-based frequency,15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+- rule-based frequency,16,bn-IN,0,1,0,0,1,1,Telma,40 capsules,1:30 AM,daily
+- rule-based frequency,17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+- rule-based frequency,18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- rule-based frequency,19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- rule-based frequency,20,bn-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- rule-based frequency,21,bn-IN,0,0,0,0,1,1,Monterey,1:45 PM,1:45 PM,next 2 months
+- rule-based frequency,22,bn-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+- rule-based frequency,23,bn-IN,0,0,0,1,1,1,Shelkale,500 tablets,5:00 PM,every friday
+- rule-based frequency,24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- rule-based frequency,25,bn-IN,0,0,1,1,1,1,saturizine,1 tablet,10:00 PM,next 10 days
+- validation layer (v1 defaults only),1,hi-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+- validation layer (v1 defaults only),2,hi-IN,0,1,1,1,0,0,paracetamol,500 mg,8:00 AM,morning
+- validation layer (v1 defaults only),3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,every morning
+- validation layer (v1 defaults only),4,hi-IN,0,1,0,1,0,0,Dolo 650,10 units,10:00 AM,Monday
+- validation layer (v1 defaults only),5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- validation layer (v1 defaults only),6,hi-IN,0,1,1,0,0,0,aspirin,1 tablet,11:00 PM,night
+- validation layer (v1 defaults only),7,hi-IN,0,1,1,1,0,0,insulin,10 units,8:00 PM,every month
+- validation layer (v1 defaults only),8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- validation layer (v1 defaults only),9,hi-IN,0,0,1,1,0,0,Echosprin,half tablet,11:15 PM,night
+- validation layer (v1 defaults only),10,hi-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,every morning
+- validation layer (v1 defaults only),11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- validation layer (v1 defaults only),12,hi-IN,0,1,0,1,1,1,pantoprazole,7 am,7:00 AM,daily
+- validation layer (v1 defaults only),13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- validation layer (v1 defaults only),14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+- validation layer (v1 defaults only),15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- validation layer (v1 defaults only),16,hi-IN,0,1,0,0,1,1,Telma,40,01:30 AM,daily
+- validation layer (v1 defaults only),17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+- validation layer (v1 defaults only),18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- validation layer (v1 defaults only),19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+- validation layer (v1 defaults only),20,hi-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- validation layer (v1 defaults only),21,hi-IN,0,0,1,0,0,0,montaire,1 tablet,1:45 PM,every month
+- validation layer (v1 defaults only),22,hi-IN,0,1,0,0,1,1,ORS,1 tablet,12:00 PM,next 2 days
+- validation layer (v1 defaults only),23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+- validation layer (v1 defaults only),24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- validation layer (v1 defaults only),25,hi-IN,0,0,1,1,1,1,cretizine,1 tablet,10:00 PM,next 10 days
+- validation layer (v1 defaults only),1,ta-IN,0,1,0,1,0,0,crocin,500 mg,9:00 PM,night
+- validation layer (v1 defaults only),2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- validation layer (v1 defaults only),3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+- validation layer (v1 defaults only),4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+- validation layer (v1 defaults only),5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- validation layer (v1 defaults only),6,ta-IN,0,1,1,0,0,0,aspirin,1 tablet,11:00 PM,night
+- validation layer (v1 defaults only),7,ta-IN,0,1,1,1,0,0,insulin,10 units,8:00 PM,every 3 months
+- validation layer (v1 defaults only),8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- validation layer (v1 defaults only),9,ta-IN,0,0,1,1,0,0,Echospirine,half tablet,11:15 PM,night
+- validation layer (v1 defaults only),10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+- validation layer (v1 defaults only),11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- validation layer (v1 defaults only),12,ta-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+- validation layer (v1 defaults only),13,ta-IN,0,1,1,1,0,0,amlodipine,5 mg,9:00 PM,nightly
+- validation layer (v1 defaults only),14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+- validation layer (v1 defaults only),15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- validation layer (v1 defaults only),16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+- validation layer (v1 defaults only),17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+- validation layer (v1 defaults only),18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- validation layer (v1 defaults only),19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- validation layer (v1 defaults only),20,ta-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- validation layer (v1 defaults only),21,ta-IN,0,0,1,0,0,0,Monterey,1 tablet,1:45 PM,every month
+- validation layer (v1 defaults only),22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+- validation layer (v1 defaults only),23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+- validation layer (v1 defaults only),24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- validation layer (v1 defaults only),25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+- validation layer (v1 defaults only),1,te-IN,0,1,0,1,1,1,crocin,none,9:00 PM,daily
+- validation layer (v1 defaults only),2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+- validation layer (v1 defaults only),3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+- validation layer (v1 defaults only),4,te-IN,0,1,0,1,0,0,Dolo 650,10 units,10:00 AM,Monday
+- validation layer (v1 defaults only),5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- validation layer (v1 defaults only),6,te-IN,0,1,1,0,0,0,aspirin,1 tablet,11:00 PM,night
+- validation layer (v1 defaults only),7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+- validation layer (v1 defaults only),8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+- validation layer (v1 defaults only),9,te-IN,0,0,1,1,0,0,echosprin,half tablet,11:15 PM,night
+- validation layer (v1 defaults only),10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+- validation layer (v1 defaults only),11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- validation layer (v1 defaults only),12,te-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+- validation layer (v1 defaults only),13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+- validation layer (v1 defaults only),14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+- validation layer (v1 defaults only),15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+- validation layer (v1 defaults only),16,te-IN,0,1,0,0,1,1,Telma 40,40,01:30 AM,daily
+- validation layer (v1 defaults only),17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+- validation layer (v1 defaults only),18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- validation layer (v1 defaults only),19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- validation layer (v1 defaults only),20,te-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- validation layer (v1 defaults only),21,te-IN,0,0,1,0,1,1,Monterey pill,1 tablet,1:45 PM,next 2 months
+- validation layer (v1 defaults only),22,te-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+- validation layer (v1 defaults only),23,te-IN,0,0,0,1,1,1,Shelkol,500 tablets,5:00 PM,every friday
+- validation layer (v1 defaults only),24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- validation layer (v1 defaults only),25,te-IN,0,0,1,1,1,1,ctrizine,1 tablet,10:00 PM,next 10 days
+- validation layer (v1 defaults only),1,bn-IN,0,1,1,1,0,0,crocin,1 tablet,9:00 PM,night
+- validation layer (v1 defaults only),2,bn-IN,0,1,1,1,0,0,paracetamol,500 mg,8:00 AM,morning
+- validation layer (v1 defaults only),3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+- validation layer (v1 defaults only),4,bn-IN,0,1,0,1,0,0,Dolo 650,10 units,10:00 AM,Monday
+- validation layer (v1 defaults only),5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+- validation layer (v1 defaults only),6,bn-IN,0,1,0,0,0,0,aspirin,tablet,11:00 PM,night
+- validation layer (v1 defaults only),7,bn-IN,0,1,1,1,0,0,insulin,10 units,8:00 PM,every month
+- validation layer (v1 defaults only),8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+- validation layer (v1 defaults only),9,bn-IN,0,0,1,1,0,0,echosprin,half tablet,11:15 PM,night
+- validation layer (v1 defaults only),10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,every morning
+- validation layer (v1 defaults only),11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+- validation layer (v1 defaults only),12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+- validation layer (v1 defaults only),13,bn-IN,0,1,1,1,0,0,amlodipine,5 mg,9:00 PM,nightly
+- validation layer (v1 defaults only),14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+- validation layer (v1 defaults only),15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+- validation layer (v1 defaults only),16,bn-IN,0,1,0,0,1,1,Telma,40 capsules,1:30 AM,daily
+- validation layer (v1 defaults only),17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+- validation layer (v1 defaults only),18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+- validation layer (v1 defaults only),19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+- validation layer (v1 defaults only),20,bn-IN,0,1,1,1,0,0,atorvastatin,10 mg,10:00 PM,nightly
+- validation layer (v1 defaults only),21,bn-IN,0,0,0,0,1,1,Monterey,1:45 PM,1:45 PM,next 2 months
+- validation layer (v1 defaults only),22,bn-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+- validation layer (v1 defaults only),23,bn-IN,0,0,0,1,1,1,Shelkale,500 tablets,5:00 PM,every friday
+- validation layer (v1 defaults only),24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+- validation layer (v1 defaults only),25,bn-IN,0,0,1,1,1,1,saturizine,1 tablet,10:00 PM,next 10 days
+- IndicTrans2 (Indic text straight to Qwen),1,hi-IN,0,0,0,1,1,1,crystalline vitamin c,0.5 grams,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),2,hi-IN,0,0,1,1,1,1,प्रोटाइमोल,500 mg,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),3,hi-IN,0,1,0,1,1,1,metformin,2 g,7:30 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),4,hi-IN,0,1,0,1,0,1,Dolo 650,10 units,10:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),5,hi-IN,0,1,0,1,0,1,vitamin D,none,9:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),6,hi-IN,0,0,1,0,1,1,espirin,1 tablet,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),7,hi-IN,0,0,1,0,0,1,iron,10 units,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),8,hi-IN,0,0,0,0,0,1,Cochrane,6 bottles,6:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),9,hi-IN,0,0,0,0,1,1,कोस्प्रिन,1 tablet,11:15 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),10,hi-IN,0,0,1,1,1,1,Throat gargle,1 tablet,7:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),11,hi-IN,0,0,1,0,0,1,Jitrosem,500 mg,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),12,hi-IN,0,0,1,1,1,1,पैंटोप्राजोल,1 tablet,7:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),13,hi-IN,0,0,1,1,1,1,मैलोडिपिन,5 mg,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),14,hi-IN,0,0,0,1,0,1,drugs,2 pills,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),15,hi-IN,0,0,0,0,0,1,गोली,1 gram,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),16,hi-IN,0,0,0,1,1,1,टेल्मा,40,8:30 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),17,hi-IN,0,0,1,1,1,1,glaxoSmithKline,500 mg,2:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),18,hi-IN,0,0,0,0,0,1,drugs,2 tablets,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),19,hi-IN,0,1,1,1,0,1,B12,1 tablet,11:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),20,hi-IN,0,0,1,0,1,1,टोरै रात,10 mg,10:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),21,hi-IN,0,0,1,0,0,1,मोंटेयर,1 tablet,9:45 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),22,hi-IN,0,1,1,0,0,1,ORS,1 packet,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),23,hi-IN,0,0,0,1,0,1,शुक्रवार,500 ml,5:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),24,hi-IN,0,0,1,1,1,1,Loratadine,50 mg,6:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),25,hi-IN,0,0,1,0,0,1,setirian,1 tablet,10:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),1,ta-IN,0,0,1,1,1,1,Kosha,1 tablet,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),2,ta-IN,0,0,1,0,1,1,Cough Syrup,500 mg,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),3,ta-IN,0,0,0,1,1,1,Malar vaccine,1 tablet,7:30 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),4,ta-IN,0,0,0,0,1,1,Cocaine,10 grams,10:00 PM,every monday
+- IndicTrans2 (Indic text straight to Qwen),5,ta-IN,0,0,0,0,0,1,Dolo 650,9 pills,5:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),6,ta-IN,0,0,1,0,1,1,Auspitz,1 tablet,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),7,ta-IN,0,0,0,0,0,1,Cochineella,10,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),8,ta-IN,0,0,0,1,0,1,snail丸,6粒,6:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),9,ta-IN,0,0,0,0,1,1,Arka,1 tablet,11:15 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),10,ta-IN,0,0,0,1,1,1,Kalarai,7 morsa,07:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),11,ta-IN,0,0,1,0,0,1,Kashmiriya,500 mg,3:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),12,ta-IN,0,0,1,0,1,1,Cough syrup,1 tablet,7:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),13,ta-IN,0,0,1,1,1,1,amoxicillin,5 mg,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),14,ta-IN,0,1,0,1,0,1,Cough Syrup,1 tablet,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),15,ta-IN,0,0,0,0,0,0,puwatana,1 mala kku,1 malla,daily
+- IndicTrans2 (Indic text straight to Qwen),16,ta-IN,0,0,1,0,0,1,Cough syrup,1 tablet,8:30 PM,next 4 days
+- IndicTrans2 (Indic text straight to Qwen),17,ta-IN,0,0,0,0,1,1,Meditation,2 pills,5:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),18,ta-IN,0,0,0,0,0,1,Cochineella marina,1 tablet,7:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),19,ta-IN,0,1,0,1,0,1,B12,11 muna,11:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),20,ta-IN,0,0,1,1,1,1,Adorvashta,10 mg,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),21,ta-IN,0,0,0,1,0,1,Cough Syrup,2,9:45 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),22,ta-IN,0,1,0,0,0,1,ORS,4 capsules,2 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),23,ta-IN,0,0,0,1,0,1,malarial pill,500 mg,5:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),24,ta-IN,0,0,1,0,1,1,Locus,50 mg,6:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),25,ta-IN,0,0,0,0,0,1,Chiru,10 mounds,10:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),1,te-IN,0,0,0,1,1,1,ప్రతిరోజూ,9 గంటల,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),2,te-IN,0,0,1,0,1,1,pratigya,500 mg,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),3,te-IN,0,0,0,0,1,1,సాయంత్రం,7:30 PM,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),4,te-IN,0,0,0,0,0,1,Dosage,10 tablets,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),5,te-IN,0,0,0,0,0,1,Doli 650,500 mg,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),6,te-IN,0,0,1,0,1,1,రాత్రి,1 tablet,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),7,te-IN,0,0,0,1,0,1,Cough syrup,3 tablets,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),8,te-IN,0,0,1,0,0,1,medicine,1 tablet,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),9,te-IN,0,0,0,1,1,1,radar,11:15 PM,11:15 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),10,te-IN,0,0,0,1,1,1,ప్రతిరోజూ,7 గంటల,7:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),11,te-IN,0,0,1,0,0,1,Cough syrup,500 mg,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),12,te-IN,0,0,0,0,1,1,ప్రతిరోజూ,7 గంటల,7:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),13,te-IN,0,0,1,1,1,1,amarola,5 mg,9:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),14,te-IN,0,1,0,1,0,1,Cough Syrup,4 tablets,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),15,te-IN,0,0,0,0,0,1,ప్రతి బుధవారం,1 గంటకు,1:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),16,te-IN,0,0,0,0,0,1,ప్రతిరోజూ,8:30 PM,8:30 PM,next 4 days
+- IndicTrans2 (Indic text straight to Qwen),17,te-IN,0,0,0,0,1,0,ప్రతిరోజూ మధ్యాహ్నం,2 గంటల,500 mg,daily
+- IndicTrans2 (Indic text straight to Qwen),18,te-IN,0,0,0,0,0,1,Cough syrup,1 tablet,7:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),19,te-IN,0,1,0,1,0,1,B12,11 mg,11:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),20,te-IN,0,0,1,1,1,1,ప్రతిరోజూ,10 mg,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),21,te-IN,0,0,0,1,0,1,Cough syrup,2 tablets,9:45 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),22,te-IN,0,1,0,1,0,1,ORS,2 tablets,4:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),23,te-IN,0,0,0,1,0,1,ప్రతి శుక్రవారం సాయంత్రం,5 గంటల,5:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),24,te-IN,0,0,1,0,1,1,ప్రతిరోజూ,50 mg,6:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),25,te-IN,0,0,0,1,0,1,Cough syrup,10 ml,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),1,bn-IN,0,0,1,0,1,1,krushi,1 tablet,9:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),2,bn-IN,0,0,0,1,1,1,Працмакол,৫০০ mg,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),3,bn-IN,0,0,0,0,1,1,Medicines,1 tablet,7:30 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),4,bn-IN,0,1,0,0,0,1,Dolo 650,500 mg,10:00 PM,every saturday
+- IndicTrans2 (Indic text straight to Qwen),5,bn-IN,0,0,0,0,0,1,D,0,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),6,bn-IN,0,0,1,0,1,1,ayasthiritn,1 tablet,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),7,bn-IN,0,0,0,0,0,0,রাত,১০ ইউনিট,৬:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),8,bn-IN,0,0,1,0,0,1,Cough syrup,1 tablet,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),9,bn-IN,0,0,0,1,1,1,Indocin,1 tablet,11:15 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),10,bn-IN,0,0,0,0,1,1,Theronram,7 tablets,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),11,bn-IN,0,0,1,0,0,1,ayitin,500 mg,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),12,bn-IN,0,0,1,1,1,1,pyanolone,1 tablet,7:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),13,bn-IN,0,0,1,0,1,1,अ्यामলোডিপিন,5 mg,9:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),14,bn-IN,0,0,0,0,0,1,dhol 650,1 pill,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),15,bn-IN,0,0,1,0,0,1,tyramine,1 tablet,10:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),16,bn-IN,0,0,0,1,1,1,টেলমা,40 খাওয়া,8:30 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),17,bn-IN,0,0,1,0,1,1,glaxo,500 mg,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),18,bn-IN,0,0,0,1,0,1,cough syrup,2 pills,6:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),19,bn-IN,0,1,0,1,0,1,B12,11 tablets,11:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),20,bn-IN,0,0,1,0,1,1,axythromycin,10 mg,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),21,bn-IN,0,0,1,0,0,1,manetixar,1 tablet,9:45 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),22,bn-IN,0,1,0,0,0,1,ORS,1 tablet,8:00 PM,daily
+- IndicTrans2 (Indic text straight to Qwen),23,bn-IN,0,0,0,0,0,1,Shelkakyl,500 g,5:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),24,bn-IN,0,0,1,0,1,1,Loratadine,50 mg,8:00 AM,daily
+- IndicTrans2 (Indic text straight to Qwen),25,bn-IN,0,0,1,0,0,1,সেটিরিজিন,1 tablet,10:00 AM,daily
+Wrong source language (all translated as Tamil),1,hi-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+Wrong source language (all translated as Tamil),2,hi-IN,0,0,1,1,1,1,Piracetamol,500 mg,8:00 AM,daily
+Wrong source language (all translated as Tamil),3,hi-IN,0,0,0,0,1,1,metformin ki do goli lene ki yaad dilana,1:30 pm,1:30 pm,daily
+Wrong source language (all translated as Tamil),4,hi-IN,0,1,0,1,1,1,Dolo 650,Lena Hai,10:00 AM,every monday
+Wrong source language (all translated as Tamil),5,hi-IN,0,1,0,1,1,1,Vitamin D,eka capsule,9:00 AM,next 5 days
+Wrong source language (all translated as Tamil),6,hi-IN,0,1,1,0,1,0,aspirin,1 tablet,N/A,daily
+Wrong source language (all translated as Tamil),7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Wrong source language (all translated as Tamil),8,hi-IN,0,0,1,1,1,1,Calcium Ki Goli Lene Ki Yaad Dilana,1 tablet,6:00 PM,every sunday
+Wrong source language (all translated as Tamil),9,hi-IN,0,0,0,1,1,1,Echoesprin ki aadhi goli lane ki yaad dilana,1 tablet,11:15 PM,daily
+Wrong source language (all translated as Tamil),10,hi-IN,0,0,1,1,1,1,Mujhe Thyronorma Ki Ek Goli,1 tablet,7:00 AM,daily
+Wrong source language (all translated as Tamil),11,hi-IN,0,0,1,1,1,1,Azithromycin Lenny,500 mg,10:00 AM,next 3 days
+Wrong source language (all translated as Tamil),12,hi-IN,0,0,1,1,1,1,Nasha Tse Pehle Bandoprajola Ki Ek Goli Lene Ki Yaad Dilana,1 tablet,7:00 AM,daily
+Wrong source language (all translated as Tamil),13,hi-IN,0,0,1,1,1,1,amlodipine lane,5 mg,9:00 PM,daily
+Wrong source language (all translated as Tamil),14,hi-IN,0,0,0,1,1,1,Khasi ki Dawa ke do chupun lane ki yaad dilana,1 tablet,8:00 PM,next 4 days
+Wrong source language (all translated as Tamil),15,hi-IN,0,0,1,1,1,1,Iron Koli,1 tablet,1:00 PM,every wednesday
+Wrong source language (all translated as Tamil),16,hi-IN,0,0,0,0,1,1,Delma 40 lane ki yaad dilana,0,03:00 PM,daily
+Wrong source language (all translated as Tamil),17,hi-IN,0,0,1,0,1,1,Glycomatose Lenny,500 mg,12:00 PM,daily
+Wrong source language (all translated as Tamil),18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Wrong source language (all translated as Tamil),19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+Wrong source language (all translated as Tamil),20,hi-IN,0,0,1,1,1,1,Adoravastadina Lene,10 mg,10:00 PM,daily
+Wrong source language (all translated as Tamil),21,hi-IN,0,0,1,0,1,1,Mondair Ki Ek Goli Lene Hai,1 tablet,1:45 PM,next 2 months
+Wrong source language (all translated as Tamil),22,hi-IN,0,1,0,0,1,1,ORS,1 tablet,12:00 PM,next 2 days
+Wrong source language (all translated as Tamil),23,hi-IN,0,0,0,1,1,1,shelkaila,500 ki ek goli leni hai,5:00 PM,every friday
+Wrong source language (all translated as Tamil),24,hi-IN,0,0,1,1,1,1,losartan lane,50 mg,6:00 AM,daily
+Wrong source language (all translated as Tamil),25,hi-IN,0,0,1,1,1,1,Cetrizin,1 tablet,10:00 PM,next 10 days
+Wrong source language (all translated as Tamil),1,ta-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+Wrong source language (all translated as Tamil),2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Wrong source language (all translated as Tamil),3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Wrong source language (all translated as Tamil),4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+Wrong source language (all translated as Tamil),5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Wrong source language (all translated as Tamil),6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Wrong source language (all translated as Tamil),7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Wrong source language (all translated as Tamil),8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Wrong source language (all translated as Tamil),9,ta-IN,0,0,1,1,1,1,Echospirine,half tablet,11:15 PM,daily
+Wrong source language (all translated as Tamil),10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Wrong source language (all translated as Tamil),11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Wrong source language (all translated as Tamil),12,ta-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+Wrong source language (all translated as Tamil),13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Wrong source language (all translated as Tamil),14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Wrong source language (all translated as Tamil),15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Wrong source language (all translated as Tamil),16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+Wrong source language (all translated as Tamil),17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+Wrong source language (all translated as Tamil),18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Wrong source language (all translated as Tamil),19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Wrong source language (all translated as Tamil),20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Wrong source language (all translated as Tamil),21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Wrong source language (all translated as Tamil),22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Wrong source language (all translated as Tamil),23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+Wrong source language (all translated as Tamil),24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Wrong source language (all translated as Tamil),25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+Wrong source language (all translated as Tamil),1,te-IN,0,0,0,1,1,1,ग्रोसीन वेश्यन,9 ग्रोसीन,9:00 PM,daily
+Wrong source language (all translated as Tamil),2,te-IN,0,0,1,0,1,0,Parastatol,500 mg,N/A,daily
+Wrong source language (all translated as Tamil),3,te-IN,0,0,0,0,1,0,सायत्र,1:30,30 minutes past midnight,daily
+Wrong source language (all translated as Tamil),4,te-IN,0,1,0,0,0,1,Dolo 650,10 g,8:00 AM,daily
+Wrong source language (all translated as Tamil),5,te-IN,0,0,0,0,0,1,Roojals,1 tablet,12:00 AM,next 4 days
+Wrong source language (all translated as Tamil),6,te-IN,0,0,1,0,1,1,Ratna,1 tablet,8:00 AM,daily
+Wrong source language (all translated as Tamil),7,te-IN,0,0,0,1,0,1,colors,none,8:00 PM,daily
+Wrong source language (all translated as Tamil),8,te-IN,0,0,1,0,0,1,Pratī dīvaraṇa sāt 6 gānṭalakṣiṇī mātr āmṛkṣōvālana īga kēna,1 tablet,8:30 PM,daily
+Wrong source language (all translated as Tamil),9,te-IN,0,0,0,1,1,1,गंटलको संग की कोस्प्रीन मात्र वेश्वालनी,1 tablet,11:15 PM,daily
+Wrong source language (all translated as Tamil),10,te-IN,0,0,1,0,1,1,Vishwavya Vellu,1 tablet,8:00 PM,daily
+Wrong source language (all translated as Tamil),11,te-IN,0,0,0,1,0,1,Hydrochloroquine,3 tablets,10:00,daily
+Wrong source language (all translated as Tamil),12,te-IN,0,0,1,0,1,1,पान्टिोप्रजिल मात्र वेश्वालानी गर्निया,1 tablet,7:00 PM,daily
+Wrong source language (all translated as Tamil),13,te-IN,0,0,0,0,0,1,ramlodi pichhak,5 ml,5:00 PM,every sunday
+Wrong source language (all translated as Tamil),14,te-IN,0,0,0,0,0,1,Roojal,N/A,8:00 AM,daily
+Wrong source language (all translated as Tamil),15,te-IN,0,0,0,0,0,0,माद्यान,1 गान्तक,प्रती बादवर माद्यान 1 गान्तक मात्र वेश्यकोवाली,daily
+Wrong source language (all translated as Tamil),16,te-IN,0,0,0,0,1,1,टेल्लमा,40 वेश्वालानी,1:30 PM,daily
+Wrong source language (all translated as Tamil),17,te-IN,0,0,0,0,1,0,Pratiroy Madyan,2 g,500 mg,daily
+Wrong source language (all translated as Tamil),18,te-IN,0,0,0,0,0,1,colorful medicine,1 tablet,9:00 PM,daily
+Wrong source language (all translated as Tamil),19,te-IN,0,1,0,1,0,1,B12,11 grams,11:00 AM,daily
+Wrong source language (all translated as Tamil),20,te-IN,0,0,0,0,1,0,smartphone,1 tablet,N/A,daily
+Wrong source language (all translated as Tamil),21,te-IN,0,0,0,0,0,1,विश्यकार,2 नेट्री,1:45 PM,daily
+Wrong source language (all translated as Tamil),22,te-IN,0,0,0,0,0,1,medicine,1 tablet,9:00 PM,daily
+Wrong source language (all translated as Tamil),23,te-IN,0,0,0,1,0,1,Shindeleka,500 ml,5:00 PM,daily
+Wrong source language (all translated as Tamil),24,te-IN,0,0,0,0,1,0,unknown,1 tablet,N/A,daily
+Wrong source language (all translated as Tamil),25,te-IN,0,0,0,0,0,1,Roojals,10,10:00 AM,daily
+Wrong source language (all translated as Tamil),1,bn-IN,0,0,0,0,1,1,Crystin,0,9:00 AM,daily
+Wrong source language (all translated as Tamil),2,bn-IN,0,0,0,0,1,1,Shaksha,8 tablets,5:00 PM,daily
+Wrong source language (all translated as Tamil),3,bn-IN,0,0,0,0,1,1,Medicine,1:30,8:00 AM,daily
+Wrong source language (all translated as Tamil),4,bn-IN,0,0,0,0,0,1,Prithi Somwar School,10 Tai Dolo 650Khte,10:00 PM,daily
+Wrong source language (all translated as Tamil),5,bn-IN,0,0,0,0,0,1,khushi,1 tablet,9:00 PM,daily
+Wrong source language (all translated as Tamil),6,bn-IN,0,0,1,0,1,1,अस्पौरीन त्याबलेट,1 tablet,8:00 AM,daily
+Wrong source language (all translated as Tamil),7,bn-IN,0,0,1,0,0,1,GAMI 3 MAS PRIDIN RAT 8 TAY 10 EUNT INSULIN,10 units,10:00 PM,daily
+Wrong source language (all translated as Tamil),8,bn-IN,0,0,1,1,0,1,Prithi Vibhar Sandhya,1 tablet,6:00 PM,daily
+Wrong source language (all translated as Tamil),9,bn-IN,0,0,0,1,1,1,अधाना एकोस्प्रीन त्याबलेट,1 tablet,11:15 PM,daily
+Wrong source language (all translated as Tamil),10,bn-IN,0,0,1,0,1,0,prateidine school 7tay amake,1 tablet,AM,daily
+Wrong source language (all translated as Tamil),11,bn-IN,0,0,1,1,0,1,ajitriboslim,500 mg,10:00 AM,daily
+Wrong source language (all translated as Tamil),12,bn-IN,0,0,1,0,1,1,Prateidin School 7Tay,1 tablet,8:00 PM,daily
+Wrong source language (all translated as Tamil),13,bn-IN,0,0,0,0,1,0,prateidine,9Tay 5 mg,Amlodipine Kahaar Kahaa,daily
+Wrong source language (all translated as Tamil),14,bn-IN,0,0,0,1,0,1,dulwich,1 tablet,8:00 PM,daily
+Wrong source language (all translated as Tamil),15,bn-IN,0,0,1,0,0,1,Pretty Dhubri,1 tablet,10:00 AM,daily
+Wrong source language (all translated as Tamil),16,bn-IN,0,0,0,0,1,1,prateidin school,30,1:00 PM,daily
+Wrong source language (all translated as Tamil),17,bn-IN,0,0,0,0,1,1,PRATIDIN DUPUR,2 Tay,5:00 PM,daily
+Wrong source language (all translated as Tamil),18,bn-IN,0,0,0,0,0,1,deva dharma,2 days,7:00 PM,daily
+Wrong source language (all translated as Tamil),19,bn-IN,0,1,0,0,0,1,B12,1000 mcg,11:00 PM,daily
+Wrong source language (all translated as Tamil),20,bn-IN,0,0,1,0,1,1,EGG,10 mg,10:00 AM,daily
+Wrong source language (all translated as Tamil),21,bn-IN,0,0,1,0,0,1,neetayat,1 tablet,1:45 PM,daily
+Wrong source language (all translated as Tamil),22,bn-IN,0,0,0,0,0,1,bikeli,4 days,2 AM,daily
+Wrong source language (all translated as Tamil),23,bn-IN,0,0,0,1,0,1,akti,500 mg,5:00 PM,daily
+Wrong source language (all translated as Tamil),24,bn-IN,0,0,0,0,1,1,Prateidine School,6Tay,5:00 AM,daily
+Wrong source language (all translated as Tamil),25,bn-IN,0,0,1,0,0,1,Cough Syrup,1 tablet,10:00 AM,daily
+Ours on noisy input (5% characters deleted),1,hi-IN,0,1,1,0,1,1,crocin,1 tablet,6:00 PM,daily
+Ours on noisy input (5% characters deleted),2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours on noisy input (5% characters deleted),3,hi-IN,0,1,0,0,1,1,Metformin,1 tablet,1:30 PM,daily
+Ours on noisy input (5% characters deleted),4,hi-IN,0,1,0,1,1,1,Dolo 650,650 mg,10:00 AM,every monday
+Ours on noisy input (5% characters deleted),5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours on noisy input (5% characters deleted),6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours on noisy input (5% characters deleted),7,hi-IN,0,0,1,0,1,0,R8B insulin,10 units,0,next 3 months
+Ours on noisy input (5% characters deleted),8,hi-IN,0,1,0,0,1,1,calcium,6 p.m.,7:00 PM,every sunday
+Ours on noisy input (5% characters deleted),9,hi-IN,0,0,0,1,1,1,Eksprin Goal,1 tablet,11:15 PM,daily
+Ours on noisy input (5% characters deleted),10,hi-IN,0,1,0,1,1,1,thyronorm,7 am,7:00 AM,daily
+Ours on noisy input (5% characters deleted),11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours on noisy input (5% characters deleted),12,hi-IN,0,1,0,1,1,1,pantoprazole,0.4 mg,7:00 AM,daily
+Ours on noisy input (5% characters deleted),13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours on noisy input (5% characters deleted),14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours on noisy input (5% characters deleted),15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours on noisy input (5% characters deleted),16,hi-IN,0,1,0,0,1,1,Telma,4,1:30 AM,daily
+Ours on noisy input (5% characters deleted),17,hi-IN,0,0,0,0,1,1,gliomete,50 mg,12:00 PM,daily
+Ours on noisy input (5% characters deleted),18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours on noisy input (5% characters deleted),19,hi-IN,0,1,1,0,1,1,B12 injection,1 tablet,8:00 AM,every saturday
+Ours on noisy input (5% characters deleted),20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours on noisy input (5% characters deleted),21,hi-IN,0,0,1,0,0,1,Monter pill,1 tablet,1:45 PM,daily
+Ours on noisy input (5% characters deleted),22,hi-IN,0,0,0,0,1,1,ORS packet,1 tablet,12:00 PM,next 2 days
+Ours on noisy input (5% characters deleted),23,hi-IN,0,0,1,0,1,1,5 JL 500,1 tablet,11:00 PM,every friday
+Ours on noisy input (5% characters deleted),24,hi-IN,1,1,1,1,1,1,losartan,50 mg,06:00 AM,daily
+Ours on noisy input (5% characters deleted),25,hi-IN,0,0,1,1,0,0,ctrizine,1 tablet,10:00 PM,next 0 days
+Ours on noisy input (5% characters deleted),1,ta-IN,0,0,1,1,1,1,Coca-Cola,1 tablet,9:00 PM,daily
+Ours on noisy input (5% characters deleted),2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours on noisy input (5% characters deleted),3,ta-IN,0,0,0,0,1,1,Irdu Metformin,1:30 p.m.,1:30 PM,daily
+Ours on noisy input (5% characters deleted),4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+Ours on noisy input (5% characters deleted),5,ta-IN,0,0,1,0,1,1,vitamin capsule,1 capsule,9:00 PM,next 5 days
+Ours on noisy input (5% characters deleted),6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours on noisy input (5% characters deleted),7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours on noisy input (5% characters deleted),8,ta-IN,1,1,1,1,1,1,calcium tablet,1 tablet,6:00 PM,every sunday
+Ours on noisy input (5% characters deleted),9,ta-IN,0,0,0,1,1,1,echospirine,half,11:15 PM,daily
+Ours on noisy input (5% characters deleted),10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours on noisy input (5% characters deleted),11,ta-IN,0,1,0,1,1,1,azithromycin,50 g,10:00 AM,next 3 days
+Ours on noisy input (5% characters deleted),12,ta-IN,0,0,1,1,1,1,Rundoperazole,1 tablet,7:00 AM,daily
+Ours on noisy input (5% characters deleted),13,ta-IN,0,0,1,1,1,1,amodipine,5 mg,9:00 PM,daily
+Ours on noisy input (5% characters deleted),14,ta-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours on noisy input (5% characters deleted),15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours on noisy input (5% characters deleted),16,ta-IN,0,0,0,0,1,1,Delma,40,1:30 PM,daily
+Ours on noisy input (5% characters deleted),17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+Ours on noisy input (5% characters deleted),18,ta-IN,0,1,1,0,1,1,eye drops,2 drops,7:00 PM,next 7 days
+Ours on noisy input (5% characters deleted),19,ta-IN,0,1,1,0,1,1,B12 injections,1 tablet,11:00 PM,every saturday
+Ours on noisy input (5% characters deleted),20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours on noisy input (5% characters deleted),21,ta-IN,0,0,1,0,0,1,Monadair,1 tablet,1:45 PM,daily
+Ours on noisy input (5% characters deleted),22,ta-IN,0,0,0,1,1,1,ORS bucket,1 tablet,4:00 PM,next 2 days
+Ours on noisy input (5% characters deleted),23,ta-IN,0,0,0,1,1,1,Shelkel,500 mg,5:00 PM,every friday
+Ours on noisy input (5% characters deleted),24,ta-IN,1,1,1,1,1,1,losartan,50 mg,06:00 AM,daily
+Ours on noisy input (5% characters deleted),25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+Ours on noisy input (5% characters deleted),1,te-IN,0,0,1,1,1,1,carosine,1 tablet,9:00 PM,daily
+Ours on noisy input (5% characters deleted),2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours on noisy input (5% characters deleted),3,te-IN,0,0,1,0,1,1,Metromine,2 tablets,1:30 PM,daily
+Ours on noisy input (5% characters deleted),4,te-IN,0,0,1,0,0,0,Parati Somavaram Dayayam,1 tablet,10 ghats,daily
+Ours on noisy input (5% characters deleted),5,te-IN,0,0,0,0,1,1,vitamin D cap,1 tablet,9:00 PM,next 5 days
+Ours on noisy input (5% characters deleted),6,te-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours on noisy input (5% characters deleted),7,te-IN,0,1,1,0,1,1,insulin,10 units,8:00 AM,next 3 months
+Ours on noisy input (5% characters deleted),8,te-IN,0,0,1,1,1,1,calendrical mass,1 tablet,6:00 PM,every sunday
+Ours on noisy input (5% characters deleted),9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours on noisy input (5% characters deleted),10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours on noisy input (5% characters deleted),11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours on noisy input (5% characters deleted),12,te-IN,0,0,0,1,1,1,O Pantoprazole,7 am,7:00 AM,daily
+Ours on noisy input (5% characters deleted),13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours on noisy input (5% characters deleted),14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours on noisy input (5% characters deleted),15,te-IN,0,1,1,0,1,0,iron tablet,1 tablet,1 hour,every wednesday
+Ours on noisy input (5% characters deleted),16,te-IN,0,1,0,0,1,1,Telma 40,40,01:30 AM,daily
+Ours on noisy input (5% characters deleted),17,te-IN,0,0,1,1,1,1,glycomat,500 mg,2:00 PM,daily
+Ours on noisy input (5% characters deleted),18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours on noisy input (5% characters deleted),19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours on noisy input (5% characters deleted),20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours on noisy input (5% characters deleted),21,te-IN,0,0,1,0,0,1,Manteira,1 tablet,1:45 PM,next 2 days
+Ours on noisy input (5% characters deleted),22,te-IN,0,0,0,1,0,1,ORS packet,1 tablet,4:00 PM,daily
+Ours on noisy input (5% characters deleted),23,te-IN,0,0,0,1,1,1,Shelkala,500 mg,5:00 PM,every friday
+Ours on noisy input (5% characters deleted),24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours on noisy input (5% characters deleted),25,te-IN,0,0,0,1,1,1,cretizine,10 mg,10:00 PM,next 10 days
+Ours on noisy input (5% characters deleted),1,bn-IN,0,0,1,1,1,1,rosin,1 tablet,9:00 PM,daily
+Ours on noisy input (5% characters deleted),2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours on noisy input (5% characters deleted),3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours on noisy input (5% characters deleted),4,bn-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours on noisy input (5% characters deleted),5,bn-IN,0,1,1,0,1,1,vitamin D,1 capsule,9:00 PM,next 5 days
+Ours on noisy input (5% characters deleted),6,bn-IN,0,1,0,0,1,1,aspirin,tablet,11:00 PM,daily
+Ours on noisy input (5% characters deleted),7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours on noisy input (5% characters deleted),8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+Ours on noisy input (5% characters deleted),9,bn-IN,1,1,1,1,1,1,Ecosprin,half tablet,11:15 PM,daily
+Ours on noisy input (5% characters deleted),10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours on noisy input (5% characters deleted),11,bn-IN,0,1,0,0,0,1,azithromycin,10:500 am,10:50 AM,daily
+Ours on noisy input (5% characters deleted),12,bn-IN,0,1,0,1,1,1,Pantoprazole,tablet,7:00 AM,daily
+Ours on noisy input (5% characters deleted),13,bn-IN,0,1,0,0,1,1,amlodipine,9:5 p.m.,11:50 PM,daily
+Ours on noisy input (5% characters deleted),14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours on noisy input (5% characters deleted),15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+Ours on noisy input (5% characters deleted),16,bn-IN,0,1,0,0,1,1,Telma,40 capsules,1:30 AM,daily
+Ours on noisy input (5% characters deleted),17,bn-IN,0,0,0,0,1,1,glaucoma,50 mg,12:00 PM,daily
+Ours on noisy input (5% characters deleted),18,bn-IN,0,1,1,0,1,1,eye drops,2 drops,10:00 PM,next 7 days
+Ours on noisy input (5% characters deleted),19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours on noisy input (5% characters deleted),20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours on noisy input (5% characters deleted),21,bn-IN,0,0,0,0,1,1,Montier tablet,1:45 PM,1:45 PM,next 2 months
+Ours on noisy input (5% characters deleted),22,bn-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours on noisy input (5% characters deleted),23,bn-IN,0,0,0,1,1,1,Shelkal,50 tablets,5:00 PM,every friday
+Ours on noisy input (5% characters deleted),24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours on noisy input (5% characters deleted),25,bn-IN,0,0,1,0,1,1,saturizine,1 tablet,12:00 PM,next 10 days
+B1 on noisy input,1,hi-IN,0,0,1,1,1,1,crocin lane,1 tablet,9:00 PM,daily
+B1 on noisy input,2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+B1 on noisy input,3,hi-IN,0,1,0,0,1,0,metformin,1 tablet,30:00 PM,daily
+B1 on noisy input,4,hi-IN,0,1,1,0,1,1,dolo,1 tablet,9:00 PM,every monday
+B1 on noisy input,5,hi-IN,0,1,0,1,1,1,vitamin d,1 tablet,9:00 AM,next 5 days
+B1 on noisy input,6,hi-IN,1,1,1,1,1,1,pill of aspirin,1 tablet,9:00 PM,daily
+B1 on noisy input,7,hi-IN,0,0,1,0,1,1,r8b,10 units,9:00 PM,next 3 months
+B1 on noisy input,8,hi-IN,1,1,1,1,1,1,dose of calcium,1 tablet,6:00 PM,every sunday
+B1 on noisy input,9,hi-IN,0,0,0,0,1,1,eksprin,1 tablet,9:00 PM,daily
+B1 on noisy input,10,hi-IN,1,1,1,1,1,1,dose of thyronorm,1 tablet,7:00 AM,daily
+B1 on noisy input,11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+B1 on noisy input,12,hi-IN,1,1,1,1,1,1,pill of pantoprazole,1 tablet,7:00 AM,daily
+B1 on noisy input,13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+B1 on noisy input,14,hi-IN,0,0,0,1,1,1,tablespoons of cough medicine,1 tablet,8:00 PM,next 4 days
+B1 on noisy input,15,hi-IN,1,1,1,1,1,1,iron,1 tablet,1:00 PM,every wednesday
+B1 on noisy input,16,hi-IN,0,1,1,0,1,0,telma,1 tablet,30:00 AM,daily
+B1 on noisy input,17,hi-IN,0,0,0,1,1,1,gliomete,50 mg,2:00 PM,daily
+B1 on noisy input,18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+B1 on noisy input,19,hi-IN,0,0,1,1,1,1,b12 is to be given,1 tablet,11:00 AM,every saturday
+B1 on noisy input,20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+B1 on noisy input,21,hi-IN,0,0,1,0,0,0,monter,1 tablet,45:00 PM,daily
+B1 on noisy input,22,hi-IN,0,0,1,1,1,1,packet lane of ors,a packet,4:00 PM,next 2 days
+B1 on noisy input,23,hi-IN,0,0,1,0,1,1,medicine,one tablet,6:00 PM,every friday
+B1 on noisy input,24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+B1 on noisy input,25,hi-IN,0,0,1,1,0,0,cetrizine,1 tablet,10:00 PM,next 0 days
+B1 on noisy input,1,ta-IN,0,0,1,1,1,1,coca-cola,1 tablet,9:00 PM,daily
+B1 on noisy input,2,ta-IN,0,0,1,1,1,1,paracetamol with,500 mg,8:00 AM,daily
+B1 on noisy input,3,ta-IN,0,0,0,0,1,0,trips to irdu metformin,1 tablet,30:00 PM,daily
+B1 on noisy input,4,ta-IN,0,0,1,1,1,1,tolo,1 tablet,10:00 AM,every monday
+B1 on noisy input,5,ta-IN,0,0,0,0,1,1,vitamin,1 tablet,9:00 PM,next 5 days
+B1 on noisy input,6,ta-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+B1 on noisy input,7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+B1 on noisy input,8,ta-IN,1,1,1,1,1,1,calcium,1 tablet,6:00 PM,every sunday
+B1 on noisy input,9,ta-IN,0,0,0,0,1,1,echospirine,1 tablet,9:00 PM,daily
+B1 on noisy input,10,ta-IN,0,0,1,1,1,1,medicine,1 tablet,7:00 AM,daily
+B1 on noisy input,11,ta-IN,0,1,0,1,1,1,azithromycin,1 tablet,10:00 AM,next 3 days
+B1 on noisy input,12,ta-IN,0,0,1,1,1,1,rundoperazole,1 tablet,7:00 AM,daily
+B1 on noisy input,13,ta-IN,0,0,1,1,1,1,amodipine,5 mg,9:00 PM,daily
+B1 on noisy input,14,ta-IN,0,0,0,1,1,1,medicine,1 tablet,8:00 PM,next 4 days
+B1 on noisy input,15,ta-IN,1,1,1,1,1,1,iron,1 tablet,1:00 PM,every wednesday
+B1 on noisy input,16,ta-IN,0,0,1,0,1,0,delma,1 tablet,30:00 PM,daily
+B1 on noisy input,17,ta-IN,0,0,1,1,1,1,glycomet should be taken,500 mg,2:00 PM,daily
+B1 on noisy input,18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+B1 on noisy input,19,ta-IN,0,0,1,0,1,1,medicine,1 tablet,11:00 PM,every saturday
+B1 on noisy input,20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+B1 on noisy input,21,ta-IN,0,0,1,0,0,0,monadair should be taken,one tablet,45:00 PM,daily
+B1 on noisy input,22,ta-IN,0,0,0,1,1,1,ors bucket,1 tablet,4:00 PM,next 2 days
+B1 on noisy input,23,ta-IN,0,0,1,1,1,1,shelkel,1 tablet,5:00 PM,every friday
+B1 on noisy input,24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+B1 on noisy input,25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+B1 on noisy input,1,te-IN,0,0,1,1,1,1,medicine,1 tablet,9:00 PM,daily
+B1 on noisy input,2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+B1 on noisy input,3,te-IN,0,0,0,0,1,0,metromine,1 tablet,30:00 PM,daily
+B1 on noisy input,4,te-IN,0,0,1,0,0,1,medicine,1 tablet,9:00 PM,daily
+B1 on noisy input,5,te-IN,0,0,0,0,1,1,medicine,1 tablet,9:00 PM,next 5 days
+B1 on noisy input,6,te-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+B1 on noisy input,7,te-IN,0,1,1,0,1,1,insulin,10 units,9:00 PM,next 3 months
+B1 on noisy input,8,te-IN,0,0,1,1,1,1,medicine,1 tablet,6:00 PM,every sunday
+B1 on noisy input,9,te-IN,0,0,0,0,1,1,an echosprin,1 tablet,9:00 PM,daily
+B1 on noisy input,10,te-IN,0,0,1,1,1,1,thyronorm should be taken,one tablet,7:00 AM,daily
+B1 on noisy input,11,te-IN,0,0,1,1,1,1,medicine,500 mg,10:00 AM,next 3 days
+B1 on noisy input,12,te-IN,0,0,1,1,1,1,o pantoprazole,1 tablet,7:00 AM,daily
+B1 on noisy input,13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+B1 on noisy input,14,te-IN,0,0,0,1,1,1,tablespoons of cough syrup,1 tablet,8:00 PM,next 4 days
+B1 on noisy input,15,te-IN,0,0,1,0,1,1,every wednesday,1 tablet,9:00 PM,every wednesday
+B1 on noisy input,16,te-IN,0,0,1,0,1,0,medicine,1 tablet,30:00 AM,daily
+B1 on noisy input,17,te-IN,0,0,0,1,1,1,medicine,1 tablet,2:00 PM,daily
+B1 on noisy input,18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+B1 on noisy input,19,te-IN,0,0,1,1,1,1,medicine,1 tablet,11:00 AM,every saturday
+B1 on noisy input,20,te-IN,0,1,1,0,1,1,atorvastatin,10 mg,9:00 PM,daily
+B1 on noisy input,21,te-IN,0,0,1,0,0,0,tablet of manteira,one tablet,45:00 PM,next 2 days
+B1 on noisy input,22,te-IN,0,0,0,1,0,1,ors packet,1 tablet,4:00 PM,daily
+B1 on noisy input,23,te-IN,0,0,1,1,1,1,shelkala,one tablet,5:00 PM,every friday
+B1 on noisy input,24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+B1 on noisy input,25,te-IN,0,0,1,1,1,1,medicine,1 tablet,10:00 PM,next 10 days
+B1 on noisy input,1,bn-IN,0,0,1,1,1,1,medicine,1 tablet,9:00 PM,daily
+B1 on noisy input,2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+B1 on noisy input,3,bn-IN,0,1,0,0,1,0,metformin,1 tablet,30:00 PM,daily
+B1 on noisy input,4,bn-IN,0,0,1,1,1,1,medicine,1 tablet,10:00 AM,every monday
+B1 on noisy input,5,bn-IN,0,1,0,0,1,1,vitamin d,1 tablet,9:00 PM,next 5 days
+B1 on noisy input,6,bn-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+B1 on noisy input,7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+B1 on noisy input,8,bn-IN,1,1,1,1,1,1,calcium,1 tablet,6:00 PM,every sunday
+B1 on noisy input,9,bn-IN,0,1,1,0,1,1,a tablet of ecosprin,half tablet,9:00 PM,daily
+B1 on noisy input,10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+B1 on noisy input,11,bn-IN,0,1,0,0,0,0,azithromycin,1 tablet,00:00 AM,daily
+B1 on noisy input,12,bn-IN,1,1,1,1,1,1,pantoprazole,1 tablet,7:00 AM,daily
+B1 on noisy input,13,bn-IN,0,0,0,0,1,1,medicine,1 tablet,5:00 PM,daily
+B1 on noisy input,14,bn-IN,0,1,0,1,1,1,cough syrup,1 tablet,8:00 PM,next 4 days
+B1 on noisy input,15,bn-IN,0,0,1,1,1,1,medicine,1 tablet,1:00 PM,every wednesday
+B1 on noisy input,16,bn-IN,0,0,1,0,1,0,medicine,1 tablet,30:00 AM,daily
+B1 on noisy input,17,bn-IN,0,0,0,1,1,1,glaucoma,50 mg,2:00 PM,daily
+B1 on noisy input,18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+B1 on noisy input,19,bn-IN,0,0,1,1,1,1,medicine,1 tablet,11:00 AM,every saturday
+B1 on noisy input,20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+B1 on noisy input,21,bn-IN,0,0,1,0,1,0,medicine,1 tablet,45:00 PM,next 2 months
+B1 on noisy input,22,bn-IN,0,0,0,1,1,1,medicine,1 tablet,4:00 PM,next 2 days
+B1 on noisy input,23,bn-IN,0,0,0,1,1,1,shelkal,50 tablet,5:00 PM,every friday
+B1 on noisy input,24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+B1 on noisy input,25,bn-IN,0,0,1,0,1,0,medicine,1 tablet,0:00 PM,next 10 days
+Ours run 2 (greedy),1,hi-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+Ours run 2 (greedy),2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 2 (greedy),3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours run 2 (greedy),4,hi-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours run 2 (greedy),5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 2 (greedy),6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours run 2 (greedy),7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 2 (greedy),8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours run 2 (greedy),9,hi-IN,0,0,1,1,1,1,Echosprin,half tablet,11:15 PM,daily
+Ours run 2 (greedy),10,hi-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours run 2 (greedy),11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 2 (greedy),12,hi-IN,0,1,0,1,1,1,pantoprazole,7 am,7:00 AM,daily
+Ours run 2 (greedy),13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 2 (greedy),14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours run 2 (greedy),15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours run 2 (greedy),16,hi-IN,0,1,0,0,1,1,Telma,40,01:30 AM,daily
+Ours run 2 (greedy),17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours run 2 (greedy),18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 2 (greedy),19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+Ours run 2 (greedy),20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 2 (greedy),21,hi-IN,0,0,1,0,1,1,montaire,1 tablet,1:45 PM,next 2 months
+Ours run 2 (greedy),22,hi-IN,0,1,0,0,1,1,ORS,1 tablet,12:00 PM,next 2 days
+Ours run 2 (greedy),23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+Ours run 2 (greedy),24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 2 (greedy),25,hi-IN,0,0,1,1,1,1,cretizine,1 tablet,10:00 PM,next 10 days
+Ours run 2 (greedy),1,ta-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+Ours run 2 (greedy),2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 2 (greedy),3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours run 2 (greedy),4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+Ours run 2 (greedy),5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 2 (greedy),6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours run 2 (greedy),7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 2 (greedy),8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours run 2 (greedy),9,ta-IN,0,0,1,1,1,1,Echospirine,half tablet,11:15 PM,daily
+Ours run 2 (greedy),10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours run 2 (greedy),11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 2 (greedy),12,ta-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+Ours run 2 (greedy),13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 2 (greedy),14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours run 2 (greedy),15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours run 2 (greedy),16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+Ours run 2 (greedy),17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+Ours run 2 (greedy),18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 2 (greedy),19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours run 2 (greedy),20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 2 (greedy),21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours run 2 (greedy),22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours run 2 (greedy),23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+Ours run 2 (greedy),24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 2 (greedy),25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+Ours run 2 (greedy),1,te-IN,0,1,0,1,1,1,crocin,none,9:00 PM,daily
+Ours run 2 (greedy),2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 2 (greedy),3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours run 2 (greedy),4,te-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours run 2 (greedy),5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 2 (greedy),6,te-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours run 2 (greedy),7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 2 (greedy),8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours run 2 (greedy),9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours run 2 (greedy),10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours run 2 (greedy),11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 2 (greedy),12,te-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+Ours run 2 (greedy),13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 2 (greedy),14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours run 2 (greedy),15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours run 2 (greedy),16,te-IN,0,1,0,0,1,1,Telma 40,40,01:30 AM,daily
+Ours run 2 (greedy),17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours run 2 (greedy),18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 2 (greedy),19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours run 2 (greedy),20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 2 (greedy),21,te-IN,0,0,1,0,1,1,Monterey pill,1 tablet,1:45 PM,next 2 months
+Ours run 2 (greedy),22,te-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours run 2 (greedy),23,te-IN,0,0,0,1,1,1,Shelkol,500 tablets,5:00 PM,every friday
+Ours run 2 (greedy),24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 2 (greedy),25,te-IN,0,0,1,1,1,1,ctrizine,1 tablet,10:00 PM,next 10 days
+Ours run 2 (greedy),1,bn-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+Ours run 2 (greedy),2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 2 (greedy),3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours run 2 (greedy),4,bn-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours run 2 (greedy),5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 2 (greedy),6,bn-IN,0,1,0,0,1,1,aspirin,tablet,11:00 PM,daily
+Ours run 2 (greedy),7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 2 (greedy),8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+Ours run 2 (greedy),9,bn-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours run 2 (greedy),10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours run 2 (greedy),11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 2 (greedy),12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+Ours run 2 (greedy),13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 2 (greedy),14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours run 2 (greedy),15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+Ours run 2 (greedy),16,bn-IN,0,1,0,0,1,1,Telma,40 capsules,1:30 AM,daily
+Ours run 2 (greedy),17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours run 2 (greedy),18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 2 (greedy),19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours run 2 (greedy),20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 2 (greedy),21,bn-IN,0,0,0,0,1,1,Monterey,1:45 PM,1:45 PM,next 2 months
+Ours run 2 (greedy),22,bn-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours run 2 (greedy),23,bn-IN,0,0,0,1,1,1,Shelkale,500 tablets,5:00 PM,every friday
+Ours run 2 (greedy),24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 2 (greedy),25,bn-IN,0,0,1,1,1,1,saturizine,1 tablet,10:00 PM,next 10 days
+Ours run 3 (greedy),1,hi-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+Ours run 3 (greedy),2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 3 (greedy),3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours run 3 (greedy),4,hi-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours run 3 (greedy),5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 3 (greedy),6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours run 3 (greedy),7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 3 (greedy),8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours run 3 (greedy),9,hi-IN,0,0,1,1,1,1,Echosprin,half tablet,11:15 PM,daily
+Ours run 3 (greedy),10,hi-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours run 3 (greedy),11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 3 (greedy),12,hi-IN,0,1,0,1,1,1,pantoprazole,7 am,7:00 AM,daily
+Ours run 3 (greedy),13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 3 (greedy),14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours run 3 (greedy),15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours run 3 (greedy),16,hi-IN,0,1,0,0,1,1,Telma,40,01:30 AM,daily
+Ours run 3 (greedy),17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours run 3 (greedy),18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 3 (greedy),19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+Ours run 3 (greedy),20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 3 (greedy),21,hi-IN,0,0,1,0,1,1,montaire,1 tablet,1:45 PM,next 2 months
+Ours run 3 (greedy),22,hi-IN,0,1,0,0,1,1,ORS,1 tablet,12:00 PM,next 2 days
+Ours run 3 (greedy),23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+Ours run 3 (greedy),24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 3 (greedy),25,hi-IN,0,0,1,1,1,1,cretizine,1 tablet,10:00 PM,next 10 days
+Ours run 3 (greedy),1,ta-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+Ours run 3 (greedy),2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 3 (greedy),3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours run 3 (greedy),4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+Ours run 3 (greedy),5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 3 (greedy),6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours run 3 (greedy),7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 3 (greedy),8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours run 3 (greedy),9,ta-IN,0,0,1,1,1,1,Echospirine,half tablet,11:15 PM,daily
+Ours run 3 (greedy),10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours run 3 (greedy),11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 3 (greedy),12,ta-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+Ours run 3 (greedy),13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 3 (greedy),14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours run 3 (greedy),15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours run 3 (greedy),16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+Ours run 3 (greedy),17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+Ours run 3 (greedy),18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 3 (greedy),19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours run 3 (greedy),20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 3 (greedy),21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours run 3 (greedy),22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours run 3 (greedy),23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+Ours run 3 (greedy),24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 3 (greedy),25,ta-IN,0,0,1,1,1,1,cetricine,1 tablet,10:00 PM,next 10 days
+Ours run 3 (greedy),1,te-IN,0,1,0,1,1,1,crocin,none,9:00 PM,daily
+Ours run 3 (greedy),2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 3 (greedy),3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours run 3 (greedy),4,te-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours run 3 (greedy),5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 3 (greedy),6,te-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours run 3 (greedy),7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 3 (greedy),8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours run 3 (greedy),9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours run 3 (greedy),10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours run 3 (greedy),11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 3 (greedy),12,te-IN,0,1,0,1,1,1,Pantoprazole,0.5 mg,7:00 AM,daily
+Ours run 3 (greedy),13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 3 (greedy),14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours run 3 (greedy),15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours run 3 (greedy),16,te-IN,0,1,0,0,1,1,Telma 40,40,01:30 AM,daily
+Ours run 3 (greedy),17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours run 3 (greedy),18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 3 (greedy),19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours run 3 (greedy),20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 3 (greedy),21,te-IN,0,0,1,0,1,1,Monterey pill,1 tablet,1:45 PM,next 2 months
+Ours run 3 (greedy),22,te-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours run 3 (greedy),23,te-IN,0,0,0,1,1,1,Shelkol,500 tablets,5:00 PM,every friday
+Ours run 3 (greedy),24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 3 (greedy),25,te-IN,0,0,1,1,1,1,ctrizine,1 tablet,10:00 PM,next 10 days
+Ours run 3 (greedy),1,bn-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+Ours run 3 (greedy),2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours run 3 (greedy),3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours run 3 (greedy),4,bn-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours run 3 (greedy),5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours run 3 (greedy),6,bn-IN,0,1,0,0,1,1,aspirin,tablet,11:00 PM,daily
+Ours run 3 (greedy),7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours run 3 (greedy),8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+Ours run 3 (greedy),9,bn-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours run 3 (greedy),10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours run 3 (greedy),11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours run 3 (greedy),12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+Ours run 3 (greedy),13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours run 3 (greedy),14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours run 3 (greedy),15,bn-IN,1,1,1,1,1,1,iron tablets,1 tablet,1:00 PM,every wednesday
+Ours run 3 (greedy),16,bn-IN,0,1,0,0,1,1,Telma,40 capsules,1:30 AM,daily
+Ours run 3 (greedy),17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours run 3 (greedy),18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours run 3 (greedy),19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours run 3 (greedy),20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours run 3 (greedy),21,bn-IN,0,0,0,0,1,1,Monterey,1:45 PM,1:45 PM,next 2 months
+Ours run 3 (greedy),22,bn-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours run 3 (greedy),23,bn-IN,0,0,0,1,1,1,Shelkale,500 tablets,5:00 PM,every friday
+Ours run 3 (greedy),24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours run 3 (greedy),25,bn-IN,0,0,1,1,1,1,saturizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 0,1,hi-IN,0,1,0,1,1,1,Crocin,500 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 0,2,hi-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 0,3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 0,4,hi-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 0,5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 0,6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 0,7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 0,8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 0,9,hi-IN,0,0,1,1,1,1,Echosprit,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 0,10,hi-IN,0,0,1,1,1,1,thyronnorm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 0,11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 0,12,hi-IN,0,1,0,1,1,1,pantoprazole,7 am,7:00 AM,daily
+Ours sampled T=0.7 seed 0,13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 0,14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 0,15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 0,16,hi-IN,0,1,0,0,1,1,Telma,40,01:30 a.m.,daily
+Ours sampled T=0.7 seed 0,17,hi-IN,0,0,1,0,1,0,glycomate,500 mg,14:00 PM,daily
+Ours sampled T=0.7 seed 0,18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 0,19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 0,20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 0,21,hi-IN,0,0,1,0,1,1,montaire,1 tablet,01:45 PM,next 2 months
+Ours sampled T=0.7 seed 0,22,hi-IN,0,1,0,0,1,0,ORS,1 tablet,14:00 PM,next 2 days
+Ours sampled T=0.7 seed 0,23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+Ours sampled T=0.7 seed 0,24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 0,25,hi-IN,0,0,1,1,1,1,cretizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 0,1,ta-IN,0,1,0,1,1,1,crocin,500 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 0,2,ta-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 0,3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 0,4,ta-IN,0,0,0,1,1,1,TOLO 650,650 mg,10:00 AM,every monday
+Ours sampled T=0.7 seed 0,5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 0,6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 0,7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 0,8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 0,9,ta-IN,0,0,0,1,1,1,Eh-spi-rin,half,11:15 PM,daily
+Ours sampled T=0.7 seed 0,10,ta-IN,0,0,1,1,1,1,thyroid hormone,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 0,11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 0,12,ta-IN,0,1,0,1,1,1,Pantoprazole pill,not specified,7:00 AM,daily
+Ours sampled T=0.7 seed 0,13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 0,14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 0,15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 0,16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+Ours sampled T=0.7 seed 0,17,ta-IN,0,1,1,0,1,0,glycomet,500 mg,14:00 PM,daily
+Ours sampled T=0.7 seed 0,18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 0,19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 0,20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 0,21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 0,22,ta-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours sampled T=0.7 seed 0,23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablet,5:00 PM,every friday
+Ours sampled T=0.7 seed 0,24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 0,25,ta-IN,0,0,0,1,1,1,creticine,not specified,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 0,1,te-IN,0,1,0,1,1,1,Crocin,500 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 0,2,te-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 0,3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 0,4,te-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 0,5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 0,6,te-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 0,7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 0,8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 0,9,te-IN,0,0,0,1,1,1,Echosprit,0.5 tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 0,10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 0,11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 0,12,te-IN,0,1,0,1,1,1,Pantoprazole pill,7,7:00 AM,daily
+Ours sampled T=0.7 seed 0,13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 0,14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 0,15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 0,16,te-IN,0,1,0,0,1,1,Telma 40,40,1:30 AM,daily
+Ours sampled T=0.7 seed 0,17,te-IN,0,0,1,0,1,0,glycomate,500 mg,14:00 PM,daily
+Ours sampled T=0.7 seed 0,18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 0,19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 0,20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 0,21,te-IN,0,0,0,0,1,1,Monterey pill,not specified,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 0,22,te-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours sampled T=0.7 seed 0,23,te-IN,0,0,0,1,1,1,Shelkol,500 tablets,5:00 PM,every friday
+Ours sampled T=0.7 seed 0,24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 0,25,te-IN,0,0,1,1,1,1,cretizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 0,1,bn-IN,0,1,1,0,1,1,crocin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 0,2,bn-IN,1,1,1,1,1,1,Paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 0,3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 0,4,bn-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 0,5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 0,6,bn-IN,0,1,0,0,1,1,aspirin,tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 0,7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 0,8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 0,9,bn-IN,0,0,1,1,1,1,Echosprin,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 0,10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 0,11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 0,12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 0,13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 0,14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 0,15,bn-IN,1,1,1,1,1,1,iron pills,1 pill,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 0,16,bn-IN,0,1,0,0,1,1,Telma,40,01:30 a.m.,daily
+Ours sampled T=0.7 seed 0,17,bn-IN,0,0,1,0,1,1,glycomate,500 mg,12:00 PM,daily
+Ours sampled T=0.7 seed 0,18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 0,19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 0,20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 0,21,bn-IN,0,0,0,0,1,1,Monterey,tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 0,22,bn-IN,0,0,0,1,1,1,ORS packet,1 tablet,4:00 PM,next 2 days
+Ours sampled T=0.7 seed 0,23,bn-IN,0,0,0,1,1,1,Shelkale,500 tablets,5:00 PM,every friday
+Ours sampled T=0.7 seed 0,24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 0,25,bn-IN,0,0,1,1,1,1,satirizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 1,1,hi-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+Ours sampled T=0.7 seed 1,2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 1,3,hi-IN,0,1,1,0,0,1,metformin,2 tablets,1:30 PM,every tuesday
+Ours sampled T=0.7 seed 1,4,hi-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 1,5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 1,6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 1,7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 1,8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 1,9,hi-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 1,10,hi-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 1,11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 1,12,hi-IN,0,1,0,1,1,1,pantoprazole,500 mg,7:00 AM,daily
+Ours sampled T=0.7 seed 1,13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 1,14,hi-IN,1,1,1,1,1,1,Cough Medicine,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 1,15,hi-IN,1,1,1,1,1,1,iron pill,1 pill,1 P.M.,every wednesday
+Ours sampled T=0.7 seed 1,16,hi-IN,0,1,0,0,1,1,Telma,40 mg,01:30 AM,daily
+Ours sampled T=0.7 seed 1,17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 1,18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 1,19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 1,20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 1,21,hi-IN,0,0,1,0,1,1,montaire,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 1,22,hi-IN,0,1,0,0,1,0,ORS,1 tablet,14:00 PM,next 2 days
+Ours sampled T=0.7 seed 1,23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+Ours sampled T=0.7 seed 1,24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 1,25,hi-IN,0,0,1,1,1,1,Cetrizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 1,1,ta-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+Ours sampled T=0.7 seed 1,2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 1,3,ta-IN,0,1,1,0,0,1,Metformin,2 tablets,1:30 PM,every tuesday
+Ours sampled T=0.7 seed 1,4,ta-IN,0,0,0,1,1,1,TOLO 650,650,10:00 AM,every monday
+Ours sampled T=0.7 seed 1,5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 1,6,ta-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 1,7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 1,8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 1,9,ta-IN,0,0,1,1,1,1,echospirine,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 1,10,ta-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 1,11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 1,12,ta-IN,0,1,0,1,1,1,Pantoprazole,unknown,7:00 AM,daily
+Ours sampled T=0.7 seed 1,13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 1,14,ta-IN,1,1,1,1,1,1,Cough Medicine,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 1,15,ta-IN,1,1,1,1,1,1,iron pill,1 pill,1 P.M.,every wednesday
+Ours sampled T=0.7 seed 1,16,ta-IN,0,0,0,0,1,1,Delma,40 mg,7:30 AM,daily
+Ours sampled T=0.7 seed 1,17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 1,18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 1,19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 1,20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10 PM,daily
+Ours sampled T=0.7 seed 1,21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 1,22,ta-IN,0,0,1,1,1,1,ORS packet,1 packet,4:00 PM,next 2 days
+Ours sampled T=0.7 seed 1,23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+Ours sampled T=0.7 seed 1,24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 1,25,ta-IN,0,0,1,1,1,1,Cetricine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 1,1,te-IN,0,0,1,1,1,1,C罗cin,1 tablet,9:00 PM,daily
+Ours sampled T=0.7 seed 1,2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 1,3,te-IN,0,1,1,0,0,1,metformin,2 tablets,1:30 PM,every tuesday
+Ours sampled T=0.7 seed 1,4,te-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 1,5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 1,6,te-IN,0,1,1,0,1,1,aspirin pill,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 1,7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 1,8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 1,9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 1,10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 1,11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 1,12,te-IN,0,1,0,1,1,1,Pantoprazole,unknown,7:00 AM,daily
+Ours sampled T=0.7 seed 1,13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 1,14,te-IN,1,1,1,1,1,1,Cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 1,15,te-IN,1,1,1,1,1,1,iron pill,1 pill,1 P.M.,every wednesday
+Ours sampled T=0.7 seed 1,16,te-IN,0,1,0,0,1,1,Telma,40 mg,01:30 AM,daily
+Ours sampled T=0.7 seed 1,17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 1,18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 1,19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 1,20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10 PM,daily
+Ours sampled T=0.7 seed 1,21,te-IN,0,0,1,0,1,1,Monterey pill,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 1,22,te-IN,0,0,1,1,1,1,ORS packet,1 packet,4:00 PM,next 2 days
+Ours sampled T=0.7 seed 1,23,te-IN,0,0,0,1,1,1,Shelkol 500 tablet,500 mg,5:00 PM,every friday
+Ours sampled T=0.7 seed 1,24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 1,25,te-IN,0,0,1,1,1,1,Cetrizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 1,1,bn-IN,1,1,1,1,1,1,Crocin,1 tablet,9:00 PM,daily
+Ours sampled T=0.7 seed 1,2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 1,3,bn-IN,0,1,1,0,0,1,metformin,2 tablets,1:30 PM,every tuesday
+Ours sampled T=0.7 seed 1,4,bn-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 1,5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 1,6,bn-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 1,7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 1,8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 1,9,bn-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 1,10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 1,11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 1,12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 1,13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 1,14,bn-IN,1,1,1,1,1,1,Cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 1,15,bn-IN,0,1,0,1,1,1,iron tablets,none,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 1,16,bn-IN,0,1,0,0,1,1,Telma,40 mg,01:30 AM,daily
+Ours sampled T=0.7 seed 1,17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 1,18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 1,19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 1,20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10 PM,daily
+Ours sampled T=0.7 seed 1,21,bn-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 1,22,bn-IN,0,0,0,1,1,1,ORS packet,unchanged,4:00 PM,next 2 days
+Ours sampled T=0.7 seed 1,23,bn-IN,0,0,0,1,1,1,Shelkale,500 tablets,5:00 PM,every friday
+Ours sampled T=0.7 seed 1,24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 1,25,bn-IN,0,0,0,1,1,1,sita,10 mg,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 2,1,hi-IN,0,1,0,1,1,1,crocin,none,9:00 PM,daily
+Ours sampled T=0.7 seed 2,2,hi-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 2,3,hi-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 2,4,hi-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 2,5,hi-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 2,6,hi-IN,0,1,1,0,1,1,aspirin,1 tablet,10:00 PM,daily
+Ours sampled T=0.7 seed 2,7,hi-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 2,8,hi-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 2,9,hi-IN,0,0,1,1,1,1,Echosprin,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 2,10,hi-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 2,11,hi-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 2,12,hi-IN,0,1,0,1,1,1,pantoprazole,7 mg,7:00 AM,daily
+Ours sampled T=0.7 seed 2,13,hi-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 2,14,hi-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 2,15,hi-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 2,16,hi-IN,0,1,0,0,1,1,Telma,40,01:30 a.m.,daily
+Ours sampled T=0.7 seed 2,17,hi-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 2,18,hi-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 2,19,hi-IN,1,1,1,1,1,1,B12,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 2,20,hi-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 2,21,hi-IN,0,0,1,0,1,1,montaire,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 2,22,hi-IN,0,1,0,0,1,1,ORS,1 tablet,12:00 PM,next 2 days
+Ours sampled T=0.7 seed 2,23,hi-IN,0,0,0,1,1,1,Shellcal,500 mg,5:00 PM,every friday
+Ours sampled T=0.7 seed 2,24,hi-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 2,25,hi-IN,0,0,1,1,1,1,ctrizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 2,1,ta-IN,0,1,1,0,1,1,crocin,1 tablet,10:00 PM,daily
+Ours sampled T=0.7 seed 2,2,ta-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 2,3,ta-IN,0,1,1,0,1,1,Metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 2,4,ta-IN,0,0,1,1,1,1,TOLO 650,1 tablet,10:00 AM,every monday
+Ours sampled T=0.7 seed 2,5,ta-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 2,6,ta-IN,1,1,1,1,1,1,aspirin,1 tablet,9:00 PM,daily
+Ours sampled T=0.7 seed 2,7,ta-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 2,8,ta-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 2,9,ta-IN,0,0,1,1,1,1,Echospirine,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 2,10,ta-IN,0,0,1,1,1,1,thyronern,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 2,11,ta-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 2,12,ta-IN,0,1,0,1,1,1,Pantoprazole,7 mg,7:00 AM,daily
+Ours sampled T=0.7 seed 2,13,ta-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 2,14,ta-IN,1,1,1,1,1,1,cough medicine,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 2,15,ta-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 2,16,ta-IN,0,0,0,0,1,1,Delma,40,01:30 AM,daily
+Ours sampled T=0.7 seed 2,17,ta-IN,1,1,1,1,1,1,glycomet,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 2,18,ta-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 2,19,ta-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 2,20,ta-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 2,21,ta-IN,0,0,1,0,1,1,Monterey,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 2,22,ta-IN,0,0,0,0,1,1,ORS packet,1 tablet,12:00 PM,next 2 days
+Ours sampled T=0.7 seed 2,23,ta-IN,0,1,0,1,1,1,Shelcal,500 tablets,5:00 PM,every friday
+Ours sampled T=0.7 seed 2,24,ta-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 2,25,ta-IN,0,0,1,1,1,1,cretacin,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 2,1,te-IN,1,1,1,1,1,1,crocin,1 tablet,9:00 PM,daily
+Ours sampled T=0.7 seed 2,2,te-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 2,3,te-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 2,4,te-IN,1,1,1,1,1,1,Dolo 650,1 tablet,10:00 AM,every monday
+Ours sampled T=0.7 seed 2,5,te-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 2,6,te-IN,0,1,1,0,1,1,aspirin,1 tablet,10:00 PM,daily
+Ours sampled T=0.7 seed 2,7,te-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 2,8,te-IN,1,1,1,1,1,1,calcium pill,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 2,9,te-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 2,10,te-IN,1,1,1,1,1,1,thyronorm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 2,11,te-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 2,12,te-IN,0,1,0,1,1,1,Pantoprazole,7 mg,7:00 AM,daily
+Ours sampled T=0.7 seed 2,13,te-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 2,14,te-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 2,15,te-IN,1,1,1,1,1,1,iron pill,1 tablet,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 2,16,te-IN,0,1,0,0,1,1,Telma 40,40,01:30 AM,daily
+Ours sampled T=0.7 seed 2,17,te-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 2,18,te-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 2,19,te-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 2,20,te-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 2,21,te-IN,0,0,1,0,1,1,Monterey pill,1 tablet,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 2,22,te-IN,0,0,0,0,1,1,ORS packet,1 tablet,12:00 PM,next 2 days
+Ours sampled T=0.7 seed 2,23,te-IN,0,0,0,1,1,1,Shelkol,500 tablets,5:00 PM,every friday
+Ours sampled T=0.7 seed 2,24,te-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 2,25,te-IN,0,0,1,1,1,1,ctrizine,1 tablet,10:00 PM,next 10 days
+Ours sampled T=0.7 seed 2,1,bn-IN,0,1,1,0,1,1,crocin,1 tablet,10:00 PM,daily
+Ours sampled T=0.7 seed 2,2,bn-IN,1,1,1,1,1,1,paracetamol,500 mg,8:00 AM,daily
+Ours sampled T=0.7 seed 2,3,bn-IN,0,1,1,0,1,1,metformin,2 tablets,1:30 PM,daily
+Ours sampled T=0.7 seed 2,4,bn-IN,0,1,0,1,1,1,Dolo 650,10 units,10:00 AM,every monday
+Ours sampled T=0.7 seed 2,5,bn-IN,1,1,1,1,1,1,vitamin D,1 capsule,9:00 AM,next 5 days
+Ours sampled T=0.7 seed 2,6,bn-IN,0,1,1,0,1,1,aspirin,1 tablet,11:00 PM,daily
+Ours sampled T=0.7 seed 2,7,bn-IN,1,1,1,1,1,1,insulin,10 units,8:00 PM,next 3 months
+Ours sampled T=0.7 seed 2,8,bn-IN,1,1,1,1,1,1,calcium tablets,1 tablet,6:00 PM,every sunday
+Ours sampled T=0.7 seed 2,9,bn-IN,0,0,1,1,1,1,echosprin,half tablet,11:15 PM,daily
+Ours sampled T=0.7 seed 2,10,bn-IN,0,0,1,1,1,1,thyronerm,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 2,11,bn-IN,1,1,1,1,1,1,azithromycin,500 mg,10:00 AM,next 3 days
+Ours sampled T=0.7 seed 2,12,bn-IN,0,0,1,1,1,1,pentoprazole,1 tablet,7:00 AM,daily
+Ours sampled T=0.7 seed 2,13,bn-IN,1,1,1,1,1,1,amlodipine,5 mg,9:00 PM,daily
+Ours sampled T=0.7 seed 2,14,bn-IN,1,1,1,1,1,1,cough syrup,2 tablespoons,8:00 PM,next 4 days
+Ours sampled T=0.7 seed 2,15,bn-IN,1,1,1,1,1,1,iron pills,1 tablet,1:00 PM,every wednesday
+Ours sampled T=0.7 seed 2,16,bn-IN,0,1,0,0,1,1,Telma,40,01:30 a.m.,daily
+Ours sampled T=0.7 seed 2,17,bn-IN,0,0,1,1,1,1,glycomate,500 mg,2:00 PM,daily
+Ours sampled T=0.7 seed 2,18,bn-IN,1,1,1,1,1,1,eye drops,2 drops,6:00 PM,next 7 days
+Ours sampled T=0.7 seed 2,19,bn-IN,1,1,1,1,1,1,B12 injections,1 tablet,11:00 AM,every saturday
+Ours sampled T=0.7 seed 2,20,bn-IN,1,1,1,1,1,1,atorvastatin,10 mg,10:00 PM,daily
+Ours sampled T=0.7 seed 2,21,bn-IN,0,0,0,0,1,1,Monterey,1:45 p.m.,1:45 PM,next 2 months
+Ours sampled T=0.7 seed 2,22,bn-IN,0,0,0,0,1,1,ORS packet,1 tablet,12:00 PM,next 2 days
+Ours sampled T=0.7 seed 2,23,bn-IN,0,0,0,1,1,1,Shelkale 500 tablet,500 tablets,5:00 PM,every friday
+Ours sampled T=0.7 seed 2,24,bn-IN,1,1,1,1,1,1,losartan,50 mg,6:00 AM,daily
+Ours sampled T=0.7 seed 2,25,bn-IN,0,0,1,1,1,1,sitarizine,1 tablet,10:00 PM,next 10 days

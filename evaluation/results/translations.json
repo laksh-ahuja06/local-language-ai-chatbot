@@ -1,0 +1,802 @@
+{
+ "1-hi-IN": {
+  "text": "मुझे हर रोज़ रात 9 बजे क्रोसिन लेने की याद दिलाना",
+  "noisy_text": "मुझे हर रोज़ रात  बजे क्रोसिन लेन ी याद दिलाना",
+  "translation": "remind me to take crocin every day at 9 p. m.",
+  "translation_latency": 0.5731181250885129,
+  "translation_as_tamil": "mujhe har roza at 9 pm crocin lane ki yaad dilana",
+  "translation_noisy": "remind me of crocin lane every night at six p. m."
+ },
+ "2-hi-IN": {
+  "text": "मुझे रोज़ सुबह 8 बजे 500 mg पैरासिटामोल लेनी है",
+  "noisy_text": "मुझे रोज़ सुबह 8 बजे 500 mg पैरासटामोल लेी है",
+  "translation": "I have to take 500 mg of paracetamol every morning at 8 am.",
+  "translation_latency": 0.593070917064324,
+  "translation_as_tamil": "Mujhe Roza at 8 am 500 mg Piracetamol Lenny Hai",
+  "translation_noisy": "I have taken 500 mg of paracetamol every morning at 8 am."
+ },
+ "3-hi-IN": {
+  "text": "शाम 7:30 बजे मेटफॉर्मिन की दो गोलियां लेने की याद दिलाना",
+  "noisy_text": "शा 7:30 बजे मेटफॉर्मिन की ो गोलियां लेने की याद दिलाना",
+  "translation": "Reminds you to take two tablets of metformin at 1: 30 p.m.",
+  "translation_latency": 0.6252966660540551,
+  "translation_as_tamil": "Metformin Ki Do Goli Lene Ki Yaad Dilana at 1: 30 pm",
+  "translation_noisy": "Reminds you to take Metformin tablets at 1: 30 p.m."
+ },
+ "4-hi-IN": {
+  "text": "हर सोमवार सुबह 10 बजे डोलो 650 लेना है",
+  "noisy_text": "हर ोमवार सुह 10 बजे डोलो 650 लेना है",
+  "translation": "Take the Dolo 650 every Monday at 10 a.m.",
+  "translation_latency": 0.45549845788627863,
+  "translation_as_tamil": "Dolo 650 Lena Hai every Monday at 10 am",
+  "translation_noisy": "Have to take Dolo 650 every Monday at 10 o'clock."
+ },
+ "5-hi-IN": {
+  "text": "अगले 5 दिन तक सुबह 9 बजे विटामिन D का एक कैप्सूल लेने की याद दिलाना",
+  "noisy_text": "अगले 5 दिन तक सुबह 9 बजे विटामिन D का एक कैप्सूल लेने की याद दिलाना",
+  "translation": "Reminds you to take a vitamin D capsule at 9 a.m. for the next 5 days",
+  "translation_latency": 0.6878505828790367,
+  "translation_as_tamil": "do you remember vitamin d ka eka capsule lane ki at 9 am for the next 5 days",
+  "translation_noisy": "Reminds you to take a vitamin D capsule at 9 a.m. for the next 5 days"
+ },
+ "6-hi-IN": {
+  "text": "रात को एस्पिरिन की एक गोली लेने की याद दिलाना",
+  "noisy_text": "रात को एस्पिरिन क एक गोली लेने क याद दिलाना",
+  "translation": "Reminds me to take a pill of aspirin at night",
+  "translation_latency": 0.4138031671755016,
+  "translation_as_tamil": "Radha ko aspirin ki eka goli lane ki yaad dilana",
+  "translation_noisy": "Reminds you to take a pill of aspirin at night"
+ },
+ "7-hi-IN": {
+  "text": "अगले 3 महीने तक रोज़ रात 8 बजे इंसुलिन की 10 यूनिट लेनी है",
+  "noisy_text": "अगले 3 महीने तक रोज़ रा 8 बे इंसुलिन की 10 यूनिट लेनी है",
+  "translation": "Take 10 units of insulin every day at 8 pm for the next 3 months",
+  "translation_latency": 0.522682209033519,
+  "translation_as_tamil": "Take 10 units of insulin at 8 pm every day for the next 3 months",
+  "translation_noisy": "Take 10 units of R8B insulin daily for the next 3 months"
+ },
+ "8-hi-IN": {
+  "text": "हर रविवार शाम 6 बजे कैल्शियम की गोली लेने की याद दिलाना",
+  "noisy_text": "हर रविवार शाम 6 बजे कैल्शियम की गो लेने की याद दिलाना",
+  "translation": "Reminds you to take a calcium pill every Sunday at 6 p.m.",
+  "translation_latency": 0.530786459101364,
+  "translation_as_tamil": "Every Sunday at 6 pm Calcium Ki Goli Lene Ki Yaad Dilana",
+  "translation_noisy": "Reminds you to take a dose of calcium every Sunday at 6 p.m."
+ },
+ "9-hi-IN": {
+  "text": "रात 11:15 बजे इकोस्प्रिन की आधी गोली लेने की याद दिलाना",
+  "noisy_text": "रात 11:15 बजे इकस्प्रिन की धी गोल लेने की याद दिलाना",
+  "translation": "Reminds you to take half a tablet of echosprin at 11:15 at night",
+  "translation_latency": 0.7321212920360267,
+  "translation_as_tamil": "Radha 11:15 baje echoesprin ki aadhi goli lane ki yaad dilana",
+  "translation_noisy": "Reminds me to pick up the daughter goal of eksprin at 11:15 at night"
+ },
+ "10-hi-IN": {
+  "text": "हर सुबह 7 बजे मुझे थायरोनॉर्म की एक गोली लेनी चाहिए",
+  "noisy_text": "हर सुबह 7 बजे ुझे थायरोनॉर्म की एक गोी लेनी चाहिए",
+  "translation": "Every morning at 7 o'clock I should take a pill of thyronorm.",
+  "translation_latency": 0.5355135418940336,
+  "translation_as_tamil": "One should take Mujhe Thyronorma Ki Ek Goli at 7 am every morning.",
+  "translation_noisy": "You should take a dose of thyronorm at 7 a.m. every morning."
+ },
+ "11-hi-IN": {
+  "text": "अगले 3 दिन सुबह 10 बजे 500 mg एज़िथ्रोमाइसिन लेनी है",
+  "noisy_text": "अगले 3 दिन सुह 10 बजे 500 mg एज़िथ्रोमाइसिन लेनी ह",
+  "translation": "500 mg azithromycin to be taken at 10 am for the next 3 days",
+  "translation_latency": 0.6456451250705868,
+  "translation_as_tamil": "500 mg Azithromycin Lenny Hai at 10 am for the next 3 days",
+  "translation_noisy": "Take 500 mg azithromycin at 10 am for the next 3 days."
+ },
+ "12-hi-IN": {
+  "text": "रोज़ सुबह 7 बजे नाश्ते से पहले पैंटोप्राजोल की एक गोली लेने की याद दिलाना",
+  "noisy_text": "रोज़ सुबह 7 बजे नाश्ते से पहले पैंटोप्राजोल ी एक गोली लेने की याद दिलाना",
+  "translation": "Reminds you to take a tablet of pantoprazole before breakfast at 7 a.m. every day",
+  "translation_latency": 0.7657762090675533,
+  "translation_as_tamil": "Every day at 7 am, Nasha Tse Pehle Bandoprajola Ki Ek Goli Lene Ki Yaad Dilana",
+  "translation_noisy": "Reminds you to take a pill of pantoprazole before breakfast at 7 a.m. every day"
+ },
+ "13-hi-IN": {
+  "text": "रोज़ रात 9 बजे 5 mg एम्लोडिपिन लेने की याद दिलाना",
+  "noisy_text": "रोज़ रत 9 बजे 5 mg एम्लोडपिन लेने की याद दिलाना",
+  "translation": "Reminds you to take 5 mg of amlodipine daily at 9 p.m.",
+  "translation_latency": 0.7071834998205304,
+  "translation_as_tamil": "5 mg amlodipine lane ki yaad dilana at 9 pm daily",
+  "translation_noisy": "Reminds you to take 5 mg of amlodipine daily at 9 p.m."
+ },
+ "14-hi-IN": {
+  "text": "अगले 4 दिन तक रात 8 बजे खांसी की दवा के दो चम्मच लेने की याद दिलाना",
+  "noisy_text": "अगले 4 दन तक रात 8 बजे खांसी की दवा के दो चम्मच लेने की याद दिलाना",
+  "translation": "Reminds you to take two tablespoons of cough medicine at 8 p.m. for the next 4 days",
+  "translation_latency": 0.7680189160164446,
+  "translation_as_tamil": "Next 4 days at 8 pm Khasi ki Dawa ke do chupun lane ki yaad dilana",
+  "translation_noisy": "Reminds you to take two tablespoons of cough medicine at 8 p.m. for the next 4 days"
+ },
+ "15-hi-IN": {
+  "text": "हर बुधवार दोपहर 1 बजे आयरन की गोली लेनी है",
+  "noisy_text": "हर बुधवार दोपहर 1 बजे आयरन की गोली लेनी ह",
+  "translation": "Take an iron pill every Wednesday at 1 p.m.",
+  "translation_latency": 0.44473766698502004,
+  "translation_as_tamil": "hara wednesday at 1 pm iron ki goli leni hai",
+  "translation_noisy": "Take an iron pill every Wednesday at 1 p.m."
+ },
+ "16-hi-IN": {
+  "text": "रोज़ सुबह 8:30 बजे टेल्मा 40 लेने की याद दिलाना",
+  "noisy_text": "रोज़ सुबह 8:30 े टेल्मा 4 लेने की याद दलाना",
+  "translation": "Reminds you to take Telma 40 every day at 1: 30 a.m.",
+  "translation_latency": 0.6033989579882473,
+  "translation_as_tamil": "Daily morning\\ 1: 30 pm Delma 40 lane ki yaad dilana",
+  "translation_noisy": "Reminds me to take Telma 4 every morning at 1: 30 a.m."
+ },
+ "17-hi-IN": {
+  "text": "रोज़ दोपहर 2 बजे 500 mg ग्लाइकोमेट लेनी है",
+  "noisy_text": "रोज़ दोपह 2 बजे 50 mg ग्लइोमेट ेी है",
+  "translation": "Take 500 mg of glycomate daily at 2 p.m.",
+  "translation_latency": 0.44088987493887544,
+  "translation_as_tamil": "500 mg Glycomatose Lenny Hai at 2 pm daily",
+  "translation_noisy": "It's 50 mg of gliomete every day at 2 p.m."
+ },
+ "18-hi-IN": {
+  "text": "अगले 7 दिन तक शाम 6 बजे आँखों में 2 बूँद आई ड्रॉप्स डालने की याद दिलाना",
+  "noisy_text": "अगले 7 दन तक शाम 6 बजे आँखं में 2 बूँद आई ड्रॉ्स डालने की याद दिलाना",
+  "translation": "Reminds you to put 2 drops of eye drops in your eyes at 6 p.m. for the next 7 days",
+  "translation_latency": 0.8345288329292089,
+  "translation_as_tamil": "Do you remember to put 2 drops of eye drops in your eyes at 6 pm for the next 7 days?",
+  "translation_noisy": "Reminds you to put 2 drops of eye drops in your eyes at 6 p.m. until the next 7 days"
+ },
+ "19-hi-IN": {
+  "text": "हर शनिवार सुबह 11 बजे B12 का इंजेक्शन लगवाना है",
+  "noisy_text": "हर शनिवार सुबह 11 बज B12 का इंजेक्शन लगवाना है",
+  "translation": "B12 is to be injected every Saturday at 11 a.m.",
+  "translation_latency": 0.4843324169050902,
+  "translation_as_tamil": "Every Saturday at 11 a.m., inject B12 with Lagwana Hai.",
+  "translation_noisy": "An injection of B12 is to be given every Saturday morning at 11 am."
+ },
+ "20-hi-IN": {
+  "text": "रोज़ रात 10 बजे सोने से पहले 10 mg एटोरवास्टेटिन लेने की याद दिलाना",
+  "noisy_text": "ोज़ रा 10 जे सोने से पहले 10 mg एटोरवास्टेटिन लेने की याद दिलाना",
+  "translation": "Reminds you to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+  "translation_latency": 0.7951847498770803,
+  "translation_as_tamil": "Sone Se Pehle 10 mg Adoravastadina Lene Ki Yaad Dilana at 10 pm everyday",
+  "translation_noisy": "Reminds you to take 10 mg of atorvastatin before bedtime"
+ },
+ "21-hi-IN": {
+  "text": "अगले 2 महीने तक रात 9:45 बजे मोंटेयर की एक गोली लेनी है",
+  "noisy_text": "अगले 2 हने तक रात 9:45 बजे मोंटेर की  गोली लेनी है",
+  "translation": "For the next 2 months, take a tablet of montaire at 1: 45 p.m.",
+  "translation_latency": 0.7617485001683235,
+  "translation_as_tamil": "Mondair Ki Ek Goli Lene Hai at 1: 45 pm for the next 2 months",
+  "translation_noisy": "By the next 2 o'clock at 1: 45 p.m., you have to take the Monter pill."
+ },
+ "22-hi-IN": {
+  "text": "अगले 2 दिन तक शाम 4 बजे ORS का एक पैकेट लेने की याद दिलाना",
+  "noisy_text": "अगले 2 दिन तक शाम 4 बजे ORS का एक पैकेट लेन की याद दिलाना",
+  "translation": "Reminds to pick up a packet of ORS at 4 p.m. for the next 2 days",
+  "translation_latency": 0.7241579999681562,
+  "translation_as_tamil": "Next 2 days at 4 pm ORS ka ek packet lane ki yaad dilana",
+  "translation_noisy": "Reminds me of a packet lane of ORS at 4 p.m. for the next 2 days"
+ },
+ "23-hi-IN": {
+  "text": "हर शुक्रवार शाम 5 बजे शेलकैल 500 की एक गोली लेनी है",
+  "noisy_text": "हर शुक्रवार शाम 5 जे ेलकैल 500 ी एक गोली लेनी है",
+  "translation": "One tablet of Shellcal 500 is to be taken every Friday at 5 pm.",
+  "translation_latency": 0.5076516249682754,
+  "translation_as_tamil": "every friday at 5 p.m. shelkaila 500 ki ek goli leni hai",
+  "translation_noisy": "One tablet of 5 JL 500 is to be taken every Friday evening."
+ },
+ "24-hi-IN": {
+  "text": "रोज़ सुबह 6 बजे 50 mg लोसार्टन लेने की याद दिलाना",
+  "noisy_text": "रोज़ सुबह 6 बजे 50 mg लोसार्टन लेने की ाद दिाना",
+  "translation": "Reminds you to take 50 mg losartan daily at 6 a.m.",
+  "translation_latency": 0.6068955829832703,
+  "translation_as_tamil": "50 mg losartan lane ki yaad dilana daily at 6 am",
+  "translation_noisy": "Recommended intake of 50 mg losartan daily at 6 am"
+ },
+ "25-hi-IN": {
+  "text": "अगले 10 दिन तक रात 10 बजे सेट्रिज़िन लेने की याद दिलाना",
+  "noisy_text": "अगले 0 दिन तक रात 10 बजे सेट्रिज़िन लेने की याद दिलाना",
+  "translation": "Reminding to take cetrizine at 10 p.m. for the next 10 days",
+  "translation_latency": 0.6942592919804156,
+  "translation_as_tamil": "next 10 days at 10 p. m. cetrizin lane ki remember dilana",
+  "translation_noisy": "Reminding to take cetrizine at 10 p.m. for the next 0 days"
+ },
+ "1-ta-IN": {
+  "text": "தினமும் இரவு 9 மணிக்கு க்ரோசின் எடுத்துக்கொள்ள நினைவூட்டுங்கள்",
+  "noisy_text": "தினமும் இரவு 9 மணி்கு க்ோசின எடுத்துக்கொள்ள நினைவூட்டங்கள்",
+  "translation": "Remind me to take crocin every night at 9 p.m.",
+  "translation_latency": 0.49800837505608797,
+  "translation_as_tamil": "Remind me to take crocin every night at 9 p.m.",
+  "translation_noisy": "Reminds me to take Coca-Cola every night at 9 p.m."
+ },
+ "2-ta-IN": {
+  "text": "நான் தினமும் காலை 8 மணிக்கு 500 mg பாராசிட்டமால் எடுக்க வேண்டும்",
+  "noisy_text": "நான் தினமும காலை 8 மிக்க 500 mg பாராசிட்டால் எடுக்க வேண்டும்",
+  "translation": "I need to take 500 mg of paracetamol every morning at 8am.",
+  "translation_latency": 0.5786759161856025,
+  "translation_as_tamil": "I need to take 500 mg of paracetamol every morning at 8am.",
+  "translation_noisy": "I need to take 500 mg of paracetamol with 8 in the morning every day."
+ },
+ "3-ta-IN": {
+  "text": "மாலை 7:30 மணிக்கு இரண்டு மெட்ஃபார்மின் மாத்திரைகள் எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "ாலை 7:30 மணிக்கு இர்டு மெட்ஃபார்மின் ாத்திரைகள எடுக்க நினைவூட்டுங்கள்",
+  "translation": "Remind me to take two Metformin tablets at 1: 30 p.m.",
+  "translation_latency": 0.6475803749635816,
+  "translation_as_tamil": "Remind me to take two Metformin tablets at 1: 30 p.m.",
+  "translation_noisy": "Remind me to take trips to Irdu Metformin at 1: 30 p.m."
+ },
+ "4-ta-IN": {
+  "text": "ஒவ்வொரு திங்கட்கிழமையும் காலை 10 மணிக்கு டோலோ 650 எடுக்க வேண்டும்",
+  "noisy_text": "ஒவ்வொரு திங்கட்கிழமையும காலை 10 மணிக்கு டோலோ 650 எடுக் வேண்டும்",
+  "translation": "Take the TOLO 650 every Monday at 10 a.m.",
+  "translation_latency": 0.43729241704568267,
+  "translation_as_tamil": "Take the TOLO 650 every Monday at 10 a.m.",
+  "translation_noisy": "Take the TOLO 650 every Monday at 10 a.m."
+ },
+ "5-ta-IN": {
+  "text": "அடுத்த 5 நாட்களுக்கு காலை 9 மணிக்கு ஒரு வைட்டமின் D கேப்சூல் எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "அடுத்த 5 நாட்களுக்கு ாலை 9 மணிக்கு ஒரு வைட்டமின்  கேப்சூல் எடுக்க நினைவூட்டுஙகள்",
+  "translation": "Remind me to take a vitamin D capsule at 9 a.m. for the next 5 days.",
+  "translation_latency": 0.6941518748644739,
+  "translation_as_tamil": "Remind me to take a vitamin D capsule at 9 a.m. for the next 5 days.",
+  "translation_noisy": "Reminders to take a vitamin capsule at 9 p.m. for the next 5 days"
+ },
+ "6-ta-IN": {
+  "text": "இரவில் ஒரு ஆஸ்பிரின் மாத்திரை எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "இரவில் ஒரு ஆஸ்பிரின் மாத்திரை எடுக்க நிைவூட்டுங்க்",
+  "translation": "Remind me to take an aspirin pill at night.",
+  "translation_latency": 0.4047227499540895,
+  "translation_as_tamil": "Remind me to take an aspirin pill at night.",
+  "translation_noisy": "Try taking an aspirin pill at night."
+ },
+ "7-ta-IN": {
+  "text": "அடுத்த 3 மாதங்களுக்கு தினமும் இரவு 8 மணிக்கு 10 யூனிட் இன்சுலின் போட வேண்டும்",
+  "noisy_text": "அடத்த 3 மாத்களுக்க தினமும் இரவு 8 மணக்கு 10 யூனிட் இன்சுலின் பட வேண்டும்",
+  "translation": "For the next 3 months, 10 units of insulin should be given every day at 8 pm.",
+  "translation_latency": 0.6555471660103649,
+  "translation_as_tamil": "For the next 3 months, 10 units of insulin should be given every day at 8 pm.",
+  "translation_noisy": "Take 10 units of insulin at 8 p.m. every day for the next 3 months."
+ },
+ "8-ta-IN": {
+  "text": "ஒவ்வொரு ஞாயிற்றுக்கிழமையும் மாலை 6 மணிக்கு கால்சியம் மாத்திரை எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "ஒவ்வொரு ஞாயிற்றுக்கிழமையும் மாலை 6 மணிக்கு கால்சியம் மாத்ிரை எடுகக நினைவூடடுங்கள்",
+  "translation": "Remind me to take a calcium pill every Sunday at 6 p.m.",
+  "translation_latency": 0.5316009169910103,
+  "translation_as_tamil": "Remind me to take a calcium pill every Sunday at 6 p.m.",
+  "translation_noisy": "Remind yourself to take a calcium tablet every Sunday at 6 p.m."
+ },
+ "9-ta-IN": {
+  "text": "இரவு 11:15 மணிக்கு அரை எகோஸ்பிரின் மாத்திரை எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "இரவு 11:15 மணிக்கு அரை எகோஸ்பிரின் மாத்திர எடுக்க நினைவூட்டுங்கள்",
+  "translation": "Remind me to take a half echospirine tablet at 11:15 at night.",
+  "translation_latency": 0.7253000000491738,
+  "translation_as_tamil": "Remind me to take a half echospirine tablet at 11:15 at night.",
+  "translation_noisy": "Remind me to take half echospirine at 11:15 at night."
+ },
+ "10-ta-IN": {
+  "text": "தினமும் காலை 7 மணிக்கு ஒரு தைரோநார்ம் மாத்திரை எடுக்க வேண்டும்",
+  "noisy_text": "தினமும் காலை 7 மணிக்கு ஒரு தைரோநார்ம் மா்திை டு்க வேண்டும்",
+  "translation": "One tablet of thyronerm should be taken every day at 7 am.",
+  "translation_latency": 0.4772656250279397,
+  "translation_as_tamil": "One tablet of thyronerm should be taken every day at 7 am.",
+  "translation_noisy": "Have a thyronerm massage at 7 a.m. every day."
+ },
+ "11-ta-IN": {
+  "text": "அடுத்த 3 நாட்களுக்கு காலை 10 மணிக்கு 500 mg அசித்ரோமைசின் எடுக்க வேண்டும்",
+  "noisy_text": "அடுத்த 3 நாட்களுக்கு காலை 10 மணிக்கு 50 g அசித்ரோமைசின் எடுக்க வேண்டும்",
+  "translation": "Take 500 mg of azithromycin at 10 am for the next 3 days.",
+  "translation_latency": 0.7007429590448737,
+  "translation_as_tamil": "Take 500 mg of azithromycin at 10 am for the next 3 days.",
+  "translation_noisy": "Take 50 g of azithromycin at 10 am for the next 3 days."
+ },
+ "12-ta-IN": {
+  "text": "தினமும் காலை 7 மணிக்கு காலை உணவுக்கு முன் ஒரு பான்டோபிரசோல் மாத்திரை எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "தினமும் காலை 7 மணி்கு காலை உணவுக்கு முன் ரு ான்டோபரசோல் மாத்திரை எடுக்க நினைவூ்டுங்கள்",
+  "translation": "Remind yourself to take a Pantoprazole pill before breakfast at 7 a.m. every day.",
+  "translation_latency": 0.7386625409126282,
+  "translation_as_tamil": "Remind yourself to take a Pantoprazole pill before breakfast at 7 a.m. every day.",
+  "translation_noisy": "Remind yourself to take Rundoperazole before breakfast at 7 a.m. every day."
+ },
+ "13-ta-IN": {
+  "text": "தினமும் இரவு 9 மணிக்கு 5 mg அம்லோடிபின் எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "தினமும் இரவு 9 மணிக்கு 5 mg அம்ோடிபின் எடுக்க நினைவூடடுங்கள்",
+  "translation": "Remind me to take 5 mg of amlodipine every night at 9pm.",
+  "translation_latency": 0.6937547500710934,
+  "translation_as_tamil": "Remind me to take 5 mg of amlodipine every night at 9pm.",
+  "translation_noisy": "Remember to take 5 mg of amodipine every day at 9 p.m."
+ },
+ "14-ta-IN": {
+  "text": "அடுத்த 4 நாட்களுக்கு இரவு 8 மணிக்கு இரண்டு ஸ்பூன் இருமல் மருந்து குடிக்க நினைவூட்டுங்கள்",
+  "noisy_text": "அுத் 4 நாட்களுக்கு இரவு 8 மணிக்கு இரண்டு ஸ்பூன் இரும் ருந்து கடிக்க நினைவூட்டுங்கள்",
+  "translation": "Remind yourself to drink two tablespoons of cough medicine at 8 p.m. for the next 4 days.",
+  "translation_latency": 0.7550625829026103,
+  "translation_as_tamil": "Remind yourself to drink two tablespoons of cough medicine at 8 p.m. for the next 4 days.",
+  "translation_noisy": "Remind them to cough up two tablespoons at 8 p.m. for the next 4 days."
+ },
+ "15-ta-IN": {
+  "text": "ஒவ்வொரு புதன்கிழமையும் மதியம் 1 மணிக்கு இரும்புச்சத்து மாத்திரை எடுக்க வேண்டும்",
+  "noisy_text": "ஒவ்வொரு புதன்கிழமையும் மதியம் 1 மணிக்கு இரும்புச்சத்து மாத்திரை டுக்க வேண்டும்",
+  "translation": "Take an iron pill every Wednesday at 1 p.m.",
+  "translation_latency": 0.41488741687498987,
+  "translation_as_tamil": "Take an iron pill every Wednesday at 1 p.m.",
+  "translation_noisy": "Take an iron pill every Wednesday at 1 p.m."
+ },
+ "16-ta-IN": {
+  "text": "தினமும் காலை 8:30 மணிக்கு டெல்மா 40 எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "தினமும் கால 8:30 மணிக்கு டெல்மா 40 எடுக்க ினைவூட்டுங்கள்",
+  "translation": "Remind me to take Delma 40 every morning at 1: 30 a.m.",
+  "translation_latency": 0.6687168339267373,
+  "translation_as_tamil": "Remind me to take Delma 40 every morning at 1: 30 a.m.",
+  "translation_noisy": "Sign up to take Delma 40 every day at 1: 30 p.m."
+ },
+ "17-ta-IN": {
+  "text": "தினமும் மதியம் 2 மணிக்கு 500 mg கிளைகோமெட் எடுக்க வேண்டும்",
+  "noisy_text": "தினமும் மதியம் 2 மணிக்கு 500 mg கிளைகோமெட் எடுக்க வேண்டும்",
+  "translation": "500 mg of glycomet should be taken daily at 2 p.m.",
+  "translation_latency": 0.5077019580639899,
+  "translation_as_tamil": "500 mg of glycomet should be taken daily at 2 p.m.",
+  "translation_noisy": "500 mg of glycomet should be taken daily at 2 p.m."
+ },
+ "18-ta-IN": {
+  "text": "அடுத்த 7 நாட்களுக்கு மாலை 6 மணிக்கு கண்ணில் 2 சொட்டு கண் சொட்டு மருந்து விட நினைவூட்டுங்கள்",
+  "noisy_text": "அடுத்த 7 நாட்ளுக்கு மாலை  மணிக்கு கண்ணில் 2 சொட்டு கண் சொட்ு மருந்து விட ிைவூட்்கள்",
+  "translation": "Remind yourself to take 2 drops of eye drops at 6 p.m. for the next 7 days.",
+  "translation_latency": 0.6936249579302967,
+  "translation_as_tamil": "Remind yourself to take 2 drops of eye drops at 6 p.m. for the next 7 days.",
+  "translation_noisy": "2 drops of eye drops in the eye at evening for the next 7 days"
+ },
+ "19-ta-IN": {
+  "text": "ஒவ்வொரு சனிக்கிழமையும் காலை 11 மணிக்கு B12 ஊசி போட வேண்டும்",
+  "noisy_text": "ஒவ்வொரு சனிக்கிழமயும் காை 11 மணிக்கு B12 ஊசி போட வேண்டும்",
+  "translation": "B12 injections should be given every Saturday at 11 a.m.",
+  "translation_latency": 0.47118212515488267,
+  "translation_as_tamil": "B12 injections should be given every Saturday at 11 a.m.",
+  "translation_noisy": "B12 injections should be given every Saturday at 11 p.m."
+ },
+ "20-ta-IN": {
+  "text": "தினமும் இரவு 10 மணிக்கு தூங்கும் முன் 10 mg அடோர்வாஸ்டாடின் எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "திமும் இரவு 10 மணிக்கு தூங்ும் முன் 10 mg அடோர்வாஸடாடின் எடுக்க நினைூட்டு்க்",
+  "translation": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+  "translation_latency": 0.813722041901201,
+  "translation_as_tamil": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+  "translation_noisy": "Remember to take 10 mg of atorvastatin before bedtime at 10 p.m."
+ },
+ "21-ta-IN": {
+  "text": "அடுத்த 2 மாதங்களுக்கு இரவு 9:45 மணிக்கு ஒரு மான்டெய்ர் மாத்திரை எடுக்க வேண்டும்",
+  "noisy_text": "அடத்த 2 மாதங்களுக்கு இரவு 9:45 மணிக்கு ஒரு மானடெய்ர் மாத்திரை எடுக்க வேண்ும்",
+  "translation": "For the next 2 months, one tablet of Monterey should be taken at 1: 45 p.m.",
+  "translation_latency": 0.706298042088747,
+  "translation_as_tamil": "For the next 2 months, one tablet of Monterey should be taken at 1: 45 p.m.",
+  "translation_noisy": "For the last 2 months, one tablet of Monadair should be taken at 1: 45 p.m."
+ },
+ "22-ta-IN": {
+  "text": "அடுத்த 2 நாட்களுக்கு மாலை 4 மணிக்கு ஒரு ORS பாக்கெட் குடிக்க நினைவூட்டுங்கள்",
+  "noisy_text": "அடுத்த 2 நாட்களுக்கு மாலை 4 மணிக்கு ஒரு ORS பக்கெட் குடி்க நினைவூட்டுஙக்",
+  "translation": "Remind them to drink an ORS packet at 4 p.m. for the next 2 days.",
+  "translation_latency": 0.6925537090282887,
+  "translation_as_tamil": "Remind them to drink an ORS packet at 4 p.m. for the next 2 days.",
+  "translation_noisy": "Reminds you to drink an ORS bucket at 4 p.m. for the next 2 days."
+ },
+ "23-ta-IN": {
+  "text": "ஒவ்வொரு வெள்ளிக்கிழமையும் மாலை 5 மணிக்கு ஒரு ஷெல்கால் 500 மாத்திரை எடுக்க வேண்டும்",
+  "noisy_text": "ஒவ்வொரு வெள்ளிக்கிழமையும் ாலை 5 மணிக்கு ஒரு ஷெல்கல் 500 மாத்திரை எட்க வேண்டும்",
+  "translation": "A Shelcal 500 tablet should be taken every Friday at 5 p.m.",
+  "translation_latency": 0.5139991249889135,
+  "translation_as_tamil": "A Shelcal 500 tablet should be taken every Friday at 5 p.m.",
+  "translation_noisy": "Take one Shelkel 500 every Friday at 5 p.m."
+ },
+ "24-ta-IN": {
+  "text": "தினமும் காலை 6 மணிக்கு 50 mg லோசார்டன் எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "தினமும் காலை 6 மணிக்கு 50 mg லோசார்டன் க்க நினைவூ்டுங்கள்",
+  "translation": "Remind yourself to take 50 mg of losartan every morning at 6am.",
+  "translation_latency": 0.6330887919757515,
+  "translation_as_tamil": "Remind yourself to take 50 mg of losartan every morning at 6am.",
+  "translation_noisy": "Remind yourself to take 50 mg of losartan at 6 a.m. every day."
+ },
+ "25-ta-IN": {
+  "text": "அடுத்த 10 நாட்களுக்கு இரவு 10 மணிக்கு செட்ரிசின் எடுக்க நினைவூட்டுங்கள்",
+  "noisy_text": "அடுத்த 10 நாட்களுக்ு இரவு 10 மணிக்ு செட்ரிசின் எடுக்க நினைூட்டுஙகள்",
+  "translation": "Remind me to take cetricine at 10 p.m. for the next 10 days.",
+  "translation_latency": 0.6751282499171793,
+  "translation_as_tamil": "Remind me to take cetricine at 10 p.m. for the next 10 days.",
+  "translation_noisy": "Recommendations for taking cetricine at 10 p.m. for the next 10 days"
+ },
+ "1-te-IN": {
+  "text": "ప్రతిరోజూ రాత్రి 9 గంటలకు క్రోసిన్ వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "ప్రతరోజూ రాత్రి 9 గంటలకు కరోసిన్ వేసుకోవాలని గుర్ు చేయండి",
+  "translation": "Remind yourself to wear crocin every day at 9 p.m.",
+  "translation_latency": 0.4995960001833737,
+  "translation_as_tamil": "प्रतिरोजी रात्री 9 ग्रोसीन वेश्यन के लिए के लिए रात्रीया",
+  "translation_noisy": "Make sure to apply carosine every night at 9 p.m."
+ },
+ "2-te-IN": {
+  "text": "నేను ప్రతిరోజూ ఉదయం 8 గంటలకు 500 mg పారాసెటమాల్ వేసుకోవాలి",
+  "noisy_text": "నేు ప్రతిరోజూ ఉదయం  గంటలకు 500 mg పారాసెటమాల్ ేుకోవాలి",
+  "translation": "I need to take 500 mg of paracetamol every day at 8 am.",
+  "translation_latency": 0.5696103749796748,
+  "translation_as_tamil": "What is the price of 8 gm 500 mg Parastatmol Vase?",
+  "translation_noisy": "I need to take 500 mg of paracetamol every morning."
+ },
+ "3-te-IN": {
+  "text": "సాయంత్రం 7:30 గంటలకు రెండు మెట్‌ఫార్మిన్ మాత్రలు వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "సాయంత్రం 7:30 గటలు రెండు మెట్ర్మిన్ మాత్రలు వేసుకోవాలని గర్త ేయండి",
+  "translation": "Remind me to take two metformin tablets at 1: 30 p.m.",
+  "translation_latency": 0.6180979590862989,
+  "translation_as_tamil": "सायत्र\\ 1: 30\\ left\\ lbrack\\ left\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ lbrack\\ lbrack\\ left\\ lbrack\\ lbrack\\ lbrack\\ lbrack\\ lbrack\\ lbrack\\ lbrack",
+  "translation_noisy": "Make sure to take two Metromine tablets at 1: 30 p.m."
+ },
+ "4-te-IN": {
+  "text": "ప్రతి సోమవారం ఉదయం 10 గంటలకు డోలో 650 వేసుకోవాలి",
+  "noisy_text": "పరతి సోమవరం దయం 10 గటలకు డోలో 650 వేసుకోవాలి",
+  "translation": "Wear a Dolo 650 every Monday at 10 a.m.",
+  "translation_latency": 0.3879730000626296,
+  "translation_as_tamil": "प्रति सोमवर 10 गान्टलको दिलो 650 वेश्वाली",
+  "translation_noisy": "Parati Somavaram Dayayam should be worn for 10 ghats with Dolo 650."
+ },
+ "5-te-IN": {
+  "text": "వచ్చే 5 రోజులు ఉదయం 9 గంటలకు ఒక విటమిన్ D క్యాప్సూల్ వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "వచ్చే 5 రోజులు ఉయ 9 గంటలకు ఒక విటమిన్ D క్యాప్స్ వేసుకోవాలని గుర్తు చేయండి",
+  "translation": "Remind yourself to take a vitamin D capsule at 9 a.m. for the next 5 days.",
+  "translation_latency": 0.6878637920599431,
+  "translation_as_tamil": "There are 5 Roojals, 9 Nos., 1 V, D, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X, X",
+  "translation_noisy": "Remind yourself to wear a vitamin D cap at 9 p.m. for the next 5 days."
+ },
+ "6-te-IN": {
+  "text": "రాత్రి ఒక ఆస్పిరిన్ మాత్ర వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "రాత్రి ఒక ఆస్పిరిన్ మాత్ర వేసుకోవాలని గుర్త చేయండి",
+  "translation": "Remind yourself to take an aspirin pill at night.",
+  "translation_latency": 0.3964473749510944,
+  "translation_as_tamil": "रात्री एक रास्पीरीन मात्र वेश्यको वेश्यको गुर्नी के लिए हैं ।",
+  "translation_noisy": "Make sure to take an aspirin pill at night."
+ },
+ "7-te-IN": {
+  "text": "వచ్చే 3 నెలలు ప్రతిరోజూ రాత్రి 8 గంటలకు 10 యూనిట్ల ఇన్సులిన్ తీసుకోవాలి",
+  "noisy_text": "వచ్చే 3 నెలలు ప్రతిరోజూ రత్రి 8 గంటలకు 10 యూనిట్ల ఇనసులిన్ తీసుకోవాలి",
+  "translation": "Take 10 units of insulin every day at 8 p.m. for the next 3 months",
+  "translation_latency": 0.6288703749887645,
+  "translation_as_tamil": "There are 3 colors, 8 colors, 10 colors, 10 colors, and so on.",
+  "translation_noisy": "Take 10 units of insulin every day for 8 hours for the next 3 months"
+ },
+ "8-te-IN": {
+  "text": "ప్రతి ఆదివారం సాయంత్రం 6 గంటలకు కాల్షియం మాత్ర వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "ప్రతి ఆదివారం సాయంత్రం 6 ంటలకు కాల్షయం మాతర వేసుోవాలని గుర్తు చేయండి",
+  "translation": "remind me to take the calcium pill every sunday at 6 p. m.",
+  "translation_latency": 0.5579147909302264,
+  "translation_as_tamil": "प्रती दिवरन सात्र 6 गान्टलक्षिनी मात्र वेश्कोवालनी गर्निया के लिए",
+  "translation_noisy": "Remind yourself to have a calendrical mass every Sunday at 6 p.m."
+ },
+ "9-te-IN": {
+  "text": "రాత్రి 11:15 గంటలకు సగం ఎకోస్ప్రిన్ మాత్ర వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "రాత్రి 11:15 గంటలకు సగం ఎకోస్ప్రిన్ ాత్ర వేసకోవాలని గుర్తు చేయండి",
+  "translation": "Remind yourself to take half an echosprin tablet at 11:15 hours at night.",
+  "translation_latency": 0.738610666943714,
+  "translation_as_tamil": "रात्री 11:15 गंटलको संग की कोस्प्रीन मात्र वेश्वालनी के लिए",
+  "translation_noisy": "Remind yourself to take half an echosprin at 11:15 hours at night."
+ },
+ "10-te-IN": {
+  "text": "ప్రతిరోజూ ఉదయం 7 గంటలకు ఒక థైరోనార్మ్ మాత్ర వేసుకోవాలి",
+  "noisy_text": "ప్రతిరోజ ఉదయం 7 గంటలకు ఒక థైరోనార్మ్ మాత్ర వేసుకోవాలి",
+  "translation": "One tablet of thyronorm should be taken every day at 7 am.",
+  "translation_latency": 0.5652943330351263,
+  "translation_as_tamil": "प्रतिरियुजाय वश्वाली मात्र वेश्युवाली के लिए विद्यार मात्र मात्र वेश्युवाली",
+  "translation_noisy": "One tablet of thyronorm should be taken every day at 7 am."
+ },
+ "11-te-IN": {
+  "text": "వచ్చే 3 రోజులు ఉదయం 10 గంటలకు 500 mg అజిత్రోమైసిన్ వేసుకోవాలి",
+  "noisy_text": "వచ్చే 3 రోజులు ఉదయం 10 గంటలకు 500 mg అజిత్ోమైసిన్ వేసుకోవాలి",
+  "translation": "Apply 500 mg azithromycin at 10 am for the next 3 days.",
+  "translation_latency": 0.666164583992213,
+  "translation_as_tamil": "3 tablets 10 gm 500 mg Hydrochloroquine vasoconstrictor",
+  "translation_noisy": "Apply 500 mg azithromycin at 10 am for the next 3 days."
+ },
+ "12-te-IN": {
+  "text": "ప్రతిరోజూ ఉదయం 7 గంటలకు అల్పాహారానికి ముందు ఒక పాంటోప్రజోల్ మాత్ర వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "ప్రతిరోజూ ఉదయం 7 గంటలకు అల్పాహారానికి ముందు ఒ పాంటోప్రజోల్ మాత్ర వేసుకోవాలని గుర్తు చేయండి",
+  "translation": "Remind yourself to take a Pantoprazole pill every day before breakfast at 7 a.m.",
+  "translation_latency": 0.7763668750412762,
+  "translation_as_tamil": "प्रतिर्रोज्या त्यास्ता 7 गान्तलक याल्पारानिकी में एक पान्टिोप्रजिल मात्र वेश्वालानी गर्निया में",
+  "translation_noisy": "Remind yourself to take O Pantoprazole every day before breakfast at 7 a.m."
+ },
+ "13-te-IN": {
+  "text": "ప్రతిరోజూ రాత్రి 9 గంటలకు 5 mg ఆమ్లోడిపిన్ వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "ప్రతిరోజ రాత్రి 9 గంటలకు 5 mg ఆమ్లోడిపిన్ వేసుకవాలని గుర్తు చేయండి",
+  "translation": "Remind yourself to take 5 mg of amlodipine every day at 9 p.m.",
+  "translation_latency": 0.7415272500365973,
+  "translation_as_tamil": "प्रतिरोजी रात्रीय 9 जान्द्री 5 मग राम्लोदीपिन वेश्यक्षा के लिए राजिया",
+  "translation_noisy": "Remind yourself to take 5 mg of amlodipine every day at 9 p.m."
+ },
+ "14-te-IN": {
+  "text": "వచ్చే 4 రోజులు రాత్రి 8 గంటలకు రెండు చెంచాల దగ్గు సిరప్ తాగాలని గుర్తు చేయండి",
+  "noisy_text": "వచ్చే 4 రోజులు ాత్రి 8 గంటలక రెండు చెంచ దగ్గు సిప్ తాగాలని గుర్తు చేయడి",
+  "translation": "Remind yourself to drink two tablespoons of cough syrup at 8 p.m. for the next 4 days.",
+  "translation_latency": 0.8254264579154551,
+  "translation_as_tamil": "There are 4 Roojals, 8 Roojals, and 6 Roojals.",
+  "translation_noisy": "Remind yourself to drink two tablespoons of cough syrup at 8 p.m. for the next 4 days."
+ },
+ "15-te-IN": {
+  "text": "ప్రతి బుధవారం మధ్యాహ్నం 1 గంటకు ఐరన్ మాత్ర వేసుకోవాలి",
+  "noisy_text": "ప్రతి బుధారం మధ్యా్నం 1 గంటకు ఐరన్ మాత్ర వేసుకోవాలి",
+  "translation": "Take an iron pill every Wednesday at 1 p.m.",
+  "translation_latency": 0.38144250004552305,
+  "translation_as_tamil": "प्रती बादवर माद्यान 1 गान्तक मात्र वेश्यकोवाली",
+  "translation_noisy": "Iron tablet should be taken for 1 hour in the middle of every Wednesday."
+ },
+ "16-te-IN": {
+  "text": "ప్రతిరోజూ ఉదయం 8:30 గంటలకు టెల్మా 40 వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "ప్రతిరోజూ ఉదయం 8:30 గంటలకు టెల్మా 40 వేసుకోవాలని గర్ు చేయండి",
+  "translation": "Remind yourself to wear Telma 40 every day at 1: 30 a.m.",
+  "translation_latency": 0.617538542021066,
+  "translation_as_tamil": "प्रतिरुजाय से\\ 1: 30 से टेल्लमा 40 वेश्वालानी गर्नी हैं ।",
+  "translation_noisy": "Make sure to wear Telma 40 every day at 1: 30 a.m."
+ },
+ "17-te-IN": {
+  "text": "ప్రతిరోజూ మధ్యాహ్నం 2 గంటలకు 500 mg గ్లైకోమెట్ వేసుకోవాలి",
+  "noisy_text": "ప్రతిరోజూ మ్యాహ్నం 2 గంటలకు 500 m గలైకోమట్ వేసుకోవాలి",
+  "translation": "Take 500 mg of glycomate every day at 2 p.m.",
+  "translation_latency": 0.5152463749982417,
+  "translation_as_tamil": "प्रतिरोज्य माद्यान 2 गान्टलक 500 mg गालियकोम्टेट्य वेश्यकुवाली",
+  "translation_noisy": "500 m glycomat should be applied every day at 2 pm."
+ },
+ "18-te-IN": {
+  "text": "వచ్చే 7 రోజులు సాయంత్రం 6 గంటలకు కళ్ళలో 2 చుక్కల ఐ డ్రాప్స్ వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "వచ్చే 7 రోజులు సయంత్రం 6 గంటలకు కళ్ళలో 2 చుక్కల ఐ డ్రాప్్ వసుకవాలని గుర్తు చేయండి",
+  "translation": "Remind yourself to apply 2 drops of eye drops to your eyes at 6 p.m. for the next 7 days.",
+  "translation_latency": 0.8218286659102887,
+  "translation_as_tamil": "It is available in 7 colours, 6 colours, and 2 colours.",
+  "translation_noisy": "Remind yourself to have 2 drops of eye drops in your eyes at 6 p.m. for the next 7 days."
+ },
+ "19-te-IN": {
+  "text": "ప్రతి శనివారం ఉదయం 11 గంటలకు B12 ఇంజెక్షన్ తీసుకోవాలి",
+  "noisy_text": "ప్రతి శనివారం ఉదయం 11 గంటలకు B12 ఇంజెక్షన్ తీసుోవాలి",
+  "translation": "B12 injections should be taken every Saturday at 11 a.m.",
+  "translation_latency": 0.5348409169819206,
+  "translation_as_tamil": "प्रति दिश्वर से 11 गान्टलको B12 हैं ।",
+  "translation_noisy": "B12 injections should be taken every Saturday at 11 a.m."
+ },
+ "20-te-IN": {
+  "text": "ప్రతిరోజూ రాత్రి 10 గంటలకు నిద్రపోయే ముందు 10 mg అటోర్వాస్టాటిన్ వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "ప్రతిరోజ రాత్రి 10 గంటలు నిద్పోయ ముందు 10 mg అటోర్వాస్టాటిన్ వేసుకవాలని గుర్తు చేయండి",
+  "translation": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+  "translation_latency": 0.8496370001230389,
+  "translation_as_tamil": "The price of the smartphone is Rs 10 lakh and the price of the smartphone is Rs 10 lakh.",
+  "translation_noisy": "Remind yourself to take 10 mg of atorvastatin every night before bedtime for 10 hours."
+ },
+ "21-te-IN": {
+  "text": "వచ్చే 2 నెలలు రాత్రి 9:45 గంటలకు ఒక మాంటెయిర్ మాత్ర వేసుకోవాలి",
+  "noisy_text": "వచ్చే 2 ెలలు రాత్రి 9:45 గంటలకు ఒక మాంటెయిర మాత్ర వేసుకోవాలి",
+  "translation": "Take a Monterey pill at 1: 45 p.m. for the next 2 months",
+  "translation_latency": 0.6467167499940842,
+  "translation_as_tamil": "विश्यकार 2 नेट्री रात्री\\ 1: 45 जान्त्री एक मांटीपीर मात्र वेश्कुवाली",
+  "translation_noisy": "For the next 2 days at 1: 45 p.m., take one tablet of Manteira."
+ },
+ "22-te-IN": {
+  "text": "వచ్చే 2 రోజులు సాయంత్రం 4 గంటలకు ఒక ORS ప్యాకెట్ తాగాలని గుర్తు చేయండి",
+  "noisy_text": "వచ్ే 2 రోులు సాయంత్రం 4 గటలకు ఒక ORS ప్యాకెట్ తాగాలన ుర్తు చేయండి",
+  "translation": "Remind me to drink an ORS packet at 4 p.m. for the next 2 days.",
+  "translation_latency": 0.7046749999281019,
+  "translation_as_tamil": "There are 2 Roojoules, 4 Roojoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujoujou.",
+  "translation_noisy": "Make sure to drink an ORS packet at 4 p.m. on the 2nd day of the week."
+ },
+ "23-te-IN": {
+  "text": "ప్రతి శుక్రవారం సాయంత్రం 5 గంటలకు ఒక షెల్‌కాల్ 500 మాత్ర వేసుకోవాలి",
+  "noisy_text": "ప్రతి శుక్రవారం సాయంత్రం 5 గంటలకు ఒక షెలకాల 500 మాత్ర వేసుకోవాలి",
+  "translation": "One Shelkol 500 tablet should be taken every Friday at 5 p.m.",
+  "translation_latency": 0.5527757920790464,
+  "translation_as_tamil": "प्रति देश्रवर्स में 5 गान्टलके एक शिन्देलकाल 500 मात्र वेश्कुवाली",
+  "translation_noisy": "One tablet of Shelkala 500 should be taken every Friday at 5 pm."
+ },
+ "24-te-IN": {
+  "text": "ప్రతిరోజూ ఉదయం 6 గంటలకు 50 mg లోసార్టాన్ వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "ప్రతిరజూ ఉదయం 6 గంలకు 50 mg లోసార్టాన్ వేసుకోవాలని గుర్తు చేయండి",
+  "translation": "Remind yourself to take 50 mg of losartan every day at 6 a.m.",
+  "translation_latency": 0.644577750004828,
+  "translation_as_tamil": "Price: Rs 6 lakh, Rs 50 lakh, Rs 50 lakh, Rs 50 lakh, Rs 50 lakh",
+  "translation_noisy": "Remind yourself to take 50 mg of losartan every morning at 6 am."
+ },
+ "25-te-IN": {
+  "text": "వచ్చే 10 రోజులు రాత్రి 10 గంటలకు సెట్రిజిన్ వేసుకోవాలని గుర్తు చేయండి",
+  "noisy_text": "వ్చే 10 రోజులు రాతరి 10 గంటలకు సెట్రిజిన్ వేసుకోవాలని ురతు చేయండి",
+  "translation": "Remind yourself to apply cetrizine at 10 p.m. for the next 10 days.",
+  "translation_latency": 0.708846207940951,
+  "translation_as_tamil": "There are 10 Roojals, 10 Gangtoks, and 10 Gangtoks.",
+  "translation_noisy": "Make sure to apply cetrizine at 10 p.m. for the next 10 days."
+ },
+ "1-bn-IN": {
+  "text": "প্রতিদিন রাত ৯টায় ক্রোসিন খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "প্রতিদিন রাত ৯টায় ্রোসিন খাওয়ার কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to eat crocin every night at 9 p.m.",
+  "translation_latency": 0.5118706659413874,
+  "translation_as_tamil": "प्रतिदिन रात 9 ताय क्रोसीन काहार कहा में करीये दिन",
+  "translation_noisy": "Remind yourself to eat rosin every night at 9 p.m."
+ },
+ "2-bn-IN": {
+  "text": "আমাকে প্রতিদিন সকাল ৮টায় ৫০০ mg প্যারাসিটামল খেতে হবে",
+  "noisy_text": "আমাকে প্রতিদি সকাল ৮টায় ৫০০ mg প্যারাসিটামল খেতে হে",
+  "translation": "I have to take 500 mg of paracetamol every morning at 8 am.",
+  "translation_latency": 0.5814372501336038,
+  "translation_as_tamil": "माके प्रतिदिन शक्षाल 8 ताय 500 mg प्रासितामल के बेते",
+  "translation_noisy": "Give me 500 mg of paracetamol every morning at 8 am."
+ },
+ "3-bn-IN": {
+  "text": "সন্ধ্যা ৭:৩০-এ দুটি মেটফরমিন ট্যাবলেট খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "সন্ধ্যা ৭:৩০-এ দুটি মেটফরমিন ট্যাবলেট খাওয়র কথা মে করিয়ে দিন",
+  "translation": "Remind yourself to take two metformin tablets at 1: 30 p.m.",
+  "translation_latency": 0.5847377919126302,
+  "translation_as_tamil": "संध्या\\ 1: 30 - यह दुती मेट्रमीन त्याबलेट काहार कहा में दिन",
+  "translation_noisy": "Make sure to take two metformin tablets at 1: 30 p.m."
+ },
+ "4-bn-IN": {
+  "text": "প্রতি সোমবার সকাল ১০টায় ডোলো ৬৫০ খেতে হবে",
+  "noisy_text": "্রতি সোমার সকাল ১০টায় ডোলো ৬৫ খেতে হবে",
+  "translation": "Have a Dolo 650 every Monday at 10am.",
+  "translation_latency": 0.3386304578743875,
+  "translation_as_tamil": "Prithi Somwar School 10Tai Dolo 650Khte",
+  "translation_noisy": "Have Dolo 65 every Monday at 10am."
+ },
+ "5-bn-IN": {
+  "text": "আগামী ৫ দিন সকাল ৯টায় একটি ভিটামিন D ক্যাপসুল খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "আগামী ৫ দিন কাল ৯টায় একটি ভিটামিন D ক্যাপসুল খাও়ার কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to take a vitamin D capsule at 9 a.m. for the next 5 days.",
+  "translation_latency": 0.6831947918981314,
+  "translation_as_tamil": "अगामी 5 दिन स्काल 9 ताये एक भितामीन द क्यापसुल काहार कहा में करीये दिन",
+  "translation_noisy": "Remind yourself to take a vitamin D capsule at 9 p.m. tomorrow for the next 5 days."
+ },
+ "6-bn-IN": {
+  "text": "রাতে একটি অ্যাসপিরিন ট্যাবলেট খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "রাতে একটি অ্যাসপিরিন ট্যাবলেট খাও়ার কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to take an aspirin tablet at night.",
+  "translation_latency": 0.37954966607503593,
+  "translation_as_tamil": "राते एक अस्पेरीन त्याबलेट काहार में करीये दिन",
+  "translation_noisy": "Remind yourself to take an aspirin tablet at night."
+ },
+ "7-bn-IN": {
+  "text": "আগামী ৩ মাস প্রতিদিন রাত ৮টায় ১০ ইউনিট ইনসুলিন নিতে হবে",
+  "noisy_text": "আগামী ৩ মাস প্তিদিন রাত ৮টায় ১০ ইউনি ইনসুলিন নিতে হবে",
+  "translation": "Take 10 units of insulin every day at 8pm for the next 3 months.",
+  "translation_latency": 0.5440291250124574,
+  "translation_as_tamil": "GAMI 3 MAS PRIDIN RAT 8 TAY 10 EUNT INSULIN",
+  "translation_noisy": "Take 10 units of insulin at 8 pm every day for the next 3 months."
+ },
+ "8-bn-IN": {
+  "text": "প্রতি রবিবার সন্ধ্যা ৬টায় ক্যালসিয়াম ট্যাবলেট খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "প্রত রবিবার সন্ধ্যা ৬টয় ক্যালসিয়াম ট্যাবলেট খাওয়ার কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to take calcium tablets every Sunday at 6 p.m.",
+  "translation_latency": 0.4770469998475164,
+  "translation_as_tamil": "Prithi Vibhar Sandhya 6Tay Kalasiyam Tablet 6Tay Kalasiyam 6Tay Kalasiyam 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay 6Tay",
+  "translation_noisy": "Remind yourself to take calcium tablets every Sunday at 6 p.m."
+ },
+ "9-bn-IN": {
+  "text": "রাত ১১:১৫-এ আধখানা ইকোস্প্রিন ট্যাবলেট খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "রাত ১১:১৫- আধখানা ইকোস্প্রিন ট্যাবলেট াওয়ার কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to take half an echosprin tablet at night 11:15",
+  "translation_latency": 0.7034915001131594,
+  "translation_as_tamil": "रात 11:15 - अधाना एकोस्प्रीन त्याबलेट काहा में करीये दिन",
+  "translation_noisy": "Night 11:15 - Remind me to take half a tablet of Ecosprin"
+ },
+ "10-bn-IN": {
+  "text": "প্রতিদিন সকাল ৭টায় আমাকে একটি থাইরোনর্ম ট্যাবলেট খেতে হবে",
+  "noisy_text": "প্রতিদিন সকাল ৭টা় আমাকে একটি থাইরোনর্ম ট্যাবলেট খেতে হবে",
+  "translation": "Every morning at 7 am I have to take a thyronerm tablet.",
+  "translation_latency": 0.5284432920161635,
+  "translation_as_tamil": "Prateidine School 7Tay Amake is a multi-purpose tablet.",
+  "translation_noisy": "Every morning at 7 am I have to take a thyronerm tablet."
+ },
+ "11-bn-IN": {
+  "text": "আগামী ৩ দিন সকাল ১০টায় ৫০০ mg অ্যাজিথ্রোমাইসিন খেতে হবে",
+  "noisy_text": "গাী ৩ দিন সকাল ১০টা় ৫০০ mg অ্যাজথ্রোমাইসিন খেতে হবে",
+  "translation": "Take 500 mg azithromycin at 10 am for the next 3 days.",
+  "translation_latency": 0.6438404170330614,
+  "translation_as_tamil": "अगामी 3 दिन शक्षाल 10 ताये 500 mg अजियत्रोम्बिसिन के बेते है",
+  "translation_noisy": "You should take azithromycin at 10: 500 am for 3 days."
+ },
+ "12-bn-IN": {
+  "text": "প্রতিদিন সকাল ৭টায় জলখাবারের আগে একটি প্যান্টোপ্রাজোল ট্যাবলেট খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "প্রতিিন সকাল ৭ায় জলখাবারর আগে একটি প্যান্টোপ্রাজো ট্যাবলেট খাওয়ার থা মনে করিয়ে দিন",
+  "translation": "Remind yourself to take a pentoprazole tablet before breakfast at 7 a.m. every day.",
+  "translation_latency": 0.7518200830090791,
+  "translation_as_tamil": "Prateidin School 7Tay जलाहाबार अगे एक प्रान्टोप्राजोल त्याबालेट का काहता में दिन",
+  "translation_noisy": "Remind yourself to take a Pantoprazole tablet every morning before breakfast at 7am."
+ },
+ "13-bn-IN": {
+  "text": "প্রতিদিন রাত ৯টায় ৫ mg অ্যামলোডিপিন খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "প্রতিদিন রাত ৯টা় ৫ mg ্যামলোডিপিন খাওয়ার কথা মনে কিয়ে দিন",
+  "translation": "Remind yourself to take 5 mg of amlodipine every night at 9pm.",
+  "translation_latency": 0.7116529161576182,
+  "translation_as_tamil": "Prateidine Rate 9Tay 5 mg Amlodipine Kahaar Kahaa mein kariye din",
+  "translation_noisy": "Remember to take 9: 5 p.m. amlodipine every night."
+ },
+ "14-bn-IN": {
+  "text": "আগামী ৪ দিন রাত ৮টায় দুই চামচ কাশির সিরাপ খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "আগমী ৪ দিন রাত ৮টায় দুই চামচ কাশির সিরাপ খাওয়ার কথা নে করয দিন",
+  "translation": "Remind yourself to take two tablespoons of cough syrup at 8 p.m. for the next 4 days.",
+  "translation_latency": 0.8149753340985626,
+  "translation_as_tamil": "अगामी 4 दिन रात 8 ताये दुवेश काशिर स्रापकार काहा में करीये दिन",
+  "translation_noisy": "Talk about eating two tablespoons of cough syrup at 8 p.m. for the next 4 days."
+ },
+ "15-bn-IN": {
+  "text": "প্রতি বুধবার দুপুর ১টায় আয়রন ট্যাবলেট খেতে হবে",
+  "noisy_text": "প্রতি বুধবার দুপুর ১টায় আয়রন ট্যাবলেট খেতে হবে",
+  "translation": "Iron tablets should be taken every Wednesday at 1 p.m.",
+  "translation_latency": 0.41580662480555475,
+  "translation_as_tamil": "Pretty Dhubri 1 tai ̄ ya ̄ r ̣ n ̣ a ̄ tablet ̣ e ̄ hebe ̄",
+  "translation_noisy": "Iron tablets should be taken every Wednesday at 1 p.m."
+ },
+ "16-bn-IN": {
+  "text": "প্রতিদিন সকাল ৮:৩০-এ টেলমা ৪০ খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "প্রতিদিন সকাল ৮:৩০-এ টেলমা ৪০ খাওয়া কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to eat Telma 40 every day at 1: 30 a.m.",
+  "translation_latency": 0.6126507909502834,
+  "translation_as_tamil": "Prateidin School\\ 1: 30 - तेल्मा 40 काहार काहा में करीये दिन",
+  "translation_noisy": "Remind yourself to eat Telma 40 every day at 1: 30 a.m."
+ },
+ "17-bn-IN": {
+  "text": "প্রতিদিন দুপুর ২টায় ৫০০ mg গ্লাইকোমেট খেতে হবে",
+  "noisy_text": "প্রতিদিন দুুর ২টায় ৫০ mg গ্লাকোমেট খেতে হবে",
+  "translation": "500 mg of glycomate should be consumed daily at 2 pm.",
+  "translation_latency": 0.44287104182876647,
+  "translation_as_tamil": "PRATIDIN DUPUR 2 TAY 500 mg GLYCOMETE HEBE",
+  "translation_noisy": "Have 50 mg of glaucoma at 2 p.m. each day."
+ },
+ "18-bn-IN": {
+  "text": "আগামী ৭ দিন সন্ধ্যা ৬টায় চোখে ২ ফোঁটা আই ড্রপ দেওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "আগমী ৭ দিন সন্ধ্যা ায় চোখে ২ ফোঁটা আই ড্রপ দেওয়ার কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to give 2 drops of eye drops at 6 p.m. for the next 7 days.",
+  "translation_latency": 0.7200010421220213,
+  "translation_as_tamil": "अगामी 7 दिन संध्या 6 दिन संध्या 6 दिन के लिए 2 दिन देवा देवार कहा में करीये दिन",
+  "translation_noisy": "Remind yourself to give 2 drops of eye drops in the evening for the next 7 days."
+ },
+ "19-bn-IN": {
+  "text": "প্রতি শনিবার সকাল ১১টায় B12 ইনজেকশন নিতে হবে",
+  "noisy_text": "প্রতি শনিবার সকাল ১১টায় B12 ইনজেকশন নিতে হবে",
+  "translation": "B12 injections should be taken every Saturday at 11 a.m.",
+  "translation_latency": 0.47295354097150266,
+  "translation_as_tamil": "Primary school 11th grade B12th grade",
+  "translation_noisy": "B12 injections should be taken every Saturday at 11 a.m."
+ },
+ "20-bn-IN": {
+  "text": "প্রতিদিন রাত ১০টায় ঘুমানোর আগে ১০ mg অ্যাটোরভাস্ট্যাটিন খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "প্রতিদিন রাত ১০টায় ঘুমানোর আগ ১০ mg অ্যাটোরভাস্্যাটিন খাও়ার কথা মনে করিয়ে দিন",
+  "translation": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+  "translation_latency": 0.7815695409663022,
+  "translation_as_tamil": "प्रतिदिन रात 10 गुमानोर एगे 10 mg अतोर्भास्ट्र्याटिन काहार काहा में करीये दिन",
+  "translation_noisy": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m."
+ },
+ "21-bn-IN": {
+  "text": "আগামী ২ মাস রাত ৯:৪৫-এ একটি মন্টেয়ার ট্যাবলেট খেতে হবে",
+  "noisy_text": "আগমী ২ মাস রাত ৯:৪৫-এ একটি মন্টয়ার ট্যাবলেট খেতে হবে",
+  "translation": "Have a Monterey tablet at 1: 45 p.m. for the next 2 months",
+  "translation_latency": 0.6141314159613103,
+  "translation_as_tamil": "अगामी 2 मास रात\\ 1: 45 - एक में में नेटेयार त्याबलेट के बेते है",
+  "translation_noisy": "Have a Montier tablet at 1: 45 p.m. for the next 2 months"
+ },
+ "22-bn-IN": {
+  "text": "আগামী ২ দিন বিকেল ৪টায় একটি ORS প্যাকেট খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "আগামী ২ দিন বিকেল ৪টায় একটি ORS প্যাকেট খাওয়ার কথা মনে করয়ে দিন",
+  "translation": "Remind me to eat an ORS packet at 4 p.m. for the next 2 days.",
+  "translation_latency": 0.7571469170507044,
+  "translation_as_tamil": "अगामी 2 दिन बिकेल 4 ताये एक आरस प्रकेट काहार में करीये दिन",
+  "translation_noisy": "Remind yourself to eat an ORS packet at 4 p.m. for the next 2 days."
+ },
+ "23-bn-IN": {
+  "text": "প্রতি শুক্রবার সন্ধ্যা ৫টায় একটি শেলক্যাল ৫০০ ট্যাবলেট খেতে হবে",
+  "noisy_text": "প্রতি শুক্রবার সন্ধ্যা ৫টায় একট শেলক্যাল ৫০ ট্যাবলেট খেে হবে",
+  "translation": "One Shelkale 500 tablet should be taken every Friday at 5 pm.",
+  "translation_latency": 0.5047605419531465,
+  "translation_as_tamil": "Pretty shukrabar sandhya 5 tay akti 500 tayable",
+  "translation_noisy": "Take one Shelkal 50 tablet every Friday at 5 pm."
+ },
+ "24-bn-IN": {
+  "text": "প্রতিদিন সকাল ৬টায় ৫০ mg লোসার্টান খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "প্রতিদন সকাল ৬টায় ৫০ mg লোসার্টান খাওয়র কথা মন করিয়ে দিন",
+  "translation": "Remind yourself to eat 50 mg of losartan every morning at 6am.",
+  "translation_latency": 0.5454211249016225,
+  "translation_as_tamil": "Prateidine School 6Tay 50mg Lozartan Khawaiyar Kahaane Kariye Din",
+  "translation_noisy": "Make it a point to eat 50 mg of losartan every morning at 6am."
+ },
+ "25-bn-IN": {
+  "text": "আগামী ১০ দিন রাত ১০টায় সেটিরিজিন খাওয়ার কথা মনে করিয়ে দিন",
+  "noisy_text": "আগামী ১০ দিন রত ০টায় সেটিরিজিন খাওয়ার কথা মনে করিয়ে দিন",
+  "translation": "remind me to eat satirizine at 10 p. m. for the next 10 days",
+  "translation_latency": 0.6092525830026716,
+  "translation_as_tamil": "अगामी 10 दिन रात 10 ताये सेटिरीजीन काहार काहा में करीये दिन",
+  "translation_noisy": "remind me to eat satirizine at 0 p.m. for the next 10 days"
+ }
+}
