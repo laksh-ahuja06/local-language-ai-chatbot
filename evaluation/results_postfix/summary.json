@@ -1,0 +1,232 @@
+{
+ "systems": {
+  "Ours, post-fix (time-safe translation + time rule)": {
+   "exact": {
+    "mean": 0.57,
+    "ci95": [
+     0.47,
+     0.67
+    ]
+   },
+   "medicine": {
+    "mean": 0.74,
+    "ci95": [
+     0.65,
+     0.82
+    ]
+   },
+   "medicine_lenient": {
+    "mean": 0.93,
+    "ci95": [
+     0.88,
+     0.98
+    ]
+   },
+   "dose": {
+    "mean": 0.76,
+    "ci95": [
+     0.68,
+     0.84
+    ]
+   },
+   "time": {
+    "mean": 0.96,
+    "ci95": [
+     0.92,
+     0.99
+    ]
+   },
+   "frequency": {
+    "mean": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "schedulable": {
+    "mean": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "dose_hallucination_rate": 0.35714285714285715,
+   "by_language": {
+    "hi-IN": 0.56,
+    "ta-IN": 0.56,
+    "te-IN": 0.56,
+    "bn-IN": 0.6
+   }
+  },
+  "Ours, translation fix only (no time rule)": {
+   "exact": {
+    "mean": 0.57,
+    "ci95": [
+     0.47,
+     0.67
+    ]
+   },
+   "medicine": {
+    "mean": 0.74,
+    "ci95": [
+     0.65,
+     0.82
+    ]
+   },
+   "medicine_lenient": {
+    "mean": 0.93,
+    "ci95": [
+     0.88,
+     0.98
+    ]
+   },
+   "dose": {
+    "mean": 0.76,
+    "ci95": [
+     0.68,
+     0.84
+    ]
+   },
+   "time": {
+    "mean": 0.93,
+    "ci95": [
+     0.88,
+     0.98
+    ]
+   },
+   "frequency": {
+    "mean": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "schedulable": {
+    "mean": 0.98,
+    "ci95": [
+     0.95,
+     1.0
+    ]
+   },
+   "dose_hallucination_rate": 0.35714285714285715,
+   "by_language": {
+    "hi-IN": 0.56,
+    "ta-IN": 0.56,
+    "te-IN": 0.56,
+    "bn-IN": 0.6
+   }
+  },
+  "B1 rule-based, post-fix translation": {
+   "exact": {
+    "mean": 0.44,
+    "ci95": [
+     0.34,
+     0.54
+    ]
+   },
+   "medicine": {
+    "mean": 0.52,
+    "ci95": [
+     0.42,
+     0.62
+    ]
+   },
+   "medicine_lenient": {
+    "mean": 0.64,
+    "ci95": [
+     0.54,
+     0.73
+    ]
+   },
+   "dose": {
+    "mean": 0.8,
+    "ci95": [
+     0.72,
+     0.88
+    ]
+   },
+   "time": {
+    "mean": 0.99,
+    "ci95": [
+     0.97,
+     1.0
+    ]
+   },
+   "frequency": {
+    "mean": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "schedulable": {
+    "mean": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "dose_hallucination_rate": 0.0,
+   "by_language": {
+    "hi-IN": 0.6,
+    "ta-IN": 0.44,
+    "te-IN": 0.36,
+    "bn-IN": 0.36
+   }
+  }
+ },
+ "original_exact": {
+  "ours": 0.52,
+  "b1": 0.42
+ },
+ "tests": [
+  {
+   "comparison": "Post-fix vs original system",
+   "a_only": 5,
+   "b_only": 0,
+   "p": 0.0625,
+   "p_holm": 0.1410930823185481
+  },
+  {
+   "comparison": "Post-fix vs translation fix only",
+   "a_only": 0,
+   "b_only": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "comparison": "Post-fix vs B1 rule-based (post-fix translation)",
+   "a_only": 25,
+   "b_only": 12,
+   "p": 0.04703102743951604,
+   "p_holm": 0.1410930823185481
+  }
+ ],
+ "language_chi2": {
+  "table": {
+   "hi-IN": [
+    14,
+    11
+   ],
+   "ta-IN": [
+    14,
+    11
+   ],
+   "te-IN": [
+    14,
+    11
+   ],
+   "bn-IN": [
+    15,
+    10
+   ]
+  },
+  "chi2": 0.12239902080783352,
+  "p": 0.9890202001054027
+ },
+ "latency_end_to_end": {
+  "mean": 1.7690865187882445,
+  "p95": 2.0028360839933157
+ },
+ "remaining_failures": 43
+}

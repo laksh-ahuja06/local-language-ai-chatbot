@@ -1,0 +1,504 @@
+{
+ "chat_fewshot": {
+  "1-hi-IN": {
+   "input": "remind me to take crocin every day at 9 p. m.",
+   "raw": "{\"medicine\": \"crocin\", \"dose\": \"500 mg\", \"time\": \"9:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.4888019999489188
+  },
+  "2-hi-IN": {
+   "input": "I have to take 500 mg of paracetamol every morning at 8 am.",
+   "raw": "{\"medicine\": \"paracetamol\", \"dose\": \"500 mg\", \"time\": \"8:00 AM\", \"frequency\": \"morning\"}",
+   "latency": 1.2332399589940906
+  },
+  "3-hi-IN": {
+   "input": "Reminds you to take two tablets of metformin at 07:30 in the evening",
+   "raw": "{\"medicine\": \"metformin\", \"dose\": \"2 tablets\", \"time\": \"07:30 PM\", \"frequency\": \"every evening\"}",
+   "latency": 1.1900709162000567
+  },
+  "4-hi-IN": {
+   "input": "Take the Dolo 650 every Monday at 10 a.m.",
+   "raw": "{\"medicine\": \"Dolo 650\", \"dose\": \"10 units\", \"time\": \"10:00 AM\", \"frequency\": \"Monday\"}",
+   "latency": 1.2797233329620212
+  },
+  "5-hi-IN": {
+   "input": "Reminds you to take a vitamin D capsule at 9 a.m. for the next 5 days",
+   "raw": "{\"medicine\": \"vitamin D\", \"dose\": \"1 capsule\", \"time\": \"9:00 AM\", \"frequency\": \"next 5 days\"}",
+   "latency": 1.1663585419300944
+  },
+  "6-hi-IN": {
+   "input": "Reminds me to take a pill of aspirin at night",
+   "raw": "{\"medicine\": \"aspirin\", \"dose\": \"\", \"time\": \"11:00 PM\", \"frequency\": \"night\"}",
+   "latency": 1.0506911659613252
+  },
+  "7-hi-IN": {
+   "input": "Take 10 units of insulin every day at 8 pm for the next 3 months",
+   "raw": "{\"medicine\": \"insulin\", \"dose\": \"10 units\", \"time\": \"8:00 PM\", \"frequency\": \"every month\"}",
+   "latency": 1.1040246251504868
+  },
+  "8-hi-IN": {
+   "input": "Reminds you to take a calcium pill every Sunday at 6 p.m.",
+   "raw": "{\"medicine\": \"calcium pill\", \"dose\": \"\", \"time\": \"6:00 PM\", \"frequency\": \"every sunday\"}",
+   "latency": 1.058952458202839
+  },
+  "9-hi-IN": {
+   "input": "Reminds you to take half a tablet of echosprin at 11:15 at night",
+   "raw": "{\"medicine\": \"Echosprin\", \"dose\": \"half tablet\", \"time\": \"11:15 PM\", \"frequency\": \"night\"}",
+   "latency": 1.1984371670987457
+  },
+  "10-hi-IN": {
+   "input": "Every morning at 7 o'clock I should take a pill of thyronorm.",
+   "raw": "{\"medicine\": \"thyronorm\", \"dose\": \"\", \"time\": \"7:00 AM\", \"frequency\": \"every morning\"}",
+   "latency": 1.022075042128563
+  },
+  "11-hi-IN": {
+   "input": "500 mg azithromycin to be taken at 10 am for the next 3 days",
+   "raw": "{\"medicine\": \"azithromycin\", \"dose\": \"500 mg\", \"time\": \"10:00 AM\", \"frequency\": \"next 3 days\"}",
+   "latency": 1.298730333102867
+  },
+  "12-hi-IN": {
+   "input": "Reminds you to take a tablet of pantoprazole before breakfast at 7 a.m. every day",
+   "raw": "{\"medicine\": \"pantoprazole\", \"dose\": \"7 am\", \"time\": \"7:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1407900000922382
+  },
+  "13-hi-IN": {
+   "input": "Reminds you to take 5 mg of amlodipine daily at 9 p.m.",
+   "raw": "{\"medicine\": \"amlodipine\", \"dose\": \"5 mg\", \"time\": \"9:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.1443664589896798
+  },
+  "14-hi-IN": {
+   "input": "Reminds you to take two tablespoons of cough medicine at 8 p.m. for the next 4 days",
+   "raw": "{\"medicine\": \"cough medicine\", \"dose\": \"2 tablespoons\", \"time\": \"8:00 PM\", \"frequency\": \"next 4 days\"}",
+   "latency": 1.2050860419403762
+  },
+  "15-hi-IN": {
+   "input": "Take an iron pill every Wednesday at 1 p.m.",
+   "raw": "{\"medicine\": \"iron pill\", \"dose\": \"\", \"time\": \"1:00 PM\", \"frequency\": \"every wednesday\"}",
+   "latency": 1.0371622079983354
+  },
+  "16-hi-IN": {
+   "input": "Reminds you to take Telma 40 every morning at 08:30",
+   "raw": "{\"medicine\": \"Telma\", \"dose\": \"40\", \"time\": \"08:30 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.0851552919484675
+  },
+  "17-hi-IN": {
+   "input": "Take 500 mg of glycomate daily at 2 p.m.",
+   "raw": "{\"medicine\": \"glycomate\", \"dose\": \"500 mg\", \"time\": \"2:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.1699847499839962
+  },
+  "18-hi-IN": {
+   "input": "Reminds you to put 2 drops of eye drops in your eyes at 6 p.m. for the next 7 days",
+   "raw": "{\"medicine\": \"eye drops\", \"dose\": \"2 drops\", \"time\": \"6:00 PM\", \"frequency\": \"next 7 days\"}",
+   "latency": 1.1298720829654485
+  },
+  "19-hi-IN": {
+   "input": "B12 is to be injected every Saturday at 11 a.m.",
+   "raw": "{\"medicine\": \"B12\", \"dose\": \"\", \"time\": \"11:00 AM\", \"frequency\": \"every saturday\"}",
+   "latency": 1.0777646249625832
+  },
+  "20-hi-IN": {
+   "input": "Reminds you to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+   "raw": "{\"medicine\": \"atorvastatin\", \"dose\": \"10 mg\", \"time\": \"10:00 PM\", \"frequency\": \"nightly\"}",
+   "latency": 1.2370401248335838
+  },
+  "21-hi-IN": {
+   "input": "For the next 2 months, take a tablet of montaire at 09:45 at night.",
+   "raw": "{\"medicine\": \"montaire\", \"dose\": \"09:45\", \"time\": \"PM\", \"frequency\": \"next 2 months\"}",
+   "latency": 1.1214105000253767
+  },
+  "22-hi-IN": {
+   "input": "Reminds to pick up a packet of ORS at 4 p.m. for the next 2 days",
+   "raw": "{\"medicine\": \"ORS\", \"dose\": \"\", \"time\": \"12:00 PM\", \"frequency\": \"next 2 days\"}",
+   "latency": 1.0855685421265662
+  },
+  "23-hi-IN": {
+   "input": "One tablet of Shellcal 500 is to be taken every Friday at 5 pm.",
+   "raw": "{\"medicine\": \"Shellcal\", \"dose\": \"500 mg\", \"time\": \"5:00 PM\", \"frequency\": \"every friday\"}",
+   "latency": 1.1361282081343234
+  },
+  "24-hi-IN": {
+   "input": "Reminds you to take 50 mg losartan daily at 6 a.m.",
+   "raw": "{\"medicine\": \"losartan\", \"dose\": \"50 mg\", \"time\": \"6:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1765788330230862
+  },
+  "25-hi-IN": {
+   "input": "Reminding to take cetrizine at 10 p.m. for the next 10 days",
+   "raw": "{\"medicine\": \"cretizine\", \"dose\": \"\", \"time\": \"10:00 PM\", \"frequency\": \"next 10 days\"}",
+   "latency": 1.1654558749869466
+  },
+  "1-ta-IN": {
+   "input": "Remind me to take crocin every night at 9 p.m.",
+   "raw": "{\"medicine\": \"crocin\", \"dose\": \"500 mg\", \"time\": \"9:00 PM\", \"frequency\": \"night\"}",
+   "latency": 1.1260113751050085
+  },
+  "2-ta-IN": {
+   "input": "I need to take 500 mg of paracetamol every morning at 8am.",
+   "raw": "{\"medicine\": \"paracetamol\", \"dose\": \"500 mg\", \"time\": \"8:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1889680419117212
+  },
+  "3-ta-IN": {
+   "input": "Remind me to take two Metformin tablets at 07:30 in the evening.",
+   "raw": "{\"medicine\": \"Metformin\", \"dose\": \"2 tablets\", \"time\": \"07:30 PM\", \"frequency\": \"every evening\"}",
+   "latency": 1.1414280410390347
+  },
+  "4-ta-IN": {
+   "input": "Take the TOLO 650 every Monday at 10 a.m.",
+   "raw": "{\"medicine\": \"TOLO 650\", \"dose\": \"650 mg\", \"time\": \"10:00 AM\", \"frequency\": \"every monday\"}",
+   "latency": 1.3187046670354903
+  },
+  "5-ta-IN": {
+   "input": "Remind me to take a vitamin D capsule at 9 a.m. for the next 5 days.",
+   "raw": "{\"medicine\": \"vitamin D\", \"dose\": \"1 capsule\", \"time\": \"9:00 AM\", \"frequency\": \"next 5 days\"}",
+   "latency": 1.198107667034492
+  },
+  "6-ta-IN": {
+   "input": "Remind me to take an aspirin pill at night.",
+   "raw": "{\"medicine\": \"aspirin\", \"dose\": \"\", \"time\": \"11:00 PM\", \"frequency\": \"night\"}",
+   "latency": 1.0100528749171644
+  },
+  "7-ta-IN": {
+   "input": "For the next 3 months, 10 units of insulin should be given every day at 8 pm.",
+   "raw": "{\"medicine\": \"insulin\", \"dose\": \"10 units\", \"time\": \"8:00 PM\", \"frequency\": \"every 3 months\"}",
+   "latency": 1.1865026250015944
+  },
+  "8-ta-IN": {
+   "input": "Remind me to take a calcium pill every Sunday at 6 p.m.",
+   "raw": "{\"medicine\": \"calcium pill\", \"dose\": \"\", \"time\": \"6:00 PM\", \"frequency\": \"every sunday\"}",
+   "latency": 1.023363625165075
+  },
+  "9-ta-IN": {
+   "input": "Remind me to take a half echospirine tablet at 11:15 at night.",
+   "raw": "{\"medicine\": \"Echospirine\", \"dose\": \"half tablet\", \"time\": \"11:15 PM\", \"frequency\": \"night\"}",
+   "latency": 1.3240543329156935
+  },
+  "10-ta-IN": {
+   "input": "One tablet of thyronerm should be taken every day at 7 am.",
+   "raw": "{\"medicine\": \"thyronerm\", \"dose\": \"1 tablet\", \"time\": \"7:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1089764169882983
+  },
+  "11-ta-IN": {
+   "input": "Take 500 mg of azithromycin at 10 am for the next 3 days.",
+   "raw": "{\"medicine\": \"azithromycin\", \"dose\": \"500 mg\", \"time\": \"10:00 AM\", \"frequency\": \"next 3 days\"}",
+   "latency": 1.285463749896735
+  },
+  "12-ta-IN": {
+   "input": "Remind yourself to take a Pantoprazole pill before breakfast at 7 a.m. every day.",
+   "raw": "{\"medicine\": \"Pantoprazole\", \"dose\": \"0.5 mg\", \"time\": \"7:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1975705418735743
+  },
+  "13-ta-IN": {
+   "input": "Remind me to take 5 mg of amlodipine every night at 9pm.",
+   "raw": "{\"medicine\": \"amlodipine\", \"dose\": \"5 mg\", \"time\": \"9:00 PM\", \"frequency\": \"nightly\"}",
+   "latency": 1.1368778750766069
+  },
+  "14-ta-IN": {
+   "input": "Remind yourself to drink two tablespoons of cough medicine at 8 p.m. for the next 4 days.",
+   "raw": "{\"medicine\": \"cough medicine\", \"dose\": \"2 tablespoons\", \"time\": \"8:00 PM\", \"frequency\": \"next 4 days\"}",
+   "latency": 1.2073092500213534
+  },
+  "15-ta-IN": {
+   "input": "Take an iron pill every Wednesday at 1 p.m.",
+   "raw": "{\"medicine\": \"iron pill\", \"dose\": \"\", \"time\": \"1:00 PM\", \"frequency\": \"every wednesday\"}",
+   "latency": 1.0468423750717193
+  },
+  "16-ta-IN": {
+   "input": "Remind me to take Delma 40 every morning at 08:30",
+   "raw": "{\"medicine\": \"Delma\", \"dose\": \"40\", \"time\": \"08:30 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.084325792035088
+  },
+  "17-ta-IN": {
+   "input": "500 mg of glycomet should be taken daily at 2 p.m.",
+   "raw": "{\"medicine\": \"glycomet\", \"dose\": \"500 mg\", \"time\": \"2:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.1588542081881315
+  },
+  "18-ta-IN": {
+   "input": "Remind yourself to take 2 drops of eye drops at 6 p.m. for the next 7 days.",
+   "raw": "{\"medicine\": \"eye drops\", \"dose\": \"2 drops\", \"time\": \"6:00 PM\", \"frequency\": \"next 7 days\"}",
+   "latency": 1.16467983298935
+  },
+  "19-ta-IN": {
+   "input": "B12 injections should be given every Saturday at 11 a.m.",
+   "raw": "{\"medicine\": \"B12 injections\", \"dose\": \"\", \"time\": \"11:00 AM\", \"frequency\": \"every saturday\"}",
+   "latency": 1.1021749589126557
+  },
+  "20-ta-IN": {
+   "input": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+   "raw": "{\"medicine\": \"atorvastatin\", \"dose\": \"10 mg\", \"time\": \"10:00 PM\", \"frequency\": \"nightly\"}",
+   "latency": 1.2242349169682711
+  },
+  "21-ta-IN": {
+   "input": "For the next 2 months, take one tablet of Monterey at 09:45 at night.",
+   "raw": "{\"medicine\": \"Monterey\", \"dose\": \"1 tablet\", \"time\": \"09:45 PM\", \"frequency\": \"next 2 months\"}",
+   "latency": 1.1872007499914616
+  },
+  "22-ta-IN": {
+   "input": "Remind them to drink an ORS packet at 4 p.m. for the next 2 days.",
+   "raw": "{\"medicine\": \"ORS packet\", \"dose\": \"\", \"time\": \"4:00 PM\", \"frequency\": \"next 2 days\"}",
+   "latency": 1.0974038750864565
+  },
+  "23-ta-IN": {
+   "input": "A Shelcal 500 tablet should be taken every Friday at 5 p.m.",
+   "raw": "{\"medicine\": \"Shelcal\", \"dose\": \"500 tablets\", \"time\": \"5:00 PM\", \"frequency\": \"every friday\"}",
+   "latency": 1.1694925839547068
+  },
+  "24-ta-IN": {
+   "input": "Remind yourself to take 50 mg of losartan every morning at 6am.",
+   "raw": "{\"medicine\": \"losartan\", \"dose\": \"50 mg\", \"time\": \"6:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.154318916844204
+  },
+  "25-ta-IN": {
+   "input": "Remind me to take cetricine at 10 p.m. for the next 10 days.",
+   "raw": "{\"medicine\": \"cetricine\", \"dose\": \"\", \"time\": \"10:00 PM\", \"frequency\": \"next 10 days\"}",
+   "latency": 1.174914374947548
+  },
+  "1-te-IN": {
+   "input": "Remind yourself to wear crocin every day at 9 p.m.",
+   "raw": "{\"medicine\": \"crocin\", \"dose\": \"none\", \"time\": \"9:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.0250708749517798
+  },
+  "2-te-IN": {
+   "input": "I need to take 500 mg of paracetamol every day at 8 am.",
+   "raw": "{\"medicine\": \"paracetamol\", \"dose\": \"500 mg\", \"time\": \"8:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.2110982090234756
+  },
+  "3-te-IN": {
+   "input": "Remind yourself to take two metformin tablets at 07:30 hours in the evening.",
+   "raw": "{\"medicine\": \"metformin\", \"dose\": \"2 tablets\", \"time\": \"07:30 PM\", \"frequency\": \"every evening\"}",
+   "latency": 1.1925080840010196
+  },
+  "4-te-IN": {
+   "input": "Wear a Dolo 650 every Monday at 10 a.m.",
+   "raw": "{\"medicine\": \"Dolo 650\", \"dose\": \"10 units\", \"time\": \"10:00 AM\", \"frequency\": \"Monday\"}",
+   "latency": 1.2337748329155147
+  },
+  "5-te-IN": {
+   "input": "Remind yourself to take a vitamin D capsule at 9 a.m. for the next 5 days.",
+   "raw": "{\"medicine\": \"vitamin D\", \"dose\": \"1 capsule\", \"time\": \"9:00 AM\", \"frequency\": \"next 5 days\"}",
+   "latency": 1.2128310832194984
+  },
+  "6-te-IN": {
+   "input": "Remind yourself to take an aspirin pill at night.",
+   "raw": "{\"medicine\": \"aspirin\", \"dose\": \"\", \"time\": \"11:00 PM\", \"frequency\": \"night\"}",
+   "latency": 1.066469999961555
+  },
+  "7-te-IN": {
+   "input": "Take 10 units of insulin every day at 8 p.m. for the next 3 months",
+   "raw": "{\"medicine\": \"insulin\", \"dose\": \"10 units\", \"time\": \"8:00 PM\", \"frequency\": \"next 3 months\"}",
+   "latency": 1.1716060410253704
+  },
+  "8-te-IN": {
+   "input": "remind me to take the calcium pill every sunday at 6 p. m.",
+   "raw": "{\"medicine\": \"calcium pill\", \"dose\": \"\", \"time\": \"6:00 PM\", \"frequency\": \"every sunday\"}",
+   "latency": 1.0209057498723269
+  },
+  "9-te-IN": {
+   "input": "Remind yourself to take half an echosprin tablet at 11:15 hours at night.",
+   "raw": "{\"medicine\": \"echosprin\", \"dose\": \"half tablet\", \"time\": \"11:15 PM\", \"frequency\": \"night\"}",
+   "latency": 1.416110583115369
+  },
+  "10-te-IN": {
+   "input": "One tablet of thyronorm should be taken every day at 7 am.",
+   "raw": "{\"medicine\": \"thyronorm\", \"dose\": \"1 tablet\", \"time\": \"7:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1812389579135925
+  },
+  "11-te-IN": {
+   "input": "Apply 500 mg azithromycin at 10 am for the next 3 days.",
+   "raw": "{\"medicine\": \"azithromycin\", \"dose\": \"500 mg\", \"time\": \"10:00 AM\", \"frequency\": \"next 3 days\"}",
+   "latency": 1.3109914581291378
+  },
+  "12-te-IN": {
+   "input": "Remind yourself to take a Pantoprazole pill every day before breakfast at 7 a.m.",
+   "raw": "{\"medicine\": \"Pantoprazole\", \"dose\": \"0.5 mg\", \"time\": \"7:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.2316754579078406
+  },
+  "13-te-IN": {
+   "input": "Remind yourself to take 5 mg of amlodipine every day at 9 p.m.",
+   "raw": "{\"medicine\": \"amlodipine\", \"dose\": \"5 mg\", \"time\": \"9:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.1432172500062734
+  },
+  "14-te-IN": {
+   "input": "Remind yourself to drink two tablespoons of cough syrup at 8 p.m. for the next 4 days.",
+   "raw": "{\"medicine\": \"cough syrup\", \"dose\": \"2 tablespoons\", \"time\": \"8:00 PM\", \"frequency\": \"next 4 days\"}",
+   "latency": 1.1896504170726985
+  },
+  "15-te-IN": {
+   "input": "Take an iron pill every Wednesday at 1 p.m.",
+   "raw": "{\"medicine\": \"iron pill\", \"dose\": \"\", \"time\": \"1:00 PM\", \"frequency\": \"every wednesday\"}",
+   "latency": 1.041206292109564
+  },
+  "16-te-IN": {
+   "input": "Remind yourself to wear Telma 40 every morning at 08:30 hours.",
+   "raw": "{\"medicine\": \"Telma 40\", \"dose\": \"40\", \"time\": \"08:30 AM\", \"frequency\": \"every morning\"}",
+   "latency": 1.218580458080396
+  },
+  "17-te-IN": {
+   "input": "Take 500 mg of glycomate every day at 2 p.m.",
+   "raw": "{\"medicine\": \"glycomate\", \"dose\": \"500 mg\", \"time\": \"2:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.160310332896188
+  },
+  "18-te-IN": {
+   "input": "Remind yourself to apply 2 drops of eye drops to your eyes at 6 p.m. for the next 7 days.",
+   "raw": "{\"medicine\": \"eye drops\", \"dose\": \"2 drops\", \"time\": \"6:00 PM\", \"frequency\": \"next 7 days\"}",
+   "latency": 1.1644633752293885
+  },
+  "19-te-IN": {
+   "input": "B12 injections should be taken every Saturday at 11 a.m.",
+   "raw": "{\"medicine\": \"B12 injections\", \"dose\": \"\", \"time\": \"11:00 AM\", \"frequency\": \"every saturday\"}",
+   "latency": 1.1316650419030339
+  },
+  "20-te-IN": {
+   "input": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+   "raw": "{\"medicine\": \"atorvastatin\", \"dose\": \"10 mg\", \"time\": \"10:00 PM\", \"frequency\": \"nightly\"}",
+   "latency": 1.6422312918584794
+  },
+  "21-te-IN": {
+   "input": "For the next 2 months, take one Monterey pill at 09:45 hours at night.",
+   "raw": "{\"medicine\": \"Monterey pill\", \"dose\": \"1 pill\", \"time\": \"09:45 PM\", \"frequency\": \"next 2 months\"}",
+   "latency": 1.2664382918737829
+  },
+  "22-te-IN": {
+   "input": "Remind me to drink an ORS packet at 4 p.m. for the next 2 days.",
+   "raw": "{\"medicine\": \"ORS packet\", \"dose\": \"\", \"time\": \"4:00 PM\", \"frequency\": \"next 2 days\"}",
+   "latency": 1.0750364582054317
+  },
+  "23-te-IN": {
+   "input": "One Shelkol 500 tablet should be taken every Friday at 5 p.m.",
+   "raw": "{\"medicine\": \"Shelkol\", \"dose\": \"500 tablets\", \"time\": \"5:00 PM\", \"frequency\": \"every friday\"}",
+   "latency": 1.2123006249312311
+  },
+  "24-te-IN": {
+   "input": "Remind yourself to take 50 mg of losartan every day at 6 a.m.",
+   "raw": "{\"medicine\": \"losartan\", \"dose\": \"50 mg\", \"time\": \"6:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1977847078815103
+  },
+  "25-te-IN": {
+   "input": "Remind yourself to apply cetrizine at 10 p.m. for the next 10 days.",
+   "raw": "{\"medicine\": \"ctrizine\", \"dose\": \"\", \"time\": \"10:00 PM\", \"frequency\": \"next 10 days\"}",
+   "latency": 1.1626472501084208
+  },
+  "1-bn-IN": {
+   "input": "Remind yourself to eat crocin every night at 9 p.m.",
+   "raw": "{\"medicine\": \"crocin\", \"dose\": \"\", \"time\": \"9:00 PM\", \"frequency\": \"night\"}",
+   "latency": 0.9676147080026567
+  },
+  "2-bn-IN": {
+   "input": "I have to take 500 mg of paracetamol every morning at 8 am.",
+   "raw": "{\"medicine\": \"paracetamol\", \"dose\": \"500 mg\", \"time\": \"8:00 AM\", \"frequency\": \"morning\"}",
+   "latency": 1.2050111249554902
+  },
+  "3-bn-IN": {
+   "input": "Remind yourself to take two metformin tablets in the evening 07:30",
+   "raw": "{\"medicine\": \"metformin\", \"dose\": \"2 tablets\", \"time\": \"07:30 PM\", \"frequency\": \"every evening\"}",
+   "latency": 1.158976041013375
+  },
+  "4-bn-IN": {
+   "input": "Have a Dolo 650 every Monday at 10am.",
+   "raw": "{\"medicine\": \"Dolo 650\", \"dose\": \"10 units\", \"time\": \"10:00 AM\", \"frequency\": \"Monday\"}",
+   "latency": 1.2264028750360012
+  },
+  "5-bn-IN": {
+   "input": "Remind yourself to take a vitamin D capsule at 9 a.m. for the next 5 days.",
+   "raw": "{\"medicine\": \"vitamin D\", \"dose\": \"1 capsule\", \"time\": \"9:00 AM\", \"frequency\": \"next 5 days\"}",
+   "latency": 1.2065703750122339
+  },
+  "6-bn-IN": {
+   "input": "Remind yourself to take an aspirin tablet at night.",
+   "raw": "{\"medicine\": \"aspirin\", \"dose\": \"tablet\", \"time\": \"11:00 PM\", \"frequency\": \"night\"}",
+   "latency": 1.1105772911105305
+  },
+  "7-bn-IN": {
+   "input": "Take 10 units of insulin every day at 8pm for the next 3 months.",
+   "raw": "{\"medicine\": \"insulin\", \"dose\": \"10 units\", \"time\": \"8:00 PM\", \"frequency\": \"every month\"}",
+   "latency": 1.1054073749110103
+  },
+  "8-bn-IN": {
+   "input": "Remind yourself to take calcium tablets every Sunday at 6 p.m.",
+   "raw": "{\"medicine\": \"calcium tablets\", \"dose\": \"\", \"time\": \"6:00 PM\", \"frequency\": \"every sunday\"}",
+   "latency": 1.0213412498123944
+  },
+  "9-bn-IN": {
+   "input": "Remind yourself to take half an echosprin tablet at night 11:15",
+   "raw": "{\"medicine\": \"echosprin\", \"dose\": \"half tablet\", \"time\": \"11:15 PM\", \"frequency\": \"night\"}",
+   "latency": 1.1347459168173373
+  },
+  "10-bn-IN": {
+   "input": "Every morning at 7 am I have to take a thyronerm tablet.",
+   "raw": "{\"medicine\": \"thyronerm\", \"dose\": \"\", \"time\": \"7:00 AM\", \"frequency\": \"every morning\"}",
+   "latency": 1.0220844591967762
+  },
+  "11-bn-IN": {
+   "input": "Take 500 mg azithromycin at 10 am for the next 3 days.",
+   "raw": "{\"medicine\": \"azithromycin\", \"dose\": \"500 mg\", \"time\": \"10:00 AM\", \"frequency\": \"next 3 days\"}",
+   "latency": 1.3067100001499057
+  },
+  "12-bn-IN": {
+   "input": "Remind yourself to take a pentoprazole tablet before breakfast at 7 a.m. every day.",
+   "raw": "{\"medicine\": \"pentoprazole\", \"dose\": \"1 tablet\", \"time\": \"7:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1338877498637885
+  },
+  "13-bn-IN": {
+   "input": "Remind yourself to take 5 mg of amlodipine every night at 9pm.",
+   "raw": "{\"medicine\": \"amlodipine\", \"dose\": \"5 mg\", \"time\": \"9:00 PM\", \"frequency\": \"nightly\"}",
+   "latency": 1.170809332979843
+  },
+  "14-bn-IN": {
+   "input": "Remind yourself to take two tablespoons of cough syrup at 8 p.m. for the next 4 days.",
+   "raw": "{\"medicine\": \"cough syrup\", \"dose\": \"2 tablespoons\", \"time\": \"8:00 PM\", \"frequency\": \"next 4 days\"}",
+   "latency": 1.1648456659168005
+  },
+  "15-bn-IN": {
+   "input": "Iron tablets should be taken every Wednesday at 1 p.m.",
+   "raw": "{\"medicine\": \"iron tablets\", \"dose\": \"\", \"time\": \"1:00 PM\", \"frequency\": \"every wednesday\"}",
+   "latency": 1.0569024998694658
+  },
+  "16-bn-IN": {
+   "input": "Remind yourself to eat telma 40 every morning at 08:30",
+   "raw": "{\"medicine\": \"telma\", \"dose\": \"\", \"time\": \"08:30 AM\", \"frequency\": \"daily\"}",
+   "latency": 0.9928510410245508
+  },
+  "17-bn-IN": {
+   "input": "500 mg of glycomate should be consumed daily at 2 pm.",
+   "raw": "{\"medicine\": \"glycomate\", \"dose\": \"500 mg\", \"time\": \"2:00 PM\", \"frequency\": \"daily\"}",
+   "latency": 1.134935500100255
+  },
+  "18-bn-IN": {
+   "input": "Remind yourself to give 2 drops of eye drops at 6 p.m. for the next 7 days.",
+   "raw": "{\"medicine\": \"eye drops\", \"dose\": \"2 drops\", \"time\": \"6:00 PM\", \"frequency\": \"next 7 days\"}",
+   "latency": 1.1351967498194426
+  },
+  "19-bn-IN": {
+   "input": "B12 injections should be taken every Saturday at 11 a.m.",
+   "raw": "{\"medicine\": \"B12 injections\", \"dose\": \"\", \"time\": \"11:00 AM\", \"frequency\": \"every saturday\"}",
+   "latency": 1.1095722920726985
+  },
+  "20-bn-IN": {
+   "input": "Remind yourself to take 10 mg of atorvastatin every night before bedtime at 10 p.m.",
+   "raw": "{\"medicine\": \"atorvastatin\", \"dose\": \"10 mg\", \"time\": \"10:00 PM\", \"frequency\": \"nightly\"}",
+   "latency": 1.2186979169491678
+  },
+  "21-bn-IN": {
+   "input": "For the next 2 months, take a nighttime 09:45 montaire tablet.",
+   "raw": "{\"medicine\": \"montaire\", \"dose\": \"09:45\", \"time\": \"PM\", \"frequency\": \"nightly\", \"duration\": \"2 months\"}",
+   "latency": 1.2864194591529667
+  },
+  "22-bn-IN": {
+   "input": "Remind me to eat an ORS packet at 4 p.m. for the next 2 days.",
+   "raw": "{\"medicine\": \"ORS packet\", \"dose\": \"\", \"time\": \"4:00 PM\", \"frequency\": \"next 2 days\"}",
+   "latency": 1.0507322091143578
+  },
+  "23-bn-IN": {
+   "input": "One Shelkale 500 tablet should be taken every Friday at 5 pm.",
+   "raw": "{\"medicine\": \"Shelkale\", \"dose\": \"500 tablets\", \"time\": \"5:00 PM\", \"frequency\": \"every friday\"}",
+   "latency": 1.1880022920668125
+  },
+  "24-bn-IN": {
+   "input": "Remind yourself to eat 50 mg of losartan every morning at 6am.",
+   "raw": "{\"medicine\": \"losartan\", \"dose\": \"50 mg\", \"time\": \"6:00 AM\", \"frequency\": \"daily\"}",
+   "latency": 1.1029380830004811
+  },
+  "25-bn-IN": {
+   "input": "remind me to eat satirizine at 10 p. m. for the next 10 days",
+   "raw": "{\"medicine\": \"saturizine\", \"dose\": \"\", \"time\": \"10:00 PM\", \"frequency\": \"next 10 days\"}",
+   "latency": 1.2053904170170426
+  }
+ }
+}

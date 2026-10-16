@@ -1,3 +1,6 @@
+import re
+import unicodedata
+
 import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from IndicTransToolkit.processor import IndicProcessor
@@ -41,10 +44,28 @@ def get_src_lang(language_code):
     return LANGUAGE_CODES.get(language_code)
 
 
+# IndicTransToolkit's preprocessing corrupts clock times with a single-digit hour:
+# "8:03" becomes the literal "\1ः03", which is translated as "1:03".
+# Two-digit hours ("08:03", "11:15") are protected and restored correctly,
+# so pad the hour before translating. \d also matches Indian-script digits (৮, ८, ...).
+SINGLE_DIGIT_HOUR_TIME = re.compile(r"(?<!\d)(\d)\s*:\s*(\d\d)(?!\d)")
+
+
+def protect_times(text):
+    """'8:03' -> '08:03' and '৭:৩০' -> '07:30', so the time survives translation."""
+
+    def pad(match):
+        hour = unicodedata.digit(match.group(1))
+        minutes = "".join(str(unicodedata.digit(c)) for c in match.group(2))
+        return f"0{hour}:{minutes}"
+
+    return SINGLE_DIGIT_HOUR_TIME.sub(pad, text)
+
+
 def translate_to_english (input, src_lang=DEFAULT_SRC_LANG):
 
     input_sentences = [
-        input
+        protect_times(input)
     ]
 
     batch = ip.preprocess_batch(input_sentences, src_lang=src_lang, tgt_lang=tgt_lang)

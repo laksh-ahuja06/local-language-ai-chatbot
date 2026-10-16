@@ -50,6 +50,61 @@ def normalize_time(time):
     return TIME_WORDS.get(time.lower(), time)
 
 
+# A clock time written in the (translated) sentence:
+#   "7:30 p.m.", "07:30", "9 am", "8.15 pm"  (minutes and am/pm are optional, but one of them must be there)
+CLOCK_TIME_PATTERN = re.compile(
+    r"\b(\d{1,2})(?:[:.]\s?(\d{2}))?\s*(a\.?\s?m\.?|p\.?\s?m\.?)?(?![\w:])",
+    re.IGNORECASE,
+)
+
+# Words that say whether a time without am/pm is in the morning or later in the day
+PM_WORDS = ("afternoon", "evening", "night", "tonight", "bedtime", "dinner")
+AM_WORDS = ("morning", "breakfast")
+
+
+def time_from_sentence(sentence):
+    """
+    Read an explicit clock time from the translated sentence, e.g.
+    "at 07:30 in the evening" -> "7:30 PM", "Remind me of 08:03" -> "8:03 AM".
+    Returns "" if the sentence has no clock time.
+    """
+
+    text = sentence.lower()
+
+    for match in CLOCK_TIME_PATTERN.finditer(text):
+
+        hour = int(match.group(1))
+        minute = match.group(2)
+        period = match.group(3)
+
+        # A bare number ("500 mg", "for 3 days") is not a time
+        if minute is None and period is None:
+            continue
+
+        minute = int(minute) if minute else 0
+
+        if hour > 23 or minute > 59:
+            continue
+
+        if period:
+            period = "PM" if period.startswith("p") else "AM"
+
+        elif hour <= 12:
+            if any(word in text for word in PM_WORDS):
+                period = "PM"
+            elif any(word in text for word in AM_WORDS):
+                period = "AM"
+
+        if period and 1 <= hour <= 12:
+            return f"{hour}:{minute:02d} {period}"
+
+        # 24-hour time ("20:00") or no hint at all ("08:03"): read it as 24-hour,
+        # then write it in the same 12-hour form as above ("8:00 PM", "8:03 AM")
+        return f"{hour % 12 or 12}:{minute:02d} {'PM' if hour >= 12 else 'AM'}"
+
+    return ""
+
+
 WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 
 NUMBER_WORDS = {
@@ -112,6 +167,13 @@ def validate_reminder(data, sentence=""):
     dose = to_text(data.get("dose"))
     time = to_text(data.get("time"))
     frequency = to_text(data.get("frequency"))
+
+    # If the user said an explicit clock time, read it from the sentence
+    # with rules instead of trusting Qwen (which sometimes drops or garbles it)
+    sentence_time = time_from_sentence(to_text(sentence))
+
+    if sentence_time:
+        time = sentence_time
 
     # Apply default values
     if not medicine:

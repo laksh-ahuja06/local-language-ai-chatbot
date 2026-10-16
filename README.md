@@ -211,6 +211,15 @@ Accuracy on 10 test sentences (fully correct after validation):
 | 0.5B | 1/10 | 5/10 | **8/10** |
 | 1.5B | 2/10 | 8/10 | 8/10 (about 2× slower) |
 
+**Full evaluation** (`evaluation/`, 100 requests in Hindi, Tamil, Telugu and Bengali): the system produced a fully correct
+reminder for **52%** of requests (rule-based baseline 42%, original 1.5B pipeline 13%); see `evaluation/results/tables.md`.
+
+**Time fix (after the evaluation):** IndicTransToolkit corrupts clock times with a single-digit hour ("8:03" → "1:03").
+`indicTrans2.py` now pads the hour before translating (`protect_times`), and `validation.py` reads an explicit clock time from
+the translated sentence (`time_from_sentence`) instead of trusting Qwen. Re-running on the same test set
+(`evaluation/run_postfix.py`) raised time accuracy from 83% to 96% and exact match from 52% to 57% (not statistically
+significant, and optimistic because the fix was designed after seeing those errors).
+
 <br>
 
 ### indicTrans2.py (if you want to run locally):
